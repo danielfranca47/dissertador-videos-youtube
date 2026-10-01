@@ -1,0 +1,333 @@
+[00:00] E aí [Música] Um bom dia para todos uma Norma Pedro Jordão sou eu que vou fazer o a formação de hoje é direcionada para o módulo da contabilidade no primeiro na primeira informação que foi feita falamos sobre a contabilidade geral mais propriamente Hoje iremos também fazer um resumo sobre a sobre essa área e iremos ligar aqui a com
+
+[00:32] quando ela funcionamento também funciona aqui também a configuração da contabilidade analítica eu antes de começar gostaria de saber se toda a gente está a ver aí a ouvir bem eu vou fazer o a partir do ecrã do Office just o Pedro a plataforma eu não sei se entretanto já estão a ver a
+
+[01:02] e o Ofício Fast dissolve confirmação por favor e [Música] e eu também tá aqui dizer que sim senhora também ok Diana também então vamos lá vamos dar a aqui seguimento ao a formação como é que é como é que vai aparecer vamos a
+
+[01:36] falar um pouco sobre a parte das configurações Gerais relacionados para a partida habilidade seguirão os seus apoio a contabilidade Verificar configurações a necessidade de fazer e que novidades é que temos nada e posteriormente a toda a todo o uso do módulo da contabilidade quanto aos instrumentos contabilísticos as relações antes era oque é [Música] é bem então do oficial temos aqui as
+
+[02:07] configurações como é normal recomendo regra já no Ofício todas as configurações do módulo já estarão A então ser feitas dentro do menu configurações reparamos dentro deste menu existe sempre um separador por cada módulo casa na configurações a serem feitas e depois temos também dentro do determinado módulo seja dentro do menos acompanhar os seus jargões são
+
+[02:39] esses dois filhos normalmente que tem que ser feitas configurações para os módulos estarem relacionados nos a contabilidade temos a direção ao temos daqui ainda ilusão da configuração das tabelas de apoio rock que também já vamos abrir essa parte de dentro Então dessas configurações nós temos um a direcionado aqui para a parte de
+
+[03:10] recursos humanos também aqui agregar trabalhos módulos para a parte da contabilidade aqui o que é que nós conseguimos fazer aqui e pré-configurado aqui dentro dos lançamentos contabilísticos de efeito dos vencimentos e daqui só faz sentido para quem está a utilizar o módulo de Recursos Humanos Ok conseguimos vir aqui várias coisas direcionada para esse módulo que é o que é que está em cima e
+
+[03:40] temos também depois a parte da configuração das contas a ser movimentada ele ia ser utilizadas com as opções que teve aqui em casa ficou com os bancários da Luna ou seja o pessoal dos órgãos sociais apagar a pessoal apagaram social e para o estado EA Segurança Social Ok e só as configurações das contas não vão receber a seguir aqui olha depois um lançamento contabilístico do próprio conhecimento seja sensível Oi gente lado junto com a
+
+[04:11] configuração das plantas que não podemos fazer também dentro de cada numeração que existe a parte dos recursos humanos foram isto temos aqui depois a parte uma das tabelas de apoio rocks aventuras problemas apoio temos a parte dos financeiros e dentro dos financeiros que temos aqui as contas não cargas no modo na formação do perfeita sobre a água dos bancos na área financeira a foi
+
+[04:43] explicada Como é o Google qual é o individual como é que deve ser utilizado essa parte das contas bancárias ok O que é que nós fizemos aqui para a parte da contabilidade fizemos a fazer a pré-configuração de quais são as contas que nós vamos ter que sejam movimentadas aquele no Regimento quer no pagamento Ok e tu é configurado por conta bancária não Por modo pagamento aí dentro de cada conta bancária nós vamos seguir então
+
+[05:14] quando é a porque vai ser utilizada a problema Ou seja no bpi eu tenho configurado aqui a conta 1201 e é uma conta que está e é uma conta que está o já criada no nosso contas e que nós podemos atribuir a diretamente aquela conta bancária e o bairro onde ser é que sempre que outro bizarra a conta do bpi ele vai me fazer um movimento
+
+[05:45] na conta do pagamento Ok caso o documentos tem um pagamento associado vai movimentar ou não recebido por o pagamento a conta que estiver configurada dentro de cada conta bancária com esta configuração faz neste nesta opção Ok contabilidade temos aqui um número muito obrigado recebimentos e número de contabilidade para caminhões Ok isso aqui acabamento é feito para bancários e
+
+[06:16] positivos para a conta bancária caixa que está sumido será aquela acordou a Gaia que está associada às vossas caixas e que vai fazer um movimento para a conta que vestir aqui nesse caso a ser uma 11 configuração exatamente no meu fone não quer o sumindo é necessário ouvir os problemas apoio ao menu financeiros contas bancárias fazer a predefinição da conta nos recebimentos e os pagamentos por conta bancária
+
+[06:47] Inclusive a conta bancária caixa OK depois disso configurar nova a temos a as contas bancárias e os seus pagamentos com a conta já e esta parte fica arrumada a segunda parte é a configuração das contas dos das velocidades Ok pronto são três configurações básicas temos que fazer aqui a definição das contas nas contas bancárias a definição das pontas
+
+[07:18] e para as entidades e a definição das contas para os artigos para fazer bancários Pois foi desligada e para a parte do advent da diz que temos que virar meu novo contabilidade servir apoio e dentro dos seus de apoio temos aqui os parâmetros uma forma muito resumida e só paramos sociais de muito obrigada o nós temos aqui várias configurações
+
+[07:48] o que nós conseguimos fazer Ok ter aqui as contas quero conta de terceiros cara as coisas os descontos das Diferenças de câmbio do encontro contas abrir aqui as contas da retenção na fonte de casa que irão de que o movimento contra neste para essa questão da potência da fonte de cá é sempre na mesma conta independentemente do fornecedor do cliente Ok e teve também a parte o dos arredondamentos
+
+[08:20] aonde temos aqui aparece missão que às vezes a positivo a negativo nas vendas nas folhas Ok estou configurações de contas que nós conseguimos fazer com base nas opções que estão para escolher dentro e direcionado para a parte do dos clientes seus amigos os condutores que nós temos aqui a configuração necessária para essa área Ok se nós aqui temos a conta vassiliadis e fornecedor a 22 Um normalmente sempre que criar uma
+
+[08:52] plataforma o quem quiser começar outra Salvador contabilidade isso já vem parametrizado o seu já vem com essas plantas aqui e não é necessário alterar Ok e depois temos aqui a possibilidade de definir qual é o número de Jesus que acordar vou trabalhar vai ter isso eu quero não queria lhe acordar automaticamente o que é que faz cada uma dessas opções o criar a conta automaticamente vai fazer com que sempre que seja aberto o dia de um fornecedor na parte da gestão a conta da contabilidade seja atribuída de forma
+
+[09:23] automática sempre que essa conta da contabilidade vai ser a vai ser criada com base na cor da base dentro do fornecedor mais o número de dígitos que eu quisesse comer OK sendo que dentro deste número de dígitos vai estar incluído o número da gestão do cliente ou do fornecedor ou seja a forma geral a a base de clientes de fora 21111 se tiver mais cinco dígitos vai
+
+[09:55] ter 00030 OK porque é 30 o número da gestão daqui diga tudo o que lhe fornece todos E então eu posso usar esta configuração posso definir Quando se diz é que vai ter a conta da minha idade depois para que a conta seja criada também forma automática é necessário que número contabilidade fez de apoio mercados seja definido Qual é a conta base
+
+[10:27] clientes enquanto a base fornecedores por mercado que é para para que sempre deverá criar uma conta forma automática a conta de clientes fornecedores esteja se a fazer obrigada Com base no país e que está associada a ficha de semente o berço Professor ou o país que seja expedido na criação da meu E com isso configurava da praticamente sempre foi criada uma entidade a conta do cliente e fornecedor é criado então de forma
+
+[10:58] automática aqui nos mercados novamente alguém criados também a única coisa que não vem é quanto à base de dados e fornecedor atribuída por mercado Ok e aqui então apenas temos que editar e definir então quando levanta base de clientes vão encontrar base fornecedor a nível Nacional porque essa é suplicar que eu aqui tenha a mesma coisa aqui para o mercado Comunitária contra acidentes para os unitários o livro dos também e depois aqui o
+
+[11:29] Internacional também que vai esta predefinição e nas também não é a pena visto que é necessário fazer Ok temos aqui outro botão que a chama se criação de contas e a situação acontece pode acontecer indicados vamos imaginar que existem clientes que vão começar agora usar uma outra muito habilidade que já tem um ofício Jorge queres Normalmente quando uma rentabilidade é criado eu nunca caso as contas das entidades criadas na parte da mortalidade mas eu
+
+[12:01] consigo fazer toda esta configuração ou seja consigo definir os marcados e quais são as pontas a movimentar e os paramos fosse dizer qual é o número de dígitos esse ano para crianças coisas de forma automática e o que vai acontecer Procure um médico gostar aqui e quer as configurações são feitas todos os dois forem criados aguardando essa criança formal com ela e para clientes e fornecedores já estão criados no Office era e que não tem conta atribuída na conta Obrigado com esta configuração e consegui chegar ao
+
+[12:33] menu da contabilidade fez apoio mercados fazer criação de contas definir que conta da qualquer criada clientes fornecedores e como momentos emitido intervalo de normalmente tempo em 2013 buscar tudo até a data que eu bem quiser entender Ok conte 39 eu faço criar contas e ele vai dizer então que isso foi ou
+
+[13:04] não alguma conta criada normalmente ele recebe criado estas contas não sei se eu tivesse sentimento diante de 300 a 400 fornecedores sem conta criada e ele iria criar com base nessas configurações que Picos oque é [Música] e não ficar mente aqui a cabeça das contas as novidades são podem já também já que já tá explicado aqui Qual é a ideia Ok eu vou soltar não terminar
+
+[13:36] Daqui a parte dos paramos da contabilidade para que nós possamos verificar aqui os restantes configurações que podemos fazer ou seja no separador diários nós conseguimos seguir diárias por marcar nas vendas Ok e o mesmo capaz de compras conseguimos criar ou associar praticamente Qual é o documento e o diário ao documento que vocês vão utilizar ou seja na fatura e
+
+[14:06] vai usar a 51 e o diário 50 se eu quiser chegar aqui eu consigo alterar isto Ok conseguimos ela quem está aqui vou comer um X e para o diário y la eu consigo fazer a criação também deste momento e resfriados ou seja não significa que tenho que utilizar sempre a os nossos - os nossos diários Ok vocês na contabilidade os seus apoio tem aqui
+
+[14:38] dois menos piores momentos e o diário Ok eu vou abrir aqui os dois nos momentos que eu posso editar ou apagar mesmo e criar nós Oi e a mesma coisa Oi para o diário para Os Diários OK posso editar Ou posso apagar e criar novos viários e assim passa utilizado aí fique com meu amigo organizado da maneira que eu quiser Ok então e eu aqui vou fazer a configuração depois que nos
+
+[15:08] diários e os pequenos criados o vou fazer a atribuição deste mês destas duas opções os clientes dos Diários ao documento em causa para que quando o documento pois a massa aprontou misticamente deles lá que então nos vídeos que estão aqui configurados depois também aqui também as classificações por cedem e foi criado por que é porque a 1 não existe
+
+[15:39] é uma configuração na ficha do artigo em que eu apenas consigo atribuir uma classificação por arte Ok é só seguir não classificação de artigo a última fosse distribuir mais um filme e gostavam de ser algo estava aconselho do isso ex-prefeito empresas que tem vários amigos negócio e te mando contas de nas contabilidades ranço / / águia negócio vamos supor assim e
+
+[16:09] praticamente o artigo se tem uma configuração para fazer uma semente contabilístico não tem duas nem três que é o caso das áreas de negócio Ok cá se eu tivesse mais o Mário negócio eu devia ter atribuído ao mesmo artigo diversas classificações do antigo para que se tivesse acerto de movimentar de forma correta e foi por isso que foi feito isso ou seja eu consigo definir uma classificação por serem facturação ou seja um poste a voz por essa já deve
+
+[16:41] negócio posso ter sérios saturação diferentes OK e eu dentro desta classificação que o série que eu posso ficar aqui criar o novo escolher sempre seja utilizada a série um a classificação de origem que a mercadoria vão por dieta as aplicação distribuidor de Ok se for para a série de fogo a classificação de origem um passa a ser a classificação por exemplo da classifico alqueires e o que ele vai fazer vai
+
+[17:13] fazer uma ligação e que sempre nos transmitiu homem vai ser vale nada a sério e facturação Ok se essa série de maturação tiver né que a parametrização ele vai verificar Ok se o artigo estiver a classificação da mercadoria então ele vai lançar a parte sempre comento Ok a classificação de teto passes já terá outras bandas já trago informações o ok praticamente aviso menu que serve mesmo país e a mesma coisa está relacionada
+
+[17:47] com os dentes por ser Ok Ou seja eu consigo definir que fará a série X encantava ao centro de custo X para ser irmão vai entrar na posse dos tipos e aqui a ideia a acaba por ser praticamente a mesma coisa eu consigo pegar definir dentro de uma determinada sério Qual é o centro de custo efetivamente vai ter a social Ok relativamente aqui a a parte do Iva Posso ver aqui então qual é o meu livro
+
+[18:18] a potência mensal trimestral posso definir aqui se vou usar inventário Permanente no lançamento ou mensalmente ou não usar Ok caso escolha Amém sábado ele vai me abrir aqui as parametrizações para que eu possa mesmo tablet a balança está aqui configurar Ou seja criar esse momento é que vai entrar Quais são as pontas apurar a conduta do número teoria da mercadoria vendidas E qual é um carro qual é a forma de carbono que vocês
+
+[18:49] querem utilizar não tem aqui a esta configuração pode ser feito e depois temos aqui a parte dos outros paramos em que posso definir qual é a data de lançamento da conta Obrigada normalmente ele vai sempre atual para agir essa data com a data de emissão do documento não significa que E já tivemos alguns clientes nos questionaram sobre esta parte eu posso querer fazer o autopreenchimento dos lançamentos contabilísticos com o último dia do mês de emissão do documento ou sejam praticamente veste a opção elevar passar
+
+[19:21] todos os momentos no mesmo dia e será o último do mês Ok atribuir aqui o livro do do técnico oficial de contas a classificação de artigos para artes do tipo normal aí do dos artigos e também vamos ver aqui esta parte é uma coisa injeção da cidade se usam a oportunidade analítica e os acentos curso na contabilidade geral e a tem a opção de usar a contabilização do Iva sobre o lucro em bem segunda mão visto
+
+[19:53] que sempre que utilizar essa razão da isenção é necessário colocar com a margem de lucro econômico mente não ficaria nada associar a a conta da contabilidade visto que a margem louco de ficar escondida entradas era preciso ativar aqui este e revisto para que o lançamento contabilístico tivesse em conta sempre quando era mais conhecido feita nos bens em segunda mão ok É seguro dos bens em segunda mão pois temos aqui o código serviço Finanças ou
+
+[20:26] então esses aplicativos baratos apresentado polegada e Universidade Ok essa informação a a sempre necessária para atrás o jogo da seleção criativa das cooperativas etc Ok só isso aqui ensinar sempre é necessário a fazer o preenchimento por aqui também o agrupar Quantas aulas e que está fazer isso aqui vai agrupar a melhor problema de contas ao bravo eu tivesse unido sentir o possa
+
+[20:57] depois de tirar também quando contas alterar ou seja um pontinho aqui agrupar conta sobre os dois se ouvia era o meu plano de contas podem verificar que as contas que estão a ser visualidades analisadas abelhas são as o grau dois fazer que tenho dois números Eu posso ficar aqui estender aquilo que eu quiser Ok para verificar o que é que está dentro da conta 11 o que é que estava entre computadores e de equipa desta informação não significa que eu posso chegar aqui ela terá por três Ok vou
+
+[21:28] chegar aqui ir para Pousada ou caiu zero não vai atualizar os cara Queria colocar para um e aqui vou ter aqui e não apenas por pela conta mãe o guerreiros a Ana tava aqui A Última Questão a nas penso que depois falamos pessoas ó nesta partida não só para não interromper aquilo assim iremos falar aqui sobre esta parte
+
+[22:00] o Ok quando a o assustamos configurações que que existem dentro dos parâmetros da contabilidade são estas As definições e ainda Voltaremos aqui pelo menos para ver a parte da classificação dos artigos ok aqui essa parte onde nós vamos agora ou seja dentro de cada artigo Eu agora vou abrir uma forma assim muito rápida e resumida de
+
+[22:30] dentro de kabat existe operadores chamado contabilidade e dentro dessa pedra portabilidade e eu consigo atribuir uma classificação de arte OK são estas classificações do antigo que vão gerar um movimento contabilístico documentos ou seja se tiveram um artigo não tem essa classificação atribuída e tenha sido vendido ou comprado num determinado comer umas lentamente que não vai ser feio que ele vai procurar E é isso que nós vamos agora vai fazer a
+
+[23:01] procura da taxa dívida no mercado dentro da pacificação que está atribuída a arte não encontrar vai dizer porque não tem conta atribuída e não vai fazer gerar uma semente por Thales tu queres e dentro do menu contabilidade serviços de apoio classificação de artigos Ok ou para quem já tenha a mais avó tem uma vontade maior pode diretamente das benesses pelos mesmos que ele vai diretamente da a parte peso
+
+[23:31] pegar aqui ele foi aos seus apoio e as classificações do ativo e eu aqui então vou criar todas as minhas classificações eu vou saber que os resultados Ok e nós temos aqui a use códigos que são sempre quentes é normal Ok a com a designação quando está sozinho por extensão da Quinta da linha e temos as linhas de pode ver nos sentimos vocês que precisamos para ter esse por 123 Ok Isto
+
+[24:04] é configurado por taxativo e por marcar ou queridos praticamente de uma forma muito resumida eu posso editar editar só para usar aqui por exemplo e dizer que o tempo levar 23 as contas a movimentar na venda no Mercado Nacional aquecer a 71 é conta da venda será por de ruiva acordar devolução de venda EA banda devolução do Iva da venda Ok e a mesma configuração tem que ser feita parte
+
+[24:36] compras Ok se eu comprar a 23 por cento mercadoria as contas movimentar na compra vai ser tem um a conta do Iva 24 32 77 OK daqui a configuração é simples é importante é perceber que a configuração da classificação de artigo é feita por taxa de Iva e por mercado OK depois temos também aqui a parte da
+
+[25:06] configuração do inventário permanente caso ele seja feito Ok ou seja utilizada na não Lançamento contábil Ele fica que eu vou subir para levanta marcadores e o a mercadorias vendidas por marcar também Ok quando se criar uma classificação nova Ok eu posso criar uma nova classificação e aqui vou ter que dizer que é nova e quando eu criar essa nova classificação
+
+[25:36] eu vou somar aqui nova classificação eu vou dizer quando é que está saindo é que eu quero criar e não é possível criar uma nova classificação para todas as estações viva numa única só vez ou seja a nova classificação vai ser criado agora OK para taxa zero por cento Onde Eu Vou definir qual é as pontas de 90 e qual é as contas de compra que ele quiser atribuir ok
+
+[26:11] e aqui eu aqui vou por a 71 pronto depois aqui vou pôr as pontas que E se eu quiser bem pode fazer essa atribuição com a conta do Iva atribuída com a configuração da parte das compras que eu também vou por aqui com uma conta qualquer só para nós podemos gravar e o que vai acontecer é que ele vai criar esta nova classificação onde vai brincar
+
+[26:42] que com o Ivan 0 internacional não existem quantas configurados o mesmo acontece para o mercado comunitário e no mercado nacional tem a configuração da conta de venda e dá conta de compra Ok mas isto apenas tá criado esta classificação apenas está criada com o Ivan Zero O que significa que se houvesse algum antigo com esta classificação com Iva diferente 0oc não haveria configuração e o lançamento não iria ser possível realizada então eu
+
+[27:12] posso vir criar uma nova classificação Mas em vez de dizer que é uma nova eu vou dizer que Qual é a classificação que eu tinha criado mas para o Ivo a 23oc e aqui eu volto a fazer a configuração do que eu empreender com as contas que eu quiser Ok por aqui muito rapidamente algumas
+
+[27:43] Oi e o Frank Essa foto é o ok programar isto passo a ter mais três linhas com a mesma classificação classificação 59 Ok e se eu quisesse ainda criar outra conta ao criar a mesma classificação alguma taxa Será diferente queria fazer novamente nova classificação não responder a nova experiência que ela acreditava criança mudar da taxa do Iva e configurar as contas de vendas e da Copa Ok E é assim
+
+[28:16] que se faz aqui a criação das classificações depois dentro da ficha do artigo eu vou então atribuir Quais são as classificações que eu quero que seja utilizada para que sempre sejam ou comprar ou vende um artigo e ele não movimente a esse mesmo artigo a com base na classificação que está atribuído O que é que nós podemos fazer aqui o monte do surgimento de obviamente que sempre
+
+[28:49] quer criar um antigo nós vamos estar a criar o artigo abrir a ficha do artigo e escolher qual a classificação da rica com o corpo mtk Ok então o que é que nós temos nós temos a possibilidade de definir nos restaurantes da aplicação Ok Qual é a classificação de artigo a ser utilizado para os artigos são de variados motivos Salvador tipo de serviço que é que significa nós podemos dividir os nossos artigos entre os tipos temos o arquivos normais estão
+
+[29:20] movimentar-se pó e disponíveis para venda ou seja são todos os artigos que te guardam aqui como mercadoria Ok compra e venda mercadoria os serviços são todos os serviços são prestados também é um pedido antigo pode ser utilizar e apresentamos os contadores de degradar digam é um artigo e cada artigo que tem uma classificação sempre diferente e por isso é que não existisse o meu onde eu possa representar é uma uma massificação da filha princípio da política da política de água tenho uma classificação diferente
+
+[29:52] da Luz tem uma classificação diferente funerário uma classificação diferente transporte é sete Ok então o que é que nós conseguimos fazer para configurar o tipo de artigo normal e os tipos artigos e serviços onde eu nasci nos meus reparamos consigo ser Ok todos os antigos podem criadores do DIP normal isso é mercadoria Ok e todos os amigos forem criados há tempo de serviço vai ser a classificação relacionada à prestação de serviços por exemplo hocks e o que é que ele vai fazer sempre seja
+
+[30:23] criar um artigo consoante o tipo artigos as cores que é uma utilizador ele vai conhecer aqui Qual é a classificação que vai ter que ser atribuída Ok pronto e fora essa configuração que é muito genérica ou seja uma configuração de pacificação na direção do artigo genérica porque tipo de artigo Ok eu ainda posso fazer outra coisa eu dentro de uma manga estoques nos preciso do apoio e nas famílias eu consigo atribuir por família ou por sua família sua
+
+[30:55] família independentemente aqui nas ficar melhor após realizarem nesta subdivisão de grupos por nativos eu consigo dentro de cada um dizer qual é a classificação do antigo vai ser utilizada ok O que é isso que vai fazer sempre que eu tenho um artigo vamos imaginar este serviço contabilidade Ok se eu tiver está atribuído a família eletricidade e o que ela vai fazer vários vão minar
+
+[31:26] que o família é que o classificação da liga é que está configurado nessa família e vai atribuir essa família amor disso Ok pronto isto é uma configuração que tem que ser feita e só vai ser tido em conta nos artigos que foram criados de novo ok Não já são criadores ele vai fazer qualquer alteração pronto mas vê se aparece um bocado por isso e aqui já vamos um pouco mais ao pormenor TVs desportivos do artigo que eu nasci
+
+[31:57] serviço posso ter diversos tipos de serviços como classificações quanto à políticas diferentes o que eu posso fazer é criar famílias e suas famílias e dentro dessa semana de sua família definir qual é a classificação da antiga ser utilizada caso o artigo seja criar com uma determinada família ok ok é relacionado aqui essa parte dando de configuração das classificações dos
+
+[32:27] artigos também já está praticamente a explicar aqui Qual é a ideia é o que é que é importante pois temos em consideração aqui que neste momento temos as pontas dos artigos ou seja as classificações do antigo já estão criadas já estão atribuídas a ficha do artigo Ok a configuração do movimento fotográfico dos artigos a ficar estas duas pré-configurações a suja configurar
+
+[32:57] as classificações antigo e atribuí-los ao próprio aos petroparts depois já temos também criadas as contas bancárias e atribuídas as pontas a contabilidade a cada conta bancária que eu tenho criado também foi feito foi a primeira parte nós fizemos e também já tem as contas as minhas entidades o criadas e a atribuídas a Guilherme o que é que eu posso fazer posso ir então eu vou só antes devemos efetuar os lançamentos
+
+[33:28] contabilísticos começou aqui passar nos seus salões nos exercícios Estamos aqui no anos 92 Eu quero mudar isso para o ano 2021 como as togas ficar aqui eu consigo ver aqui aos seus apoio exercícios fazer esta alteração seja profundo saltavam outro aí Abatida eu estava a ver a quanto obrigas March 22 Vou ver agora a portabilidade dos meus 21 e informações importantes temos aqui para dar ter sempre em
+
+[33:59] atenção que ah é possível criar exercícios antes efetivamente onde começar Ok novamente a criação de outros seja feita sempre a passagem do lado quando a questão que se coloca aqui estômago um monte de nossos clientes tenho que ter em consideração que sempre nós fazemos não exercício e ele vai abrir o ano que tiver aqui definido a basear-se no último exercício e o que
+
+[34:31] ele é fazer é copiar o plano de contas documentos de viagem paramos acessa o que significa o quê silenciosamente sobre suas ações 23 exatamente com as posições com titânio Ok em que ele vai vou pegar tudo e vai copiar tudo o que está em 2022 e passa e três praticamente eu respondo abrir este Exercício se alguma vez eu tiver que criar uma conta em 2022 também vou ter que tirar essa conta da minha 23 Ok por
+
+[35:03] quê Porque o exercício já foi criado o plano conta já foi copiada de todas as alterações que sejam feitas no plano de contas nas classificações de antigo nos parâmetros de exercício etc etc eu sempre posso escolher um exercício de alteram ou restaurantes ou essa informação no exercício anterior vou ter que alterar também no novo exercícios já foi criar Ok ter em consideração também que quando a criadas todo exercício mudem sempre os
+
+[35:36] colaboradores de todos para esse exercício atual ou seja tão trazer meu livro de um eu em janeiro 2022 queria o exercício e mudo todos os meus cobradores para esse exercício porque Se tiverem a parametrização criar as pontas as entidades de forma automática Ok se tiver um curador num exercício que não é o exercício atual Esse é um vai criar uma entidade o que vai acontecer é que
+
+[36:07] essa entidade vai ficar criada no plano coisas do exercício em que se cobradores tá e não no blog quantas atual Ok ter também isto que são importantes porque quando é criado um novo exercício tem que se passar todos os cobradores preço exercícios e se faz uma maneira muito simples mas aqui a opção de um lápis entre o quadrado e eu vou atribuir então aqui todos os colaboradores que eu quiser Ok
+
+[36:38] e faço gravar e praticamente ele mudou-me todos os colaboradores para o ano seguinte Ok a tua falta para aqui informações adicionais aqui por até também a possibilidade de fechar os meses ok tenho que o aberta eu consigo fechar dentro desta pasta e praticamente ele vai me fechar aquele mês Ok não vai permitir que seja passado mais nada conta basicamente o e temos aqui também este estou integrada
+
+[37:11] O que é que as questões que ela vai fazer é uma das formas de efetuar os lançamentos contabilísticos ou seja diariamente é correr uma cão em que vai validar documentos é que estão na gestão de grandes provações bem muito obrigado e com padrões ele vai jogar uma determinada hora do dia que eu não sei exatamente qual é a hora mas vai comer essa vai querer essa uma vez ouvir rock leva umidade pneus não estão ansiosos na conta obrigado e vai integrar de forma automática casas de sementes as três
+
+[37:41] levávamos para semente grátis o lançamento vai ser feio e não existe aqui nenhuma intervenção do utilizador na numa semente metalist que nos temos o poder agradecer a documentos ou que não tem uma conta da antiga tribo ida ou volta a conta do Iva ou lado a conta dele já não pode faltar alguma coisa para tu fazer para fazer sucesso e então quem vai fazer enviar um e-mail O problema é que estiver configurável no menu relatórios automáticos
+
+[38:15] O separador diário e temos aqui a integração da contabilidade Ok ele vai enviar beleza para ir para um labrador todos os dias alguém alguém é um relatório automático ia todos os dias com a indicação documentos que foram integrados na contabilidade naquele dia os que não foram integrados e os que não foram integrados porque ele não ter sido integrados Ok e depois outro lisador tá autorizador ir verificar naquele documento naquele lançamento
+
+[38:46] contabilístico O que é que já estarem sol que maneira que vocês têm mais simples de fazer isto a Setembro homem não contabilidade e lançamentos em lote o Ok nos lançamentos a moto eu consigo validar aqui não podemos edificar aqui do ano todo a verificar aqui que documentos é que ainda não reclamações na contabilidade e sempre geração não utilizar eles vão aqui aparecer Ok eu aqui não vou para
+
+[39:19] consigo logo pré-visualizar o movimento e eu já sei oque que falta a conta da entidade aqui por isso é que o primeiro não foi integrado mas uma forma muito simples de ver o que é que está maluca que não está eu consigo selecionar aqui em lançar ao que neste vídeo então vai se relacionar todos os momentos e eu consigo fazer uma praia de validação em que consigo visualizar o que está vermelha significa ter falta de informação ou querer que é o caso
+
+[39:51] bom e depois eu consigo definir também eu consegui visualizar aviões que já estão corretamente atribuídos reconhecimento essa fator recibo e são documentos que estão prontos para ser lançados contra o principalmente Ok eu dentro das sementes posso fazer processar custou a vermelha não vai passar pela dizer que existem que eles e vai lançar os cinco documentos que estavam que nós conseguimos depois de se ver e já estão na parte da cantora idade
+
+[40:22] Ok e aqui consigo fazer a segunda pharmacy no orçamento com tão bem filhos você já consigo ter uma integração a fazer o nosso médico então clique forma automática diariamente em que o utilizador não necessita fazer nada a não ser por dirigir os nossos aumentos contra o Benfica ou corrigir a configuração do documento que efetivamente informação na contabilidade e segurar Então essa informação por e-mail numa Antônio e Alma e depois
+
+[40:52] tenho aqui os relacionamentos amorosos imprimir dentro no centro exatas vão fazer um filtro por Diário o por tipo de documento ou até mesmo processos do momento eu consigo fazer a validação e o testamento desses documentos para a contabilidade processamentos contábeis que fica então emitidos Ok e depois o temos aqui a opção de lançamentos que me permite fazer os lançamentos manuais a ser consigo ficar aqui fazer novo lançamento que me hidrata posso seguir
+
+[41:25] aquilo que me de origem casa existe mentores em associar o dispositivo associar então o cometer diária e eu aqui vou selecionando as pontas por valor eu e pisar internet a relação de sal também então tem como quem e como as livre guardar e fica uma semente fechado feliz temos entrar aqui este estão associar me permitia social nacionais recorrentes
+
+[41:57] que é seus pensamentos poemas eu posso levar o contabilidade e fichas de apoio eu tenho aqui os lançamentos revendas OK e eu posso criar um determinado tipo de relacionamento está dizendo lançamento eu vou ter que fazer sempre todos os todos os meses vamos imaginar E é uma semente que tem um bocado complexo e a grande Ok então eu posso criar aqui esse lançamento e atribuir mais são as pontas movimentaram os valores a débito EA crédito se você quiser colocar aqui também ó posso fazer
+
+[42:28] e toda essa informação nutritivo Até os ventos exemplo aquele pimentão o bancos e o diário também até por aqui essa informação e vou gravar ok que é que está a fazer-se uma vez quiser criar um documento ao lançamento contabilístico novo com base na cama informação eu posso chegar aqui associar por aqui qual é o lançamento que eu quero grave ele já vai carregar todas as
+
+[43:01] contas são vai carregar os números da o e acredito casa já tenho esse pedido Eu também me sinto curso também dá para fazer o seu discurso como tal documento já que os criativos a Complex uma só por hoje é só retificar a triângulos e guardada Ok a precisamos questão social ainda dentro dos lançamentos temos aqui a opção criar lançamentos são sempre obrigado está tudo efetivamente é correto Ok e também aqui o tão opções que me permite fazer transferências
+
+[43:31] contas com base Nas condições que eu quisesse vir aqui ou seja vamos imaginar que eu quero transferir eu tenho o acordar de um a minha conta das refeições por exemplo subdividida por fornecedor mas eu quero deixar ter esse vídeo professor e quero ter apenas numa conta então posso fazer transferência da conta X para a conta Iris manda Ok em que as condições normais é tudo que é do exercício das
+
+[44:03] novas 2011 todos os diários e desde o mix ao vivo e que ela é fazer é algo lançamento contabilístico já estão criados com a conta origem Ok conta da Caixa ar ele vai fazer toda a transferência para a conta que ia sair aqui que é uma caixa da série plantas Ok ir para relacionar para esta transferência de contas para quem não sabe é a neste uma opções que faz essa essa esse pensamento é depois dando aqui
+
+[44:35] a continuidade na temos aqui os apuramento dos resultados do Benfica e que o apuramento de resultados e o pagamento de Iva está assim o corações separados Ok em que o apuramento do Iva e já está pré-configurado de bem com o planeta resultados Ou seja que nós estamos aqui ao mesmo contabilidade cheio de apoio apuramentos eu vou ter disponíveis Ok todos os
+
+[45:05] apartamentos que a queiram utilizar ou que queiram criar vai entender Ok Oliva não nos já está criada e é apenas uma puramente que está aqui sumido hein que tenho medo nessa definição Ou seja quando eu estou a criar essa puramente o assumir isso é puramente Oliva ou não ok É o caso Verde já está assumido como sim é permitido Iva então ele vai por aqui igual é a conta de apuramento o viagem das sementes de nação Isto é rica de
+
+[45:36] sayo lançamento contabilístico e depois quais são todas as pontas apurar a Ok e a definição do Iva a pagar e do Iva a recuperar esse campo vai definir essa informação Ok relativamente a todos os outros fundamentos eu posso criar novos apuramentos ok operativo o contrário daquilo ferramenta de teste ok a conta apurar
+
+[46:06] o hippie então o apuramento criado e aqui eu posso editar e posso fingir Então qual é o diário utilizado o documento utilizado e quais são as contas a apurar Ok vamos nesse caso nós temos aqui alguns criados passavam as crianças base do vestido já tem que ir Vai ter aqui toda essa informação ao Rei das contas apurar por a conta da puramente isso aqui é configuração de
+
+[46:36] todos os apuramentos que eu quiser criar Ok por quê Porque depois neste métodos apuramento dos resultados a barra Iva dentro do - a contabilidade a única coisa que eu preciso fazer é chamar ou o Iva o apuramento de resultados e executar Ok eu quero vai fazer praticamente é criar um lançamento contabilístico Com base no apuramento que estava configurado nos meus funções de apoio e vai fazer então esse lançamento contabilístico quero noiva quer nos resultados é que eu posso poder
+
+[47:08] aqui todos os os apartamentos que eu vai entender oque é o ultimamente o rolamento custa manter as medidas e acesso imediatamente na semana um ir só aparece aqui caso vocês façam tenho Liberdade permanente ativo e Registro mensal Ok e então aqui já tenho a pré-configuração e eu consigo dormir dentro dos meus parentes da contabilidade também é só escutar e a partir daí ele
+
+[47:38] vai fazer então o apuramento das contas apurar com a cor da mercadoria e do custo das mercadorias vídeo ok também é só escutar a nossa mesmo também é realizado de forma automática e depois relações já foram incluídas aqui algumas Reparações novas mais propriamente reparação recapitulativo Diva EA relação da Modelo
+
+[48:09] 22 e o dentro destas dentro da o cultivo já temos que estão aqui a fazer a utilização desta desta mesma reparação é sempre que a única de oração que hoje vamos bater aqui as únicas duas coisas bater serão é a periódica e modelo de 10 a relação da modelo do na mesa 22 e cultivo do livro vão ter depois um vídeo específico para cada uma delas visto que
+
+[48:39] são informações novas são módulos novos e efetivamente terão que ser aplicados a minuciosamente cada uma portanto vai levar aqui muito tempo na explicação dessas Reparações o mesmo acontece a Ana tava a falar a pouco da parte do imobilizado mesmo acontece nas neste módulo Só que também modo que é muito recente e aqui neste momento não sei se já foi a terminado para tratar a parte da dos
+
+[49:12] Testes é diretamente com esse módulo mas também será disponibilizado um vídeo formativo que depois que fica atirou no Ofício chefe até mesmo na nossa página de internet e cadastro realizado então o módulo e o vídeo com a explicação do também ao pormenor não queres que marcam a pipoca aqui e a Furação daí as com
+
+[49:42] comunicação dos atos da contabilidade a ser obrigatórias que é assim o saft contabilidade gerencial distrair aqui aí essa eu penso que esse trabalho que está a ser feito portanto penso que este ano é só essa parte daí ainda vai ficar concluída ontem mas é uma informação depois eu posso dizer posso enviar pessoalmente para que a ficar sobrancelha nesse ponto ok está contabilidade sal temos pronto aí já é
+
+[50:13] possível retirar é feita Exatamente no mesmo difícil é que a repetir o saco condensado para a comunicação das Finanças Ok vamos aqui a parte da comunicação a ter exportar saf em vez de escolher a comunicação comemos vou escolher o saco da contabilidade eu aqui posso retirar do mês Inicial fiz algumas final ok e você ficou a entender ele vai jogar então esse cheio pronto não tem essa depois então correr será
+
+[50:46] informado então quando tivermos a continuarmos Então essa informação dentro aqui na ponta umidade para pelo menos aqui lá no saque explicação as relações que de aplicação periódica a dinheiro nessa plataforma está defendendo uma relação periódica por período a trimestral Ok podemos mudar para mensal né Igual a ideia dentro de cada Federação já existem nos campos ter que estão
+
+[51:16] pré-configuradas as contas associadas a esse campo ou sejamos todas essas roupas que a questão significa que eu consigo configurar a dentro desse Campo a apertar associada e ao campo em casa o meu aqui é fácil também só comer a conta escolher para o meu câmpus tem mais ou menos e se é para ter em consideração Hospital débito ou crédito antigo essa informação ele praticamente certa a relacionamento contabilístico
+
+[51:46] ele vai fazer o osso da atualização em tempo real para se dizer da relação Periódica do Iva ok ok Pois é possível fazer a regularização aqui do campo 41oc ou do campo 40 a questão é informação que depois será ao ficar associada a dentro de si mesmo trimestre e posso também anexar aqui ou a relação cliente relação de fornecedores Ok pronto
+
+[52:18] fim desta definição da operação posso finalizar a Furação A editável sempre como estiverem abertos mas já tivesse tá na conta Obrigado por janelas irritada e consigo suportar e para submeter nas Finanças ou imprimir aqui a relação Clínica do Iva Ok na forma que aqui está de dentro da modelo traz
+
+[52:48] é uma relação que também é preenchido de forma automática O que significa uma ação o OK tá bom então aqui a colocar uma uma questão pertinente que até já tinha sido colocada a pessoa problema de não poder colocar a opção dos Campos editáveis para conseguirem escrever Olá neste momento eu não consigo
+
+[53:19] arranjar forma de fazer porque sendo uma declaração que está sendo uma sala em tempo real qualquer informação que vocês possam registrar manualmente pode servir a pode ser [Música] alterada Ok Com base na algum lançamento que possa ser emitir a ideia passa por a tentarmos definir não não não não estamos bem aqui essa essa possibilidade mas definir que Campos é que poderão ser
+
+[53:50] escritos manualmente ou não ok não tem ideia que todos é um sejam a capazes de forma automática ou seja a valer a contabilidade das pontas de tomar pré-definidas tranquila que arranjar uma forma ainda que eu não conseguimos arranjar de perceber se dá ou não para no terminal de Campo Grande senhora daquele Campo não é ponderar contabilidade e assim poder escrever manualmente em Ah mas é um mês é muito vago É como eu digo Paula ainda não foi equacionada essa
+
+[54:22] essa essa possibilidade na parte do desenvolvimento para que possam depois escrever manualmente valores na relação jurídica viva dentro do oficial foram realmente consegue não querem pois nas Finanças quiserem cemitério preparação conseguem fazer a extração da mesma ou que nas Finanças e alterar os números que pretenderem na parte das Finanças antes da submissão não oficiais que ainda não é possível não tem Eu também estou aqui continuidade à
+
+[54:53] população aqui do da música rodar não vai validar um que vai vou ligar Qual é a conta de retenção na fonte que está atribuída na ficha de professor o cliente e agora é apresentadas e com base nessa informação ele vai praticamente se fizer aqui nova decoração não quero perguntar qual é o ano e vai me abrir aqui então a declaração com a apresentação de valores se efetivamente eu tiver valores atribuídos nesse mesmo ano Ok eu posso
+
+[55:24] adicionar sempre Há caminhos Ok em que eu vou ter que escrever aqui qual é o nome do contribuinte o tipo de rendimento o carro absolutamente seja toda essa informação que tanto adicionar nesta neste quadro 5 ok informação que é carregada a forma automática só vai ter sido encontra-se dentro da ficha de identidade a ouvir aqui o fruto SO2 por exemplo eu tiver Ok tem a retenção na fonte quando
+
+[55:55] encontra aplicação em qual é a porcentagem que neste Campo aqui vamos lá que sentimentos é que tem retenção na fonte e vai fazer oito sentido em conta essa informação nesta preparação da modelo das e funciona exatamente da mesma forma eu consigo finalizar consigo depois a exportar ou imprimir os Portal em termos de consumo de petróleo nas Finanças o processo é exatamente idêntico e a que nós temos na apuração periódica divisão não quer passando aqui esta parte das celebrações
+
+[56:27] é o que é que nós temos ainda os centros de custos Ok e associado aos centros de custo temos a contabilidade analítica o que eu posso fazer E aí E aí um ok a Paula estava aqui ainda para deixar mais uma informação mesmo então não tenho a retenção na fonte temos que enviará de todos os fornecedores a Independentes assim exatamente pois é
+
+[57:06] Oi tia exatamente Ok algumas isso pois tem que ser criadas manualmente também diretamente na modelo essas esses fornecedores Independentes oque é E aí o OK daqui a segmento então nos centros de custo nós temos a possibilidade de a fazer a criação do seu discurso e fazer organização deve dentro da parte da
+
+[57:37] gestão e dentro da parte de contabilidade ou não ok a raiz que está definido dentro dos nossos filhos de apoio e nos separamos temos aqui os outros parâmetros eu consigo usar a contabilidade analítica ou só usar as contabilidade geral usar apenas os seus custos no hospital Ok para antigamente o que é que ele vai fazer para usar Muito obrigado analítica é preciso essas duas opções ativas Ok e o depois dentro dessa informação possa atribuir um número da contabilidade centro de custo bloqueios
+
+[58:10] meses seus custam que eu posso criar posso fazer atualização de anos diretamente na criação de documentos e depois eu consigo definir aqui por cento o ok Quais são as contas a serem movimentados na contabilidade analítica e praticamente o que é que necessite de fazer e para temos aqui em conta e ver se eu consigo fazer aqui o formou a da coisa ou seja
+
+[58:41] Eu também fiz o curso de criar efeito de Ok eu sei que sempre que exemplo de custo forno assado no documento a contabilidade analítica vai ter que ter em consideração que vive que o efeito o artigo prefira as escadas portanto custa vai ser um gastamos imaginários Ok vou por aqui por exemplo uma conta seja qualquer colocar os por aqui 62
+
+[59:12] o WhatsApp infantis Ok ou até mesmo tudo e essas 2 um ok quem vai me criar as 34 linhas são as 34 contas associadas eu vou dizer que a conta destino a ser uma conta nove Ok e tem colocar aqui a conta inversa Ok para que depois vou colocar aqui quando a porcentagem porque eu posso crer que
+
+[59:44] só cinquenta por cento do valor que entra para uma vocês é vai descer em conta vai ter em consideração na parte da contabilidade analítica Ok e praticamente a configuração é ou seja antes mais perceber que dentro do menu contabilidade plano de contas nós vamos ter que introduzir aqui o plano contas da contabilidade analítica ou seja dentro deste menu cometer os dois comandos contas o seu contabilidade geral e analítica OK depois disto eu vou
+
+[1:00:15] ter que criar os centros de custo que eu vou utilizar os não estiver criados eu vou ter que definir por centro de custo a movimentação da contabilidade analítica tem que ser feito Ok eu vou fazer aqui visão muito rápido só para não ver os Vou colocar aqui sempre 91 um tem o branco e contabilidade uma coisa e vou gravar três e depois vou por aqui e a conta
+
+[1:00:46] 99999 e o em Sumaré essa comunidade e o agravado o centro de custo Ok o que eu posso dizer aos seguintes se o artigo ou vamos vamos por aqui e se calhar até vou chamar aqui um artigo em específico os irmãos por aqui por exemplo esta este Ok e não Laurinha eu vou chamar aqui a
+
+[1:01:17] conta vamos imaginar de porque 62 não sei se existe aqui trabalhos realizados em Ok e vou gravar um e é esse aqui que eu vou utilizar a emissão de um documento dentro de uma centro de custo do e fixo eu posso dizer que todas as contas que sejam lançadas na 62 Ok o movimento que eu tenho que fazer a entrar na 91 na contabilidade analítica e na conta
+
+[1:01:49] inverte OK eu vou dizer porcentagem nesse caso o corpo sempre sempre que eu quero que seja no outro tá eu vou ficar com este criado ele queríamos 744 linhas porque ela que ele foi jogar como eu só configurei aqui na minha conta a 62 eu vou jogar tudo que é 62 Ok todas as contas de movimento que são 62 e vai introduzir mas aqui e vai dizer relação encontrar um vestido que tem que ser na parte da contabilidade analítica desta conta para a conta inversa o sempre
+
+[1:02:20] certo ok O que é que significa vamos imaginar por agora vem aqui vão o documento de compra uma fatura fornecedor e vão passar aqui o antigo no fornecedor [Música] demônio por exemplo aqui o número do fornecedor e vou colocar aqui o artigo que eu tinha um a Warner Ok eu que vou dizer que isto é impresso de
+
+[1:02:51] espanhol ou vou participantes em eu não sonho Ok eu vou gravar o quanto mais antes de gravar documentos eu tenho aqui já Amanda Santos postativa Quem não tiver esta coluna do centro decorativo Vânia as configurações paramos o carro e nos separamos tem aqui o mostrar quando é Bruno - quer nas vendas externas compras e tem aqui a opção de ativar o centro de custo que não se
+
+[1:03:21] ficar no outro ok É só fazer ativação aqui dentro República ilha é possível fazer a configuração de que nos documentos de compra os campos obrigatórios nos momentos são os centros de custo o que é que vai acontecer se estiver com Campo obrigatório eu sempre tentar fazer um momento e não atribuir a ser recurso quando eu guardar eu não vai permitir vai me obrigar sempre a preencher essa Ok eu vou escolher aqui o centro de custo Que nós tínhamos
+
+[1:03:52] definido no be Fit e ele não tem ou não tá aparecendo nada porque já não tem validade praticamente sempre custo eu vou gravar me eu vou fazer aqui um refresh na página para conseguir lançar isto não conhece vamos por aqui Antônio partir de qualquer melhores por aqui long you
+
+[1:04:23] [Aplausos] [Música] can pro pressiona aqui então de ver os vou escolher então centro de custo do Benfica em Leiria e vou guardar em finalizar Se nós formos jogar novo lançamento da porta e filtrar pelo dia de hoje para não mostrar aqui todos os momentos eu tenho
+
+[1:04:54] aqui o documento e o que é que ele mostra aqui mostra-me o lançamento da contabilidade geral Ok com centro de custo associado à conta do livro A conta do do fornecedor eu tenho aqui o lançamento de analítica por quê Porque o centro de custo utilizado foi o e fita e como eu tenho configurar dentro desse centro de recursos que sempre que for utilizada a conta se 62 a esperança pode acreditar
+
+[1:05:26] E como eu tenho aqui essa conta OK e tá me dizer que a contabilidade da conta destino inversa são essas duas contas e ele está na introduzir aqui essa informação Ok e praticamente relação à contabilidade analítica Exatamente porque eu trazer Santa de custo Ok é importante perceber que documento da gestão tem que ser associado com o centro de custo ok que ia centro de curso tem dentro do da sua
+
+[1:05:57] configuração alguém dentro de exemplos cursos está configurar a frontalidade analítica que vai ser Porto depender da conta Obrigado geral OK tudo é gravado na ponta da modalidade de graça E compartilhe os nossos aquele junção destas duas informações ele vai fazer o pensamento da contabilidade analítica caso as esteja configurada essa informação Ok e a configuração deste controle da dengue e desta forma antiga
+
+[1:06:28] que o oficial Ok não sei que alguns clientes já estão fazendo utilização desta contabilidade analítica outros não mas vem aqui então essa essa possibilidade de Pois é o que é que nós temos mais temos a parte dos relatórios Ok dentro dos relatórios eu tenho aqui numa Manu contabilidade todos os romances que eu consigo retirar quero nem ficando nas obras taxonomia E por falar em taxonomia é importante a realizarem as também
+
+[1:07:00] número contabilidade esse apoio vocês têm aqui a possibilidade de fazer a atualização das taxonomias Ok eu aqui só tenho que atualizar um tomando conta se ele com base nas contas que tem criadas e não está astronomia as vai fazer atribuição dessas taxonomies automático contas depois nós temos também ainda aqui os rios variam com a minha mente contas Ok e
+
+[1:07:31] essa situação está a ser acionada para que e em que é que isto é utilizado tão pesado em muitos casos por exemplo no livro de autoliquidação Ok em segundos e alegria da Iva e nesse tipo situações como é que sempre emitido com invasão normalmente a ponta do Iva que era na cama de comprar é para motorizada à venda classificação do artigo e essa classificação de artigo vai validar que valor é que está associado por linha
+
+[1:08:01] documento no campo do Iva da venda de sua arte Games and viva não vai bater informações numa Ou seja no cliente sem autorização Ok tem que dormir cedo hoje a partir daí vão se eu não tiver alguém que a minha mente quantas criar o orçamento que ele vai fazer é pegar na fonte da base é e nenhum ou 31 e vou pesquisar e a ponta poder virar ok Não
+
+[1:08:32] entendi Nem liquidação na impressão do livro e é isso porque a minha mente conta faz por exemplo se não tivermos aqui as seis dois ou três Ok eu tenho aqui as informação ou seja sempre que for utilizar a conta seis dois ou três Ok eu quero que ele mande para 24 32 o valor do débito de 23 por cento do valor que atira na conta de 72 Ok e depois a mesma linha embaixo Mas
+
+[1:09:04] não pro Iva dedutível umas disse para ele que idade ok ele praticamente leva negar Ok se o artigo for amassado naquele documento tiver a ponta pré-configurada tiveram invadir essa conta pré-configurada OK e que vai lançar vapor nesta conta ele vai passar 23 por cento para esta e vai lançar 23 por cento para era já está configurado Ok e se funciona Também e tá relacionado com aquela questão do Iva a cinquenta
+
+[1:09:35] por cento de tirando o combo do gasóleo ok onde funciona exatamente da mesma forma ou seja hoje fatura de compra do gasóleo é uma sala 23 por cento e o tempo vai fazer efetivamente é lançar o valor do Iva a 23 por cento de lançamento contabilístico meninas Pois existe aqui ligando que a minha mãe do Iva Ok brincar minha mãe de contas é que ele vai dizer Ok caiu uns vinte e três por cento aqui então eu agora quero transferir veste a conta para conta destino a crédito cinquenta por cento Ok
+
+[1:10:06] E a deve ter que pagar conta que aqui estiveram abrir franquia para abater por cento só ficaram as e-mail neste caso acredito o der mas casar débito e enviar essa textura deve depois para ações das facas para a prima a mesma coisa só as duas situações em que há mais utilizada aqui o ambiente a minha mente mas agora da autoliquidação ir para essa questão do gasóleo
+
+[1:10:37] terminando aqui a parte dos seus de apoio vamos a segunda estou aqui a parte dos relatórios onde estávamos a ver então que tinhas a parte da contabilidade os balancetes Ok com todas as opções que vocês têm aqui conseguem retirar Ok eu vou só aguardar a Ana tava aqui ir ano raiva e se consegue chegar aqui alguma coisa
+
+[1:11:10] e vamos falar aqui aguardar Ok na sua o reencaminhamento de contas Ok vamos voltar então aqui a parte do cliente a minha mente de contas E aí E aí E aí E aí se inscrever aqui
+
+[1:11:43] e o reencaminhamento de contas gasóleo o centro custa é também automaticamente preenchido E aí se você já que estão aqui ok andar não está colocar uma opção Ok pronto olha está aqui a colocar uma questão que eu penso que não está a fazer ou não Ou seja o que está
+
+[1:12:13] agradecer é vestimentos Saiyajin pagamento de contas o movimento contra o leite que seria feito e centro de custo ficava associada essa conta vai ficar atribuída ao seu discurso na totalidade Ok se efetivamente desistiram reencaminhamento de contas aí eu penso que ele vai perder um bocado a ligação desse centro de custo até porque nós estamos aqui a dizer é que deves as duas linhas tanto a permanência
+
+[1:12:44] duas linhas de configuração veste a parte da redução do Iva a cinquenta por cento ok uma das Linhas não vai ficar sempre custo pequeno arrumar viva Ok e a outra já vai ter centro de custo ok e o que nós podemos fazer e foi uma firma questão pertinente é a depois dentro da do leão entendimento de contas ok nós definirmos aqui as efetivamente a querem
+
+[1:13:16] ter o centro de custo associado da conta de origem ou não ok Trono mas isso teria que ser configurado aí eu não sei só nós Já verificou se efetivamente a um lançamento contabilístico do gasóleo com concêntricos efetivamente amassar esse valor dos cinquenta por cento do custo do Ivan está a ser doença na Qual são os doces que não Ok mas não tenho certeza mas o que é que eu ia pedir nada não o Ok pronto era detectar gato que é que
+
+[1:13:48] eu ia pedir a Anna enviado para o nosso suporte a esta questão para depois eu posso a reencaminhar a diretamente para o desenvolvimento e para depois ficar disponível Ok então é isso que o meu filho faça o envio desta desta situação para a pro nosso suporte depois eu faço uma luzinha da minha mente ao desenvolvimento desta desta questão para que na próxima semana essa essa questão ficou resolvida ok Oi para aqui concluídas estão
+
+[1:14:26] o resultado então aqui abrir uma segunda criança parte dos medicamentos é o Dudu do medicamento aberta informação O que é que nós temos aqui o Luan Santana lítico que pode ser então retirado com base nos fios se vocês quiserem aqui e a com as opções de tipos de impressão que foi pretendido Ok Isto é possível imprimir para essas ela é possível imprimir para PDF de fazer aqui
+
+[1:14:56] um filme vou por aqui Deus de uma semente Zara e entretanto Ainda bem que coloquei aqui mas deve ajudar aqui outra informação pertinente mas não tenho aqui então tudo informação posso imprimir Ok e tenho aqui o meu macete analítico Depois temos aqui também é uma situação Ok Google a ser taxonomia pronta tudo aqui olha seus que podem ser retirados os tratos Ok o extrato conta
+
+[1:15:27] pode ser retirado diretamente por aqui por esse meu relatório ou eu consigo mesmo aceder ao menu contabilidade ao meu mano contas e dentro do banco de contas dentro da determinada conta neste casa eu vou abrir aqui esta conta apresenta eu tenho aqui uma extrato Ok você tirar aqui o extrato neste pãozinho Ok é consigo tirar aqui a diferença é que foi quando eu só consigo ir aos trata de uma determinada conta e eu aqui posso tirar uma seleção de intervalo ou
+
+[1:15:58] até mesmo a seleção múltipla eu quero só destas duas pontas então eu vou introduzir aqui as informação e faz filtrar e vão ter essa informação o Ok vou ver aqui se 500 Ainda temos a o extrato diário tamanho temos aqui o balanceamento das os resultados e isto vai complementar a parte do da Modelo 22 Ok a nesse momento ele está em verificar o salvar a vão estou fórmulas para eliminar os saldos das contas que estão
+
+[1:16:30] proibidas e daí a passar por um cara que por taxonomia com granizo informada na formação anterior Ok e pode ser impressa em PDF ou também dormir para ser acção a demonstração de resultados está pré-configurada também da mesma forma Ok é por formas ele vai buscar aqui a solução das contas que estiverem para motorizadas e também dá para imprimir ou imprimir para essa Ok atuação funcionar aqui essa impressão Depois temos aqui os fluxos de caixa foi
+
+[1:17:01] o relatório que foi adicionado a a mesma muito pouco tempo para isso aqui é novo ainda nem sequer com esta configuração Mas é possível fazer a configuração aqui com base nas fórmulas tampouco existe na mostra são resultado no balanço Ok eu penso que ainda não foi feito por parte da da Suzana Mega mas iremos ter aqui a configuração e a aplicação das fórmulas nessa neste relatório e depois temos aqui também o relatório do centro de
+
+[1:17:34] custo e que eu consigo ver qual é o valor de um está associado que é na parte da gestão comercial quero na contabilidade geral Ok com base em documentos Qual é o centro de custo e com base deste tipo social que existe aqui é tratado relatórios associados ao centro de custo só existe por enquanto ok já está a ser trabalhar está a ser analisado mais alguns relatórios para vir tenho mais informação por centro de custo na parte a queda Muito obrigado
+
+[1:18:05] quer na gestão comercial que é com base nesta informação e tô dando aqui há segmentos pois temos aqui a mais relevante estes mapas oque queres mapas analíticos Ok é que eu posso criar aqui novos mapas analíticos e posso sempre adicionar grupos e outra nomes de grupos é 737 ou seja aqui praticamente acabo porque o estruturar aqui um mapa
+
+[1:18:36] que eu bem quiserem que eu em Pretender Ok bem como os mapas normais que a questão que também já tinha cidadão mostrar em que praticamente eu consigo fazer a utilização de mapas um campo em tempo real com base numa folha entrar prospecção que aquela pessoa que nós estamos aqui eu posso tirar aqui nos mapas o curativo formação um o dizer que é um novo pode ser três páginas ou por
+
+[1:19:09] quadrilhas e não fornece um Ok pronto e posso gravar e este mapa acaba por ser aquilo que estamos a ver a senhora tem que ter as páginas é que eu posso voltar aqui o nome até a página 11 páginas hoje página três Ok dentro de cada página eu posso colocar nome aqui ok informação o cara perto a contar um
+
+[1:19:40] ponto b será posso transmitir essa informação e depois também daqui estou apesar de ser igual as formas Ok disponíveis para a busca dos valores precisamos eu quiser aqui o sal de Ponta Negra vão Ok então vamos ver aqui o que é que eu nasci isso seja preciso por aqui a quando logo por aqui por exemplo quando conta a e tem um ok e vou por o mesmo iniciada Ah vá é uma cor aqui
+
+[1:20:13] eu fiz aquilo com barba ele vai buscar então essa informação Ok pronto acaba por ser assistiu menos sofreu um entrar e vi nunca mais ficaria a fazer isso mas a ideia é eu conseguisse torturar aqui dentro de uma folha parece uma folha que fala um relatório que eu possa crer a ter e que não existe um oficial para só e para a parte da conta Obrigada e só vai ficar vamos lá parte da
+
+[1:20:44] contabilidade e consigo ter sempre aqui então esse relatório estruturava e com os campos de tudo aquilo que já está ameaçado a data atual na contabilidade Ok isso ela será um prazer temperado a contabilidade foi lá quer para que a contabilidade analítica Ok é que tem estas noções e depois aquela falar é possível retirar isto para que serve Ok onde podem ser fazer correndo Pretender terminando por aqui essa parte
+
+[1:21:15] dos mapas manuais que podem ser criados de um como como terminar aqui a formação da parte da contabilidade Entretanto a cana carapau a tendência de colocar os cães durante a esta formação a novamente Não não temos de ser assim mas hoje foi de certificação ou não se não tivéssemos reflexão entretanto abriu agora se as questões e respostas para quem tiver alguma dúvida
+
+[1:21:47] queira colocar o balão Extra na parte inferior do vosso ecrã ou quem será só dois vilões que terão os fios é só Oi gente fazer as pessoas que tiveram e enquanto eu vou vou vamos aqui aguardando por alguma questão que possa vir a surgir explicar que este módulo é um módulo adicional Ok então vou complementar no oficial é só não está ativo para toda a
+
+[1:22:18] gente ou seja necessário fazer compra atualização do México sempre que depois ama configuração de toda a parte aqui Muito obrigada então sempre o nosso apoio nesse primeiro segundo mês a subir ou menos essa questão Ok vou deixar também o acesso esta bem eu vou deixar dentro do outro balão aqui o realizador
+
+[1:22:50] e ir para o forno a formação [Música] E aí o ok deixei aí eu quero utilizador que era Passo Forte uma pesquisador vai ser formação Ok e password vai ser muito obrigado as minhas 21 letras pequenas
+
+[1:23:22] que assim assado Isso vai ser a madeira ou vai ser o utilizador que vai ficar disponível mesmo não está dentro essa parte da contabilidade Ok para que vocês casa quem não tenha a área tem uma mania de volta ativo que era fazer e quer experimentar qualquer até mesmo dar o acesso ao vosso contabilista experimentar a plataforma justificar centro Ed friendly tive que tem aqui o os acessos para o utilizador formacao e
+
+[1:23:55] a password contabilidade 2021 Ok vamos para quem já tem o óculos já tenho a parte da contabilidade mesmo queira tirar alguma do a fazer alguma coisa dentro da sua plataforma pode vir aqui experimentar aí iria analisar aqui os seus testes são alguma dúvida que possa ouvir a ter menu ajuda o suporte Ok tenho que ir nos contar
+
+[1:24:26] aquela sua linha telefônica mais direcionado a porta muito obrigada estou eu a vi está a Suzana alguém pega Suzana que até tem sido internado mais apoio na parte da contabilidade ou podem fazer aqui o novo pedido com o assunto com a mensagem e a ficaram ao enviar aqui este vivo ficar aguentando com os pedidos todos aqui em aberto Ou resolvidos consegue acompanhar a crítica ficar nosso lar ok
+
+[1:24:58] mais informações dentro do explorador Manu ajuda manual Ok entretanto nós vamos ter vindo aqui alguns a em algumas informações que vocês podem verificar Ok ou seja o consegue ver aqui a como criança a turma com avaliações iniciais que eram novas ordem de serviço o serviço vai ser humano que vai ser sempre atualizado Ok eu posso ver aqui
+
+[1:25:30] por categoria E escolher efetivamente qual é a área que eu quero ter acesso e que a visualizar para esclarecer alguma dúvida Ok onde você que já tá mudados não estava desta forma e agora A ideia é aos roteiros e inclusive daqui toda essa informação por cada a entrada que vocês vêm aqui consegue visualizar aqui um e as configurações Ok com as imagens e
+
+[1:26:01] com toda a informação que está aqui relacionada Ok e na parte da contabilidade penso que ainda não está Mas ficará disponível Muito obrigado recursos humanos ou quem pense que deve dizer tá aqui na quarta financeira tudo aquilo tudo isso é que está a família não está irá ficar disponível também hocks os vídeos irão ficar disponíveis na nossa página e salvo erro também não sei se era vestir os no manual mas envia passa por
+
+[1:26:34] dentro da nossa página bem tempo official.com nós temos aqui para fazer academia Ok vento de se fazer academia consegue ver aqui a canalização das formações e conseguem ver aqui depois em todas as formações que tenha sido realizada estação é bem na já tem mais de um ano Os vídeos estão a ser feitas e as forças estão ser feitas agora depois vão ficar disponíveis também aqui nesta página do oficiais academia Ok
+
+[1:27:07] Entretanto penso que nós Macho mas não não ficou aqui mais uma questão vou dar então como como terminada esta formação é qualquer dúvida Estou sempre à vontade para nos contactar E reprisar então um bom dia e uma boa semana de trabalho Ok beijos tchau [Música]

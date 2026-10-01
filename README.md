@@ -62,6 +62,14 @@ O `video.mp4` só serve para capturas extra e pode ser apagado depois (num víde
 - Os trechos em que nem a fala nem o ecrã deixam claro levam ❓.
 - Quando o vídeo serve um projeto (por exemplo, o winners-group), o Claude Code lê o que o projeto já sabe e marca as divergências sem as sobrescrever.
 
+## Como o projeto evolui
+
+- **O que falta fazer:** [`docs/plans/melhorias-futuras.md`](docs/plans/melhorias-futuras.md), por prioridade. Hoje: transcrever o áudio de vídeos sem legendas, e usar a skill a partir de qualquer projeto.
+- **Como se muda a ferramenta:** qualquer alteração aos scripts ou à skill passa por um plano aprovado antes de haver código. As regras estão no [`CLAUDE.md`](CLAUDE.md) e os guias em [`docs/implementations/`](docs/implementations/).
+- **Porque as coisas são como são:** [`docs/decisoes.md`](docs/decisoes.md).
+
+Dissertar um vídeo não precisa de nada disto: é só colar o link.
+
 ## Requisitos
 
 - Python 3.13, `yt-dlp` (`python -m pip install yt-dlp`) e Pillow

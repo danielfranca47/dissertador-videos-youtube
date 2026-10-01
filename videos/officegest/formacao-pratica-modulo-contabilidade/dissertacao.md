@@ -622,7 +622,7 @@ Segundo a formação de 2021-09 (versão 3.043), e **ainda por confirmar no Offi
 - [ ] A Modelo 10 já inclui os independentes sem retenção?
 - [ ] O balanço e a demonstração de resultados usam fórmulas ou taxonomias? Os **Fluxos de caixa** já vêm configurados?
 - [ ] Há mais relatórios por **centro de custo**?
-- [ ] O **Fecho de TPA** existe? (Entrada vista no manual online.)
+- [ ] O **Fecho de TPA** existe? (Entrada vista no manual online.) → Em agosto de 2021 já existia: ver a secção 9 da [Formação Prática Módulo Financeira](../formacao-pratica-modulo-financeira/dissertacao.md). Falta confirmar no sistema atual.
 - [ ] A secção **08_Contabilidade** do manual online já está escrita? Se sim, é uma fonte mais atual do que estes vídeos.
 
 ## Limites desta versão

@@ -1,0 +1,836 @@
+[
+  {
+    "instante": "00:01",
+    "segundos": 1.0,
+    "arquivo": "00-01.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "00:05",
+    "segundos": 5.0,
+    "arquivo": "00-05.jpg",
+    "origem": "cobertura"
+  },
+  {
+    "instante": "00:06",
+    "segundos": 6.0,
+    "arquivo": "00-06.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "00:46",
+    "segundos": 46.0,
+    "arquivo": "00-46.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "00:51",
+    "segundos": 51.0,
+    "arquivo": "00-51.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "00:58",
+    "segundos": 58.0,
+    "arquivo": "00-58.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "01:03",
+    "segundos": 63.0,
+    "arquivo": "01-03.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "02:00",
+    "segundos": 120.0,
+    "arquivo": "02-00.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "02:05",
+    "segundos": 125.0,
+    "arquivo": "02-05.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "03:05",
+    "segundos": 185.0,
+    "arquivo": "03-05.jpg",
+    "origem": "cobertura"
+  },
+  {
+    "instante": "03:09",
+    "segundos": 189.0,
+    "arquivo": "03-09.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "05:55",
+    "segundos": 355.0,
+    "arquivo": "05-55.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "06:38",
+    "segundos": 398.0,
+    "arquivo": "06-38.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "06:51",
+    "segundos": 411.0,
+    "arquivo": "06-51.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "07:28",
+    "segundos": 448.0,
+    "arquivo": "07-28.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "07:35",
+    "segundos": 455.0,
+    "arquivo": "07-35.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "10:01",
+    "segundos": 601.0,
+    "arquivo": "10-01.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "11:02",
+    "segundos": 662.0,
+    "arquivo": "11-02.jpg",
+    "origem": "cobertura"
+  },
+  {
+    "instante": "12:05",
+    "segundos": 725.0,
+    "arquivo": "12-05.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "15:05",
+    "segundos": 905.0,
+    "arquivo": "15-05.jpg",
+    "origem": "cobertura"
+  },
+  {
+    "instante": "15:07",
+    "segundos": 907.0,
+    "arquivo": "15-07.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "15:37",
+    "segundos": 937.0,
+    "arquivo": "15-37.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "16:31",
+    "segundos": 991.0,
+    "arquivo": "16-31.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "16:57",
+    "segundos": 1017.0,
+    "arquivo": "16-57.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "18:37",
+    "segundos": 1117.0,
+    "arquivo": "18-37.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "18:46",
+    "segundos": 1126.0,
+    "arquivo": "18-46.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "18:48",
+    "segundos": 1128.0,
+    "arquivo": "18-48.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "18:51",
+    "segundos": 1131.0,
+    "arquivo": "18-51.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "19:01",
+    "segundos": 1141.0,
+    "arquivo": "19-01.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "19:32",
+    "segundos": 1172.0,
+    "arquivo": "19-32.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "19:42",
+    "segundos": 1182.0,
+    "arquivo": "19-42.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "20:19",
+    "segundos": 1219.0,
+    "arquivo": "20-19.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "20:25",
+    "segundos": 1225.0,
+    "arquivo": "20-25.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "20:28",
+    "segundos": 1228.0,
+    "arquivo": "20-28.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "20:35",
+    "segundos": 1235.0,
+    "arquivo": "20-35.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "20:37",
+    "segundos": 1237.0,
+    "arquivo": "20-37.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "20:40",
+    "segundos": 1240.0,
+    "arquivo": "20-40.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "21:05",
+    "segundos": 1265.0,
+    "arquivo": "21-05.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "21:16",
+    "segundos": 1276.0,
+    "arquivo": "21-16.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "21:18",
+    "segundos": 1278.0,
+    "arquivo": "21-18.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "21:19",
+    "segundos": 1279.0,
+    "arquivo": "21-19.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "22:19",
+    "segundos": 1339.0,
+    "arquivo": "22-19.jpg",
+    "origem": "cobertura"
+  },
+  {
+    "instante": "23:17",
+    "segundos": 1397.0,
+    "arquivo": "23-17.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "23:19",
+    "segundos": 1399.0,
+    "arquivo": "23-19.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "26:33",
+    "segundos": 1593.0,
+    "arquivo": "26-33.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "27:03",
+    "segundos": 1623.0,
+    "arquivo": "27-03.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "28:28",
+    "segundos": 1708.0,
+    "arquivo": "28-28.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "28:30",
+    "segundos": 1710.0,
+    "arquivo": "28-30.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "28:31",
+    "segundos": 1711.0,
+    "arquivo": "28-31.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "28:35",
+    "segundos": 1715.0,
+    "arquivo": "28-35.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "29:35",
+    "segundos": 1775.0,
+    "arquivo": "29-35.jpg",
+    "origem": "cobertura"
+  },
+  {
+    "instante": "30:07",
+    "segundos": 1807.0,
+    "arquivo": "30-07.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "30:24",
+    "segundos": 1824.0,
+    "arquivo": "30-24.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "30:35",
+    "segundos": 1835.0,
+    "arquivo": "30-35.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "30:43",
+    "segundos": 1843.0,
+    "arquivo": "30-43.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "31:03",
+    "segundos": 1863.0,
+    "arquivo": "31-03.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "31:04",
+    "segundos": 1864.0,
+    "arquivo": "31-04.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "31:12",
+    "segundos": 1872.0,
+    "arquivo": "31-12.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "32:12",
+    "segundos": 1932.0,
+    "arquivo": "32-12.jpg",
+    "origem": "cobertura"
+  },
+  {
+    "instante": "33:12",
+    "segundos": 1992.0,
+    "arquivo": "33-12.jpg",
+    "origem": "cobertura"
+  },
+  {
+    "instante": "34:01",
+    "segundos": 2041.0,
+    "arquivo": "34-01.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "34:02",
+    "segundos": 2042.0,
+    "arquivo": "34-02.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "34:40",
+    "segundos": 2080.0,
+    "arquivo": "34-40.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "34:46",
+    "segundos": 2086.0,
+    "arquivo": "34-46.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "35:46",
+    "segundos": 2146.0,
+    "arquivo": "35-46.jpg",
+    "origem": "cobertura"
+  },
+  {
+    "instante": "38:46",
+    "segundos": 2326.0,
+    "arquivo": "38-46.jpg",
+    "origem": "cobertura"
+  },
+  {
+    "instante": "38:56",
+    "segundos": 2336.0,
+    "arquivo": "38-56.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "40:57",
+    "segundos": 2457.0,
+    "arquivo": "40-57.jpg",
+    "origem": "cobertura"
+  },
+  {
+    "instante": "41:19",
+    "segundos": 2479.0,
+    "arquivo": "41-19.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "41:22",
+    "segundos": 2482.0,
+    "arquivo": "41-22.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "41:51",
+    "segundos": 2511.0,
+    "arquivo": "41-51.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "42:08",
+    "segundos": 2528.0,
+    "arquivo": "42-08.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "43:39",
+    "segundos": 2619.0,
+    "arquivo": "43-39.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "45:39",
+    "segundos": 2739.0,
+    "arquivo": "45-39.jpg",
+    "origem": "cobertura"
+  },
+  {
+    "instante": "45:48",
+    "segundos": 2748.0,
+    "arquivo": "45-48.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "46:11",
+    "segundos": 2771.0,
+    "arquivo": "46-11.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "47:12",
+    "segundos": 2832.0,
+    "arquivo": "47-12.jpg",
+    "origem": "cobertura"
+  },
+  {
+    "instante": "48:12",
+    "segundos": 2892.0,
+    "arquivo": "48-12.jpg",
+    "origem": "cobertura"
+  },
+  {
+    "instante": "49:12",
+    "segundos": 2952.0,
+    "arquivo": "49-12.jpg",
+    "origem": "cobertura"
+  },
+  {
+    "instante": "49:37",
+    "segundos": 2977.0,
+    "arquivo": "49-37.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "50:37",
+    "segundos": 3037.0,
+    "arquivo": "50-37.jpg",
+    "origem": "cobertura"
+  },
+  {
+    "instante": "51:15",
+    "segundos": 3075.0,
+    "arquivo": "51-15.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "51:16",
+    "segundos": 3076.0,
+    "arquivo": "51-16.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "51:42",
+    "segundos": 3102.0,
+    "arquivo": "51-42.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "53:42",
+    "segundos": 3222.0,
+    "arquivo": "53-42.jpg",
+    "origem": "cobertura"
+  },
+  {
+    "instante": "54:24",
+    "segundos": 3264.0,
+    "arquivo": "54-24.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "55:25",
+    "segundos": 3325.0,
+    "arquivo": "55-25.jpg",
+    "origem": "cobertura"
+  },
+  {
+    "instante": "56:15",
+    "segundos": 3375.0,
+    "arquivo": "56-15.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "56:22",
+    "segundos": 3382.0,
+    "arquivo": "56-22.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "56:30",
+    "segundos": 3390.0,
+    "arquivo": "56-30.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "56:34",
+    "segundos": 3394.0,
+    "arquivo": "56-34.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "56:42",
+    "segundos": 3402.0,
+    "arquivo": "56-42.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "56:43",
+    "segundos": 3403.0,
+    "arquivo": "56-43.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "56:45",
+    "segundos": 3405.0,
+    "arquivo": "56-45.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "56:47",
+    "segundos": 3407.0,
+    "arquivo": "56-47.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "57:17",
+    "segundos": 3437.0,
+    "arquivo": "57-17.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "58:30",
+    "segundos": 3510.0,
+    "arquivo": "58-30.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "58:40",
+    "segundos": 3520.0,
+    "arquivo": "58-40.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "59:02",
+    "segundos": 3542.0,
+    "arquivo": "59-02.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "59:03",
+    "segundos": 3543.0,
+    "arquivo": "59-03.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "59:07",
+    "segundos": 3547.0,
+    "arquivo": "59-07.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "59:11",
+    "segundos": 3551.0,
+    "arquivo": "59-11.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "59:55",
+    "segundos": 3595.0,
+    "arquivo": "59-55.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "1:00:19",
+    "segundos": 3619.0,
+    "arquivo": "1-00-19.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "1:00:22",
+    "segundos": 3622.0,
+    "arquivo": "1-00-22.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "1:00:34",
+    "segundos": 3634.0,
+    "arquivo": "1-00-34.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "1:01:40",
+    "segundos": 3700.0,
+    "arquivo": "1-01-40.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "1:02:24",
+    "segundos": 3744.0,
+    "arquivo": "1-02-24.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "1:02:36",
+    "segundos": 3756.0,
+    "arquivo": "1-02-36.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "1:02:38",
+    "segundos": 3758.0,
+    "arquivo": "1-02-38.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "1:02:40",
+    "segundos": 3760.0,
+    "arquivo": "1-02-40.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "1:02:58",
+    "segundos": 3778.0,
+    "arquivo": "1-02-58.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "1:03:09",
+    "segundos": 3789.0,
+    "arquivo": "1-03-09.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "1:03:18",
+    "segundos": 3798.0,
+    "arquivo": "1-03-18.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "1:03:56",
+    "segundos": 3836.0,
+    "arquivo": "1-03-56.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "1:04:02",
+    "segundos": 3842.0,
+    "arquivo": "1-04-02.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "1:04:04",
+    "segundos": 3844.0,
+    "arquivo": "1-04-04.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "1:04:07",
+    "segundos": 3847.0,
+    "arquivo": "1-04-07.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "1:04:27",
+    "segundos": 3867.0,
+    "arquivo": "1-04-27.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "1:05:16",
+    "segundos": 3916.0,
+    "arquivo": "1-05-16.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "1:05:21",
+    "segundos": 3921.0,
+    "arquivo": "1-05-21.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "1:05:54",
+    "segundos": 3954.0,
+    "arquivo": "1-05-54.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "1:05:56",
+    "segundos": 3956.0,
+    "arquivo": "1-05-56.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "1:06:14",
+    "segundos": 3974.0,
+    "arquivo": "1-06-14.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "1:07:14",
+    "segundos": 4034.0,
+    "arquivo": "1-07-14.jpg",
+    "origem": "cobertura"
+  },
+  {
+    "instante": "1:08:14",
+    "segundos": 4094.0,
+    "arquivo": "1-08-14.jpg",
+    "origem": "cobertura"
+  },
+  {
+    "instante": "1:08:33",
+    "segundos": 4113.0,
+    "arquivo": "1-08-33.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "1:08:34",
+    "segundos": 4114.0,
+    "arquivo": "1-08-34.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "1:08:37",
+    "segundos": 4117.0,
+    "arquivo": "1-08-37.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "1:08:42",
+    "segundos": 4122.0,
+    "arquivo": "1-08-42.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "1:08:49",
+    "segundos": 4129.0,
+    "arquivo": "1-08-49.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "1:08:50",
+    "segundos": 4130.0,
+    "arquivo": "1-08-50.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "1:08:51",
+    "segundos": 4131.0,
+    "arquivo": "1-08-51.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "1:09:20",
+    "segundos": 4160.0,
+    "arquivo": "1-09-20.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "1:10:00",
+    "segundos": 4200.0,
+    "arquivo": "1-10-00.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "1:10:08",
+    "segundos": 4208.0,
+    "arquivo": "1-10-08.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "1:10:14",
+    "segundos": 4214.0,
+    "arquivo": "1-10-14.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "1:10:46",
+    "segundos": 4246.0,
+    "arquivo": "1-10-46.jpg",
+    "origem": "mudança de ecrã"
+  },
+  {
+    "instante": "1:10:49",
+    "segundos": 4249.2,
+    "arquivo": "1-10-49.jpg",
+    "origem": "cobertura"
+  }
+]

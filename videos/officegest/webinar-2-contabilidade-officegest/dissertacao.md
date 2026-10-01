@@ -267,7 +267,7 @@ Segundo o webinar de 2020-06 (versão 2.220), e **ainda por confirmar no OfficeG
 - [ ] Os caminhos de menu acima continuam iguais?
 - [ ] A integração automática (Exercícios → Integrar) e o relatório "Integração Contabilidade" ainda existem nestes moldes?
 - [ ] O que faz hoje a **Importação E-fatura**, e se serve para a conferência das compras?
-- [ ] O TPA ou multibanco como conta própria, anunciado em 2020, chegou a existir?
+- [ ] O TPA ou multibanco como conta própria, anunciado em 2020, chegou a existir? → Sim, em agosto de 2021 já existia o **Fecho TPA**: ver a secção 9 da [Formação Prática Módulo Financeira](../formacao-pratica-modulo-financeira/dissertacao.md). Falta confirmar no sistema atual.
 - [ ] O balanço e a demonstração de resultados já são calculados a partir das taxonomias?
 
 ## Limites desta versão

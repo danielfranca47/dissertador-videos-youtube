@@ -112,7 +112,9 @@ exemplo é ilustrativo, a correção **não foi feita**.
 **Atualização (2026-10-02).** O risco deixou de ser teórico: a dissertação de
 `videos/officegest/formacao-pratica-modulo-contabilidade/` embute três capturas
 pedidas à mão (`18-40.jpg`, `37-20.jpg` e `1-17-05.jpg`; foram pedidas cinco,
-com `18-25.jpg` e `1-18-25.jpg`). Repetir a captura desse vídeo deixa a
+com `18-25.jpg` e `1-18-25.jpg`). A de
+`videos/officegest/formacao-pratica-modulo-financeira/` embute mais duas
+(`43-20.jpg` e `1-02-30.jpg`). Repetir a captura desse vídeo deixa a
 dissertação com três imagens em falta. **Sobe para MÉDIA** na primeira vez que
 for preciso repetir a captura de um vídeo já dissertado.
 

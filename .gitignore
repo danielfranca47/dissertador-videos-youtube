@@ -1,0 +1,18 @@
+# Vídeo descarregado: só serve para capturas extra e volta a descarregar-se (~120 MB por 45 min)
+videos/**/video.mp4
+
+# Folhas de miniaturas: material de revisão, o capturar_ecras.py volta a gerá-las
+videos/**/ecras/folhas/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Chaves e segredos (ex.: chave da OpenAI, se a transcrição de áudio for implementada)
+.env
+.env.*
+
+# Claude Code: cópias isoladas de trabalho e definições locais da máquina
+.claude/worktrees/
+.claude/settings.local.json

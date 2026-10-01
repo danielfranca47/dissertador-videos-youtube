@@ -52,7 +52,7 @@ como confirmado sem verificar no sistema atual.
 
 Na primeira vez, o Claude Code desse projeto vai pedir autorização para ler fora da pasta dele. Para não perguntar sempre, adicione a pasta nas definições desse projeto (`additionalDirectories`).
 
-O `video.mp4` só serve para capturas extra e pode ser apagado depois (num vídeo de 45 min ocupa cerca de 120 MB).
+O `video.mp4` só serve para capturar os ecrãs (num vídeo de 45 min ocupa cerca de 120 MB). É apagado no fim de cada dissertação; se mais tarde for preciso um ecrã extra, descarrega-se de novo.
 
 ## Regras para a dissertação
 

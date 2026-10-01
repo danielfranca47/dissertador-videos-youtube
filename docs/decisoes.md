@@ -70,3 +70,24 @@ ecrãs do histórico e passar a guardá-los só na pasta.
 
 **Atenção:** o histórico de versões não é uma cópia de segurança. Está no
 mesmo disco que os ficheiros; se o disco falhar, perde-se tudo.
+
+---
+
+## 02/10/2026 — O vídeo descarregado é apagado no fim de cada dissertação
+
+Antes, a skill perguntava se podia apagar o `video.mp4`. Passa a apagá-lo
+sempre, sem perguntar, depois de a dissertação estar escrita, as imagens
+embutidas confirmadas e o commit feito. Os dois vídeos que existiam foram
+apagados nesta data.
+
+**Motivo:** decisão do utilizador. Depois de o conteúdo estar dissertado, o
+vídeo não compensa o espaço (214 MB num vídeo de 1 h 27), e a pergunta
+repetia-se em todos os vídeos com a mesma resposta.
+
+**Custo aceite:** pedir um ecrã extra mais tarde obriga a descarregar o vídeo
+de novo, e deixa de ser possível se o vídeo sair do YouTube. Os ecrãs já
+capturados não se perdem: estão na pasta e no histórico.
+
+**Como foi feito:** alteração de uma linha na skill e outra no `README.md`,
+direta em `main`, sem passar pelo fluxo de implementação, por ser uma regra de
+uso já decidida pelo utilizador e sem escolhas por fechar.

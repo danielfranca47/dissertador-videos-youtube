@@ -104,8 +104,43 @@ nada regista que foram pedidas.
 **O que precisa mudar.** Registar no índice que uma captura foi pedida à mão, e
 poupá-la quando a captura automática for repetida.
 
-Ainda não causou nenhuma perda: o único vídeo dissertado não tem capturas
-manuais. O arquivo
+Ainda não causou nenhuma perda. O arquivo
 [`_template-implementacao.md`](../implementations/_template-implementacao.md)
 usa este problema como exemplo de como se documenta uma implementação — o
 exemplo é ilustrativo, a correção **não foi feita**.
+
+**Atualização (2026-10-02).** O risco deixou de ser teórico: a dissertação de
+`videos/officegest/formacao-pratica-modulo-contabilidade/` embute três capturas
+pedidas à mão (`18-40.jpg`, `37-20.jpg` e `1-17-05.jpg`; foram pedidas cinco,
+com `18-25.jpg` e `1-18-25.jpg`). Repetir a captura desse vídeo deixa a
+dissertação com três imagens em falta. **Sobe para MÉDIA** na primeira vez que
+for preciso repetir a captura de um vídeo já dissertado.
+
+---
+
+## M4 — O yt-dlp avisa que vai deixar de funcionar sem um "motor de JavaScript"
+
+**Prioridade: MÉDIA**
+
+> Contexto: observado ao dissertar o vídeo `dwB0syVcAvg`, em 2026-10-02.
+
+**O que acontece hoje.** Ao pedir os dados de um vídeo, o `yt-dlp` escreve o
+aviso "No supported JavaScript runtime could be found (…) YouTube extraction
+without a JS runtime has been deprecated, and some formats may be missing". O
+vídeo foi extraído e descarregado sem problema (legendas, metadados e imagem),
+por isso hoje não há consequência.
+
+**O risco.** O aviso diz que este modo está a ser abandonado. Numa versão
+futura do `yt-dlp`, ou quando o YouTube mudar, a extração pode falhar ou
+descarregar o vídeo com pior imagem, o que prejudica a leitura dos ecrãs.
+
+**O que precisa mudar.** Instalar na máquina o motor que o `yt-dlp` pede (o
+`deno`, gratuito) e acrescentá-lo aos requisitos do `README.md`. Detalhe em
+<https://github.com/yt-dlp/yt-dlp/wiki/EJS>.
+
+Não custa dinheiro nem exige contas. Não muda a arquitetura recomendada.
+**Sobe para ALTA** no dia em que um vídeo falhar a extração por este motivo.
+
+**Nota menor, do mesmo vídeo.** A saída do `capturar_ecras.py` traz centenas de
+linhas de progresso do descarregamento antes do resumo. Não atrapalha o
+resultado, só a leitura.

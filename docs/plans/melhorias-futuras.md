@@ -114,8 +114,13 @@ exemplo é ilustrativo, a correção **não foi feita**.
 pedidas à mão (`18-40.jpg`, `37-20.jpg` e `1-17-05.jpg`; foram pedidas cinco,
 com `18-25.jpg` e `1-18-25.jpg`). A de
 `videos/officegest/formacao-pratica-modulo-financeira/` embute mais duas
-(`43-20.jpg` e `1-02-30.jpg`). Repetir a captura desse vídeo deixa a
-dissertação com três imagens em falta. **Sobe para MÉDIA** na primeira vez que
+(`43-20.jpg` e `1-02-30.jpg`). A de
+`videos/officegest/formacao-pratica-modulo-configuracao-geral/` embute três
+(`11-45.jpg`, `55-45.jpg` e `1-10-30.jpg`; foram pedidas oito). Neste último
+vídeo a captura automática **saltou um tema inteiro**: entre 08:05 e 12:28 não
+guardou nenhum ecrã, e o separador "Comunicação AT" só ficou registado porque
+foi pedido à mão. Repetir a captura de qualquer destes vídeos deixa a
+dissertação com imagens em falta. **Sobe para MÉDIA** na primeira vez que
 for preciso repetir a captura de um vídeo já dissertado.
 
 ---

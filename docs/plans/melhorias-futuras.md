@@ -128,6 +128,8 @@ da skill pode pedir mais capturas à mão em vídeos antigos, quando uma pergunt
 nova pede um ecrã que não existe. Por isso a skill proíbe repetir a captura
 automática de um vídeo já dissertado. É uma proteção por regra escrita, não
 pelo script: a correção de fundo continua a ser esta melhoria.
+Na primeira revisão real (2026-10-02) contaram-se 16 ecrãs pedidos à mão nos
+três vídeos de 2021 que existem em `ecras/` e não constam do índice.
 
 ---
 
@@ -157,3 +159,39 @@ Não custa dinheiro nem exige contas. Não muda a arquitetura recomendada.
 **Nota menor, do mesmo vídeo.** A saída do `capturar_ecras.py` traz centenas de
 linhas de progresso do descarregamento antes do resumo. Não atrapalha o
 resultado, só a leitura.
+
+---
+
+## M5 — Afinar o pedido "revê os vídeos" (rever a ligação)
+
+**Prioridade: BAIXA**
+
+> Contexto: triagem dos "Ajustes Possíveis" na graduação de
+> `ligacao-projetos-destino.md`, em 2026-10-02. Tudo isto foi notado na
+> primeira revisão real (os quatro vídeos do OfficeGest) e contornado à mão.
+
+**O que acontece hoje.** O modo "rever a ligação" da skill `dissertar-video`
+funciona, mas deixa cinco pontos por dizer:
+
+1. **Rever um assunto inteiro numa só conversa é pesado.** Quatro vídeos
+   pediram quatro transcrições inteiras e 41 ecrãs em tamanho real. A skill
+   não sugere rever vídeo a vídeo, nem em lotes pequenos.
+2. **Versão anterior sem data.** A skill manda escrever "a versão anterior era
+   de AAAA-MM-DD" e não diz de onde tirar a data quando a tabela antiga não a
+   tem. Usou-se a data "Processado em" do cabeçalho.
+3. **Revisão no mesmo dia.** Quando a versão anterior é do próprio dia, a
+   linha repete a data e não diz o que mudou. Acrescentou-se à mão "feita com
+   leitura parcial".
+4. **"Do mais antigo para o mais recente"** não diz se é pela data de
+   publicação ou de gravação. Seguiu-se a de gravação, porque três vídeos têm
+   a mesma data de publicação.
+5. **Assunto registado como "nenhum".** O registo e a skill só dizem o que vai
+   na coluna Projeto (as outras ficaram com "—"), e o modo de rever não diz o
+   que fazer quando o assunto pedido não serve nenhum projeto.
+
+**O que precisa mudar.** Escrever na skill a resposta a cada ponto. São
+alterações de texto na skill; os scripts não mudam.
+
+Não custa dinheiro nem exige contas. Não muda a arquitetura recomendada.
+**Sobe para MÉDIA** quando um assunto passar de quatro vídeos, ou na próxima
+revisão que tropeçar num destes pontos.

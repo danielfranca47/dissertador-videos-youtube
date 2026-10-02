@@ -12,13 +12,13 @@ Para a visão global de componentes, ver [`_mapa-sistema.md`](_mapa-sistema.md).
 
 | Documento | Área | Atualizar quando... |
 |---|---|---|
-| _(nenhum ainda)_ | — | — |
+| [`ligacao-projetos-destino.md`](ligacao-projetos-destino.md) | Como a dissertação se liga às perguntas do projeto que serve: registo de destinos, leitura das perguntas, secção de ligação datada, revisão a pedido | Mudar o registo `videos/projetos-destino.md`, o passo 1b da skill, as regras da secção de ligação ou o modo "rever a ligação" |
 
-Esta tabela nasce vazia de propósito. Os docs de arquitetura são criados na
-**graduação** de implementações — não antecipadamente. Um doc aqui é sempre um
-espelho de código que já existe e foi validado, nunca uma intenção.
+Os docs de arquitetura são criados na **graduação** de implementações — não
+antecipadamente. Um doc aqui é sempre um espelho de código que já existe e foi
+validado, nunca uma intenção.
 
-Onde vive o que, enquanto esta tabela está vazia:
+Onde vive o que ainda não tem doc de arquitetura:
 
 | Tipo de informação | Onde vive hoje |
 |---|---|
@@ -33,7 +33,7 @@ Onde vive o que, enquanto esta tabela está vazia:
 
 ---
 
-## Quando criar o primeiro doc
+## Quando criar um doc novo
 
 Na graduação de uma implementação, quando o Passo 3 de
 [`_processo-graduacao-implementacao.md`](../implementations/_processo-graduacao-implementacao.md)
@@ -51,7 +51,8 @@ Candidatos prováveis neste projeto, pela ordem em que deve crescer:
   constante controla, e o que distingue uma captura automática de uma manual.
 - **Formato da base de conhecimento** — o que fica em `videos/`, e o que os
   outros projetos podem assumir ao lê-la. Nasce quando a skill passar a ser
-  usada a partir de outras pastas.
+  usada a partir de outras pastas. O registo de destinos, que também vive em
+  `videos/`, já está em `ligacao-projetos-destino.md`.
 
 **Formato:** `docs/architecture/<slug>.md` + uma linha na tabela acima.
 

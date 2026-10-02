@@ -84,7 +84,7 @@ O `video.mp4` só serve para capturar os ecrãs (num vídeo de 45 min ocupa cerc
 
 ## Como o projeto evolui
 
-- **O que falta fazer:** [`docs/plans/melhorias-futuras.md`](docs/plans/melhorias-futuras.md), por prioridade. Hoje: transcrever o áudio de vídeos sem legendas, e usar a skill a partir de qualquer projeto.
+- **O que falta fazer:** [`docs/plans/melhorias-futuras.md`](docs/plans/melhorias-futuras.md), por prioridade. Os principais: transcrever o áudio de vídeos sem legendas, e usar a skill a partir de qualquer projeto.
 - **Como se muda a ferramenta:** qualquer alteração aos scripts ou à skill passa por um plano aprovado antes de haver código. As regras estão no [`CLAUDE.md`](CLAUDE.md) e os guias em [`docs/implementations/`](docs/implementations/).
 - **Porque as coisas são como são:** [`docs/decisoes.md`](docs/decisoes.md).
 

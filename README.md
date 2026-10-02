@@ -14,6 +14,24 @@ Abra o Claude Code nesta pasta e cole o link do vídeo, ou escreva:
 
 A skill [`.claude/skills/dissertar-video`](.claude/skills/dissertar-video/SKILL.md) faz os passos abaixo pela ordem certa e escreve a dissertação com as regras de data e de hipótese.
 
+### Para que projeto é o vídeo
+
+Cada **assunto** pode servir um projeto. O registo [`videos/projetos-destino.md`](videos/projetos-destino.md) diz qual, e onde esse projeto guarda as suas perguntas em aberto. Antes de olhar para os ecrãs, a skill lê essas perguntas por inteiro, para procurar no vídeo o que o projeto precisa de saber nesse dia. A dissertação termina com uma tabela "o que este vídeo pode responder", com a data em que as perguntas foram consultadas.
+
+- **Assunto novo:** a skill pergunta uma vez que projeto ele serve (pode ser nenhum) e guarda a resposta no registo.
+- **Outro projeto só para um vídeo:** indique-o no pedido, depois do link.
+- A skill **só lê** o projeto de destino; nunca o edita.
+
+### Rever os vídeos antigos quando as perguntas mudam
+
+As perguntas de um projeto mudam, e a tabela de cada dissertação é o retrato do dia em que foi escrita. Para a pôr em dia, peça:
+
+```
+revê os vídeos do <assunto> com as perguntas atuais
+```
+
+A skill volta à transcrição e aos ecrãs já guardados de cada vídeo do assunto e reescreve **só** a tabela de ligação e a lista de pontos a verificar. O resto da dissertação não muda. Só acontece a pedido.
+
 ### Os passos, se quiser correr à mão
 
 1. Extrair os dados e a transcrição do vídeo:
@@ -50,6 +68,8 @@ O conteúdo de vídeo é hipótese datada: cite o vídeo e a data, e não o trat
 como confirmado sem verificar no sistema atual.
 ```
 
+Para as dissertações serem escritas a pensar nas perguntas desse projeto, registe-o em [`videos/projetos-destino.md`](videos/projetos-destino.md), com o assunto e os ficheiros onde ele guarda as perguntas em aberto (ou deixe a skill perguntar no primeiro vídeo do assunto).
+
 Na primeira vez, o Claude Code desse projeto vai pedir autorização para ler fora da pasta dele. Para não perguntar sempre, adicione a pasta nas definições desse projeto (`additionalDirectories`).
 
 O `video.mp4` só serve para capturar os ecrãs (num vídeo de 45 min ocupa cerca de 120 MB). É apagado no fim de cada dissertação; se mais tarde for preciso um ecrã extra, descarrega-se de novo.
@@ -60,11 +80,11 @@ O `video.mp4` só serve para capturar os ecrãs (num vídeo de 45 min ocupa cerc
 - Tudo é escrito como "segundo o vídeo de AAAA-MM", e não como facto atual.
 - Os nomes de menus, campos e botões vêm **dos ecrãs**, e não da legenda. As legendas automáticas erram muito com o português de Portugal.
 - Os trechos em que nem a fala nem o ecrã deixam claro levam ❓.
-- Quando o vídeo serve um projeto (por exemplo, o winners-group), o Claude Code lê o que o projeto já sabe e marca as divergências sem as sobrescrever.
+- Quando o assunto serve um projeto (ver [`videos/projetos-destino.md`](videos/projetos-destino.md)), o Claude Code lê por inteiro as perguntas em aberto desse projeto, diz na dissertação em que dia as consultou, só cita perguntas que leu, e marca as divergências sem editar o projeto.
 
 ## Como o projeto evolui
 
-- **O que falta fazer:** [`docs/plans/melhorias-futuras.md`](docs/plans/melhorias-futuras.md), por prioridade. Hoje: transcrever o áudio de vídeos sem legendas, e usar a skill a partir de qualquer projeto.
+- **O que falta fazer:** [`docs/plans/melhorias-futuras.md`](docs/plans/melhorias-futuras.md), por prioridade. Os principais: transcrever o áudio de vídeos sem legendas, e usar a skill a partir de qualquer projeto.
 - **Como se muda a ferramenta:** qualquer alteração aos scripts ou à skill passa por um plano aprovado antes de haver código. As regras estão no [`CLAUDE.md`](CLAUDE.md) e os guias em [`docs/implementations/`](docs/implementations/).
 - **Porque as coisas são como são:** [`docs/decisoes.md`](docs/decisoes.md).
 

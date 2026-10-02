@@ -23,7 +23,7 @@ Há dois tipos de trabalho nesta pasta, e só um deles passa pelo fluxo abaixo.
 
 | Trabalho | Exemplo | Como se faz |
 |---|---|---|
-| **Usar** a ferramenta | Dissertar um vídeo, reprocessar um vídeo, corrigir o texto de uma dissertação | Direto na pasta principal, pela skill `dissertar-video`. Sem Plan Mode, sem branch. No fim, um commit em `main` só com a pasta desse vídeo e o índice: `docs: dissertar <título do vídeo>` |
+| **Usar** a ferramenta | Dissertar um vídeo, reprocessar um vídeo, corrigir o texto de uma dissertação, rever a ligação dos vídeos de um assunto às perguntas atuais do projeto de destino, acrescentar ou corrigir uma linha em `videos/projetos-destino.md` | Direto na pasta principal, pela skill `dissertar-video`. Sem Plan Mode, sem branch. No fim, um commit em `main` só com a pasta desse vídeo e o índice: `docs: dissertar <título do vídeo>` (ou, numa revisão, só com as dissertações revistas: `docs: rever a ligação de <assunto> ao projeto <nome>`) |
 | **Mudar** a ferramenta | Alterar `scripts/`, a skill `dissertar-video`, ou as regras da dissertação | Workflow de Implementação, abaixo |
 
 Se um vídeo revelar uma falha da ferramenta (ecrãs a mais, legenda que não é

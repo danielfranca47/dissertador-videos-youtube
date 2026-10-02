@@ -9,9 +9,9 @@ Para saber qual **doc de arquitetura** ler por área, ver
 [`CLAUDE.md`](../../CLAUDE.md) na raiz — este ficheiro não o repete.
 
 **Estado:** fase inicial, a funcionar. As três fases iniciais (texto, ecrãs e
-skill) estão concluídas e foram testadas num vídeo (OfficeGest, webinar #2,
-2020). Vídeos sem legendas ainda não têm transcrição. Não há testes
-automáticos.
+skill) estão concluídas, e a dissertação é escrita com as perguntas atuais do
+projeto que serve. Há quatro vídeos dissertados, todos do OfficeGest. Vídeos
+sem legendas ainda não têm transcrição. Não há testes automáticos.
 
 ---
 
@@ -24,15 +24,23 @@ link do YouTube
 scripts/extrair_video.py ──► metadados.json + transcricao.txt
    │                          (código de saída 2 = vídeo sem legendas)
    ▼
+videos/projetos-destino.md ► que projeto o assunto serve; as perguntas em
+   │                          aberto desse projeto são lidas por inteiro
+   ▼
 scripts/capturar_ecras.py ─► video.mp4 + ecras/MM-SS.jpg + ecras/indice.json
    │                          + ecras/folhas/ (miniaturas para revisão)
    ▼
 Claude Code, pela skill dissertar-video
    lê a transcrição, revê as folhas, abre os ecrãs-chave em tamanho real
+   (os que tocam numa pergunta do projeto são sempre ecrãs-chave)
    │
    ▼
 dissertacao.md  +  uma linha em videos/fontes-video.md
 ```
+
+A pedido, a skill também **revê a ligação** de vídeos já dissertados às
+perguntas de hoje, sem repetir a extração nem a captura. O detalhe está em
+[`ligacao-projetos-destino.md`](ligacao-projetos-destino.md).
 
 Os scripts fazem a parte que dá sempre o mesmo resultado. Ler imagens e
 escrever é feito pelo próprio Claude Code na sessão, sem chave de API.
@@ -55,7 +63,7 @@ máquina; `ffmpeg` e `ffprobe` no PATH.
 
 | Ficheiro | Responsabilidade |
 |---|---|
-| `SKILL.md` | Os passos, pela ordem certa, que o Claude segue ao receber um link: escolher o assunto, correr os dois scripts, rever os ecrãs, escrever a dissertação com as regras de data e de hipótese, e atualizar o índice |
+| `SKILL.md` | Os passos, pela ordem certa, que o Claude segue ao receber um link: escolher o assunto, extrair, ler as perguntas do projeto de destino, capturar e rever os ecrãs, escrever a dissertação com as regras de data e de hipótese, e atualizar o índice. Tem um segundo modo, "rever a ligação", para vídeos já dissertados |
 
 A skill só é carregada com o Claude Code aberto nesta pasta.
 
@@ -76,14 +84,19 @@ Não há base de dados.
 | `video.mp4` | O vídeo descarregado, só para capturas extra | Não — ~120 MB por 45 min, volta a descarregar-se |
 | `dissertacao.md` | O resultado: o que o vídeo ensina, com ficha de busca no topo | Sim |
 
-`videos/fontes-video.md` é o índice de todos os vídeos, por assunto. É por ele
-que os outros projetos entram.
+Na raiz de `videos/`, dois ficheiros valem para todos os vídeos:
+
+| Ficheiro | O que é | No git? |
+|---|---|---|
+| `fontes-video.md` | O índice de todos os vídeos, por assunto. É por ele que os outros projetos entram | Sim |
+| `projetos-destino.md` | O registo que diz, por assunto, que projeto as dissertações servem e onde esse projeto guarda as perguntas em aberto | Sim |
 
 ### Fontes externas
 
 | Fonte | Para quê | Conta ou custo |
 |---|---|---|
 | YouTube, através do `yt-dlp` | Dados do vídeo, legendas e o próprio vídeo | Nenhum |
+| Ficheiros de perguntas do projeto de destino, noutra pasta da máquina | Saber o que procurar no vídeo e preencher a secção de ligação | Nenhum. Só leitura |
 
 O `yt-dlp` deixa de funcionar de tempos a tempos, quando o YouTube muda. O
 primeiro passo perante um erro de extração é atualizá-lo:
@@ -97,8 +110,11 @@ primeiro passo perante um erro de extração é atualizá-lo:
 |---|---|
 | `C:\projetos\winners-group` | Lê as dissertações do assunto `officegest`. A instrução a colar no `CLAUDE.md` do projeto consumidor está no [`README.md`](../../README.md) |
 
-O dissertador nunca edita o projeto consumidor: a dissertação marca as
-divergências, e o utilizador aponta o outro projeto para ela.
+A relação tem dois sentidos: o consumidor lê as dissertações, e o dissertador
+lê as perguntas em aberto do consumidor, pelos caminhos de
+`videos/projetos-destino.md`. O dissertador nunca edita o projeto consumidor:
+a dissertação marca as divergências, e o utilizador aponta o outro projeto
+para ela.
 
 ---
 

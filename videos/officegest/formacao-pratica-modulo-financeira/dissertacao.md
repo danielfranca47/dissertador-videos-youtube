@@ -393,33 +393,53 @@ A descrição do vídeo refere também **SEPA**, "Automatismos, Notificações e
 
 ## O que este vídeo pode responder no projeto winners-group
 
-Segundo a formação de 2021-08 (versão 3.042), e **ainda por confirmar no OfficeGest atual**. As perguntas são as de `docs/dependencias-externas.md` e de `contabilidade/processo-atual/`.
+Perguntas consultadas em 2026-10-02 (revisão; a versão anterior era de 2026-10-02, feita com leitura parcial) em: `docs/dependencias-externas.md`, `docs/pendentes.md` e `contabilidade/processo-atual/perguntas-em-aberto.md` do projeto `C:\projetos\winners-group`, lidos por inteiro, mais o registo de vídeos `docs/fontes-videos.md`. A tabela é o retrato desse dia: se as perguntas mudarem, pede-se nova revisão.
 
-| Pergunta | O que o vídeo mostra |
-|---|---|
-| **OG-3** — importação de extratos e reconciliação | **Confirma** o que o teste na demo de 30/09 encontrou: extrato **só em CSV**, com identificação das colunas, e **Auto Conciliação por valor igual**. Acrescenta: o ficheiro **não leva linha de títulos** e só usa três colunas (data, descrição, valor); uma linha do banco pode emparelhar com **vários** documentos; a reconciliação pode ficar aberta; há relatórios do reconciliado e do não reconciliado. **Não responde** como trata dois documentos com o mesmo valor |
-| **P10** — importar o extrato | O passo existe e é manual: descarregar o CSV do banco, tirar os títulos e as linhas que não são movimentos, carregar e identificar as colunas. É **por banco e por período** |
-| **P11 / P12** — reconciliar; há movimentos sem documento? | **Ponto novo e importante.** O lado "Gestão" da reconciliação só tem o que foi registado. Um movimento do banco **sem documento** (IVA, salários, comissões, despesas bancárias) só emparelha depois de alguém criar uma **operação bancária** com o tipo de despesa certo. Ou seja, o P12 resolve-se dentro do módulo Bancos, e o que a oficina tem de dizer (P13) é **a que tipo de despesa** corresponde cada movimento |
-| **P14 / C-9** — registar pagamentos de impostos | O caminho nativo é a **operação bancária** com um tipo de despesa por imposto (o vídeo cria "Pagamento do IVA" e usa "Salários - Ao pessoal"). O tipo de despesa pode ter **conta da contabilidade**, e a operação tem botão Contabilidade e data de contabilização. O relatório *Despesas do banco* soma por tipo. A perguntar: a Winners usa operações bancárias, ou lança os impostos diretamente na contabilidade? |
-| **B-1** — formato do extrato | Do lado do OfficeGest, a resposta é **CSV**. O que continua em aberto é o que **cada banco** entrega, e quanto trabalho dá convertê-lo. É um bom candidato a automação pequena: converter o extrato de cada banco para o CSV que o OfficeGest aceita |
-| **B-2** — quem obtém o extrato; importação direta "EBank" | O vídeo de 2021 **não mostra nenhuma importação direta do banco**: só o carregamento de ficheiro. A "EBank" vista na demo de 2026 será posterior. Continua por perguntar ao suporte |
-| **Emparelhamento por valor exato** (nota de OG-3: 1 cêntimo de diferença já não emparelha) | **Explica o caso do multibanco:** o banco deposita o total do dia **menos a comissão**, por isso nunca bate com as faturas uma a uma. O **Fecho TPA** existe para isso: junta os recebimentos do dia, lança a comissão e deixa no OfficeGest **uma linha com o valor líquido**, igual à do banco. Sem fecho de TPA, estes movimentos ficam todos por reconciliar. A perguntar: as oficinas fazem o fecho de TPA? |
-| **D-3 / OG-10** — funcionalidades nativas | A acrescentar ao inventário, como perguntas: Fecho TPA, operações bancárias com tipos de despesa, depósitos e levantamentos, movimentos de caixa, os relatórios *Saldos*, *Extrato de movimentos de contas* e *Despesas do banco*. Segundo a fala, o módulo Bancos vem na **versão de base** ❓ |
-| **TPA anunciado em 2020** | **Fecha o ponto** que estava "por verificar" nas duas dissertações anteriores: em agosto de 2021 o Fecho TPA já existia e funcionava como descrito aqui |
+Tudo o que está na coluna do meio é **segundo a formação de 2021-08 (versão 3.042)** e continua **por confirmar no OfficeGest atual**. Os instantes entre parênteses são ecrãs guardados em [`ecras/`](ecras/). O projeto já absorveu este vídeo a 02/10/2026; as perguntas C-26 e C-27 nasceram dele.
 
-**Não há divergências** com o que o winners-group já tinha registado sobre a reconciliação; há confirmação e mais detalhe.
+| Pergunta (código e texto no projeto) | O que o vídeo mostra | O que ficou por ver |
+|---|---|---|
+| **OG-3** — O OfficeGest tem importação de extratos e reconciliação bancária? | Extrato **só em CSV**, sem linha de títulos, com identificação das colunas, e **Auto Conciliação por valor igual**. Uma linha do banco pode emparelhar com **vários** documentos; a reconciliação pode ficar aberta; há relatórios do reconciliado e do não reconciliado. Novo nesta revisão: (1) a lista "Gestão" tem as colunas **Data** e **Data Prev.** ([1:08:14](ecras/1-08-14.jpg)); (2) no emparelhamento **à mão**, uma linha do extrato com data de 02/05/2016 foi aceite com uma fatura-recibo de 31/08/2021 ([1:09:20](ecras/1-09-20.jpg)): à mão, a data não é verificada; (3) o extrato de exemplo, de 2016, foi importado num período de agosto de 2021 sem aviso ([1:05:56](ecras/1-05-56.jpg)); (4) as duas listas do "Não reconciliado" têm botões de copiar, **Excel**, **CSV** e imprimir. | Como trata dois documentos com o mesmo valor: **não responde**. Que data a *Auto Conciliação* usa, e com que tolerância: não se vê. Se há API de movimentos: **não responde**. |
+| **C-26** — Como regista a equipa os movimentos do banco sem documento? Os tipos de despesa têm conta da contabilidade? | O caminho do produto é a **operação bancária** com um ou vários **tipos de despesa** ([43:20](ecras/43-20.jpg)); só depois de registada aparece no lado "Gestão". Novo nesta revisão: na demo, **só 4 dos 10 primeiros tipos** têm conta da contabilidade (AGUA, comissoes, Despesas Bancárias com IVA, Despesas Bancárias) ([40:57](ecras/40-57.jpg)); a fala diz que a conta se preenche "caso tenham o módulo" de contabilidade ativo. Cada linha da operação tem também um **Centro Custo**. | O lançamento gerado pelo botão *Contabilidade* não foi aberto. O que a Winners faz é pergunta para a Winners. |
+| **C-27** — As oficinas fazem o Fecho de TPA? Quem o faz? | O *Fecho TPA* junta os recebimentos por multibanco de uma caixa e de um banco, pede o valor que entrou e lança a diferença como comissão, numa operação bancária criada sozinha ([1:03:09](ecras/1-03-09.jpg)). No lado "Gestão" da reconciliação fica **uma linha "Fecho TPA"** com o valor líquido ([1:08:14](ecras/1-08-14.jpg)). | Se as oficinas o fazem e quem: pergunta para a Winners. |
+| **C-9** — Que impostos são registados no fecho? Os pagamentos aparecem como movimentos sem documento? | Sim, do lado do produto: o **pagamento do IVA** e o dos **salários** são os exemplos de operação bancária. O relatório *Despesas do banco* soma por tipo de despesa, com mapa anual. | Retenções, Segurança Social e PEC/PPC não são referidos. |
+| **AT-3** — De onde vêm os dados dos pagamentos de impostos? | **Não responde.** O valor é escrito à mão na operação bancária. | — |
+| **B-1** — Com que bancos trabalham as oficinas, e em que formato chega o extrato? | Do lado do OfficeGest: **CSV, sem títulos, só com movimentos**. O ficheiro tira-se do banco online ou pede-se ao banco (fala, ≈ 1:04:20–1:04:55). As linhas que não são movimentos entram como "NaN/NaN/NaN" ([1:08:14](ecras/1-08-14.jpg)) e em 2021 não se podiam apagar. | O que cada banco entrega: pergunta para a Winners. |
+| **B-2** — Quem obtém o extrato? Faz sentido um agregador (PSD2)? | **Não responde.** Só se vê o carregamento de ficheiro; nenhuma importação direta do banco. | A "EBank" vista na demo de 2026. |
+| **C-5** — O que é o ficheiro de performance? | Relatórios do menu *Relatórios → Bancos*: *Extrato de movimentos de contas*, *Conta corrente caixa*, *Saldos*, *Despesas do banco*, *Despesas de caixa* ([51:42](ecras/51-42.jpg)), e *Gestão de fluxos de caixa*. Centro de custo nas linhas das operações bancárias. | Se o ficheiro de performance usa números de tesouraria. |
+| **C-16** — O processamento salarial é feito no OfficeGest? | Só uma frase: o formador diz que o processamento de salários se pode fazer dentro do OfficeGest (≈ 03:45–04:15), e mesmo assim o **pagamento** regista-se como operação bancária. | Não é mostrado. |
+| **OG-10** — Que funcionalidades estão licenciadas e em uso? | A fala diz que o módulo Bancos vem "de base" ❓ e que há módulos a que os clientes "ainda não têm acesso" (≈ 00:00–02:00). Os *Parâmetros* desta demo (pacote Contabilidade) têm separadores de Subscrições, Recursos Humanos, **Bancos** e Assiduidade ([1:02:30](ecras/1-02-30.jpg)). | O que a Winners e as oficinas têm. |
+| **OG-9** e **OG-6** — importador do e-Fatura; DMS | **Não responde.** *Comunicações AT* e *Gestão Documental* veem-se no menu ([1:02:30](ecras/1-02-30.jpg)), mas não são abertos. | — |
+| **D-3** — Que funcionalidades nativas a Winners já usa? | Para o inventário: Fecho TPA, operações bancárias com tipos de despesa, depósitos e levantamentos, movimentos de conta e de caixa, e os relatórios de bancos. | O uso é pergunta para a Winners. |
+| Sem código: **regra do risco irreversível** (citada nas notas do projeto) | Finalizar um depósito pede confirmação com o aviso de que é **irreversível**. ⚠️ **Divergência com o projeto:** o projeto regista que as operações bancárias ficam "Fechado" e não se desfazem. No ecrã, uma operação bancária **Fechado** e um movimento de caixa **Fechado** têm os botões *Guardar*, *Imprimir*, *Duplicar* e **Apagar** ([1:03:09](ecras/1-03-09.jpg), [51:42](ecras/51-42.jpg)). O botão não foi carregado. Um par reconciliado desfaz-se no caixote; a reconciliação inteira também tem *Apagar*. | Se "Apagar" funciona num registo fechado, e o que acontece ao lançamento. |
+
+As restantes perguntas em aberto (OG-4, OG-5, OG-7, OG-8, API-1 a API-3, AT-1, AT-2, AT-4, COM-1, C-2, C-3, C-11, C-12, C-18, C-19, C-21, C-24, D-1, D-2 e as perguntas de volume e de âmbito) não são tocadas por este vídeo.
+
+**Perguntas sugeridas** (o vídeo levanta, o projeto ainda não tem):
+
+- As contas bancárias das oficinas têm **data de início e saldo inicial** preenchidos? Sem isso, os saldos e a reconciliação partem de um valor errado (≈ 08:30–10:00).
+- As oficinas guardam o dinheiro e só o depositam de vez em quando? Usam uma **conta intermédia**, como o formador sugere? (≈ 24:10–26:15)
+- A lista que a equipa manda à oficina com os movimentos por explicar é o **Relatório Não reconciliado** do OfficeGest, ou é feita à mão?
+
+**A rever no texto acima** (não corrigido nesta revisão, que só mexe na ligação): as secções 6.1 e 7 dizem que a operação bancária e o movimento de caixa ficam "Fechado", sem referir que o ecrã mostra um botão **Apagar**; a secção 10.2 não refere a coluna **Data Prev.**, os botões de exportação das duas listas nem o separador *Observações*; a secção 10.1 não refere que o período pedido e as datas do ficheiro não são confrontados.
+
+O projeto winners-group **não foi editado**: é ele que decide o que absorve.
 
 ## Pontos a verificar no sistema atual
 
-- [ ] O menu **Bancos** continua com estas entradas? Existe agora uma importação direta do banco ("EBank")?
-- [ ] A reconciliação continua a aceitar **só CSV sem títulos**? Que colunas pede hoje?
+- [ ] O menu **Bancos** continua com estas entradas? Existe agora uma importação direta do banco ("EBank")? (B-2)
+- [ ] A reconciliação continua a aceitar **só CSV sem títulos**? Que colunas pede hoje? (B-1)
 - [ ] Já existe o **caixote do lixo** nas linhas do banco, anunciado em 2021?
-- [ ] A Auto Conciliação continua a emparelhar **só por valor igual**? O que faz com dois movimentos do mesmo valor?
+- [ ] A Auto Conciliação continua a emparelhar **só por valor igual**? O que faz com dois movimentos do mesmo valor? (OG-3)
 - [ ] As oficinas têm as **contas bancárias com saldo inicial** e data de início preenchidos?
-- [ ] As oficinas fazem **Fecho TPA**? Existe o tipo de despesa das comissões, com conta da contabilidade?
-- [ ] Como regista a Winners os pagamentos de **IVA, salários e Segurança Social**: por operação bancária, ou direto na contabilidade?
-- [ ] Que **tipos de despesas** existem em cada oficina, e quais têm conta da contabilidade?
-- [ ] O módulo Bancos vem mesmo em todas as licenças?
+- [ ] As oficinas fazem **Fecho TPA**? Existe o tipo de despesa das comissões, com conta da contabilidade? (C-27)
+- [ ] Como regista a Winners os pagamentos de **IVA, salários e Segurança Social**: por operação bancária, ou direto na contabilidade? (C-26)
+- [ ] Que **tipos de despesas** existem em cada oficina, e quais têm conta da contabilidade? (C-26)
+- [ ] O módulo Bancos vem mesmo em todas as licenças? (OG-10)
+- [ ] A *Auto Conciliação* compara a **Data** ou a **Data Prev.**, e com que tolerância? O emparelhamento à mão continua a aceitar qualquer data? (OG-3)
+- [ ] Uma operação bancária, um movimento de caixa ou um fecho de TPA **Fechado** pode ser apagado? O que acontece ao lançamento da contabilidade? (regra do risco irreversível)
+- [ ] As listas do "Não reconciliado" ainda exportam para **Excel e CSV**?
+- [ ] O que lança na contabilidade o botão *Contabilidade* de uma operação bancária cujo tipo de despesa **não tem conta**? (C-26)
 
 ## Limites desta versão
 

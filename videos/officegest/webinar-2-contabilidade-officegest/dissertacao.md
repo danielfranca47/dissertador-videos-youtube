@@ -255,22 +255,58 @@ Os relatórios estão em **Relatórios → Contabilidade**:
 
 ## O que este vídeo pode responder no projeto winners-group
 
-Segundo o webinar de 2020-06 (versão 2.220), e **ainda por confirmar no OfficeGest atual**:
+Perguntas consultadas em 2026-10-02 (revisão; a versão anterior era de 2026-10-01) em: `docs/dependencias-externas.md`, `docs/pendentes.md` e `contabilidade/processo-atual/perguntas-em-aberto.md` do projeto `C:\projetos\winners-group`, lidos por inteiro, mais o registo de vídeos `docs/fontes-videos.md`. A tabela é o retrato desse dia: se as perguntas mudarem, pede-se nova revisão.
 
-| Pergunta | O que o vídeo mostra |
-|---|---|
-| **C-2** — o que é "classificar por artigos"? | Confirma a hipótese registada a 30/09. A classificação é atribuída **ao artigo** (por família ou no separador Contabilidade da ficha) e define as contas de compra, venda, IVA e devolução **por taxa de IVA e por mercado** (Nacional, Comunitário, Internacional). O ecrã mostra os números das contas. |
-| **C-24** — existe lançamento automático, e como funciona? | Sim, de **três formas**: o botão na fatura, o ecrã **Lançamentos em lote** (Filtrar → Validar → Processar, com os erros a vermelho) e a **integração diária** (Exercícios → Integrar por mês), com relatório de erros por email. Continua por saber **se a Winners usa** esta funcionalidade. |
-| **D-3** — que funcionalidades nativas existem? | Mostra classificação de artigos, integração automática, declaração periódica, SAF-T com taxonomias, mapas e apuramentos. **Não demonstra** DMS/OCR, reconciliação bancária nem QR Code. |
-| **e-Fatura** | Em 2020 já existia o menu **Comunicações AT → Importação E-fatura**, mas não foi demonstrado. Vale verificar, porque a API não tem nada sobre o e-Fatura. |
+Tudo o que está na coluna do meio é **segundo o webinar de 2020-06 (versão 2.220)** e continua **por confirmar no OfficeGest atual**. Os instantes entre parênteses são ecrãs guardados em [`ecras/`](ecras/).
+
+| Pergunta (código e texto no projeto) | O que o vídeo mostra | O que ficou por ver |
+|---|---|---|
+| **OG-9** — O OfficeGest tem um importador do e-Fatura? | O menu **Comunicações AT** tem três entradas: *Exportar SAFT-PT*, *Inventário* e **Importação E-fatura** ([33:37](ecras/33-37.jpg)). | A entrada **não foi aberta** neste vídeo. ⚠️ **Divergência com o projeto:** o projeto regista que não se sabe o que esta entrada faz. Ela é **aberta e explicada** na [Formação Prática Módulo Configuração Geral](../formacao-pratica-modulo-configuracao-geral/dissertacao.md), secção 2, que o projeto ainda não tem no seu registo de vídeos. |
+| **OG-6** — As oficinas têm o módulo DMS (OCR) licenciado? | Só a entrada **Gestão Documental** no menu lateral, visível em quase todos os ecrãs ([01:45](ecras/01-45.jpg)). | Nunca foi aberta. Não se sabe se é o DMS. |
+| **C-24** — A equipa usa o lançamento automático ou lança à mão? | **Três formas de lançar** (botão na fatura, *Lançamentos em lote*, integração diária por mês). Novo nesta revisão: (1) a lista *Lançamento de Documentos* já tinha em 2020 **faturas de fornecedor lançadas** ("Factura Fornecedor FAF 9999/22", diário 40) e uma linha "Compras / Despesas", ao lado das vendas ([22:47](ecras/22-47.jpg)), ou seja, as compras passam pelo mesmo mecanismo; (2) os *Lançamentos em lote* têm um atalho **Compras** ([22:55](ecras/22-55.jpg)); (3) o ecrã *Exercícios* tem uma coluna **Colaboradores**: o exercício de 2020 está atribuído a um utilizador e o de 2019 a outros três ([26:51](ecras/26-51.jpg)); (4) a mesma lista já tinha o botão **"Validar lançam…"** (o resto do nome está tapado pela câmara). | O vídeo só demonstra o lançamento de **vendas**; nenhuma compra é lançada à frente da câmara. Se a Winners usa alguma das três formas continua a ser pergunta para a Winners. |
+| **C-24**, hora da integração | O formador diz "penso que" é de madrugada. | ⚠️ **Divergência com o projeto:** o projeto regista "de madrugada" como facto. Na fala é uma suposição, e a formação de 2021 diz que o formador não sabe a hora. |
+| **C-8** — Qual é o prazo do fecho? Onde se perde mais tempo? | Não responde à pergunta, que é sobre a Winners. Mostra só o que o sistema tem para o fecho: no ecrã *Exercícios*, cada mês tem um estado (**Aberto**) com um ícone de pasta, e o exercício tem uma coluna **Fechado** ("Não") ([25:23](ecras/25-23.jpg)). | Fechar um mês ou um exercício não foi demonstrado. |
+| **C-2** — "Classificar por artigos" é atribuir a conta SNC ou o artigo? | A classificação é do **artigo** (pela família ou no separador *Contabilidade* da ficha) e define as contas por **taxa de IVA e por mercado**. A ficha do artigo mostra o **Tipo Artigo "Contabilístico"** ([11:54](ecras/11-54.jpg)), o mesmo tipo que a formação de 2021 explica para as despesas. | Como a Winners trabalha. |
+| **C-19** — Que regra se aplica a cascos, rappel e devoluções? | Só as **devoluções**: cada classificação tem *Conta Devolução Compra* e *Conta Devolução IVA Compra* por mercado ([09:44](ecras/09-44.jpg)). O menu tem *Reencaminhamento de contas*, não aberto. | Cascos e rappel: **não responde**. |
+| **C-9** — Que impostos são registados no fecho? | Apuramento de IVA (gera um lançamento no diário [70]), declaração periódica com exportação em XML, e nos *Parâmetros* a conta **Retenção na Fonte (Compras) = 2422**, com a opção "Usar retenção no pagamento" desligada ([13:02](ecras/13-02.jpg)). | Segurança Social, PEC/PPC e Modelo 10: **não responde**. |
+| **C-11** — Regime de IVA mensal ou trimestral? | A lista de declarações da demo é toda **por trimestre** ([30:32](ecras/30-32.jpg)); a fala diz que pode ser mensal. Os *Parâmetros* têm um separador **"Iva / Abertura"** ([13:02](ecras/13-02.jpg)). | O separador não foi aberto. A formação de contabilidade de 2021 diz que é aí que se escolhe o regime, mas também não o abre. |
+| **C-18** — Como são tratados os contratos de leasing/ALD no fecho? | Os *Lançamentos recorrentes* são uma **lista de contas** ([29:36](ecras/29-36.jpg)); ao associar, as linhas entram com valor 0,00 e os valores escrevem-se à mão. Sem agendamento. | Bate com a nota do projeto. Nada de novo. |
+| **C-5** — O que é o ficheiro de performance? | *Mapas* (relatório desenhado pelo utilizador, exporta para Excel). Novo nesta revisão: o menu *Relatórios → Contabilidade* já tinha em 2020 **Mapas analíticos**, **Centros de Custo** e *Mapa estado da conta* ([38:45](ecras/38-45.jpg)), e cada linha de lançamento tem uma coluna **Centro Custo** ([22:20](ecras/22-20.jpg)). | *Mapas analíticos* e *Centros de Custo* não foram abertos. |
+| **C-21** — O OfficeGest exporta para Excel a lista de compras e o balancete? | O **balancete**: botões *Imprimir* e **Imprimir Excel** ([36:59](ecras/36-59.jpg)); a demonstração de resultados tem os mesmos. | A lista de compras: **não responde** (o relatório de compras não aparece). |
+| **C-3** e **C-12** — O que conta como divergência? A equipa verifica o ATCUD? | Só uma pista: nos lançamentos de compras, o descritivo traz o **número do documento no fornecedor**, escrito de formas diferentes ("123456789", "12434", "FT00001") ([22:47](ecras/22-47.jpg)). Confirma, já em 2020, que é texto livre. | ATCUD e QR Code: **não responde** (o vídeo é anterior a ambos). |
+| **C-27** — As oficinas fazem o Fecho de TPA? | O formador **anuncia** para uma versão seguinte o multibanco como conta própria e a passagem para o banco no fecho do TPA (≈ 19:10–20:45). | Não é mostrado. Existe na formação de financeira de 2021. |
+| **C-26** — Como se registam os movimentos do banco sem documento? | **Não responde.** Há só duas pistas: o campo "Conta Custos Banco Pagam. Auto." nos *Parâmetros*, vazio ([13:02](ecras/13-02.jpg)), e o atalho **Bancos** nos *Lançamentos em lote*. | O menu *Bancos* nunca é aberto. |
+| **OG-3** — O OfficeGest tem importação de extratos e reconciliação? | **Não responde.** | — |
+| **C-16** — O processamento salarial é feito no OfficeGest? | **Não responde.** O menu *Recursos Humanos* vê-se, mas não é aberto. | — |
+| **OG-10** — Que funcionalidades estão licenciadas e em uso? | **Não responde.** A conta do vídeo é uma demonstração, com o aviso de que "algumas funcionalidades serão limitadas" ([01:45](ecras/01-45.jpg)). | — |
+| **D-3** — Que funcionalidades nativas a Winners já usa? | Para o inventário: classificação de artigos, criação automática de contas de terceiros, lançamentos em lote, integração automática, lançamentos recorrentes, declaração periódica, SAF-T da contabilidade, taxonomias, mapas e apuramentos. | O uso é pergunta para a Winners. |
+| Sem código: **regra do risco irreversível** (citada nas notas do projeto) | O lançamento gerado por uma fatura tem os botões **Novo, Editar, Duplicar, Imprimir e Apagar** ([22:20](ecras/22-20.jpg)), e o formador apaga-o. A lista de lançamentos tem caixas de seleção e um **Apagar** para vários ([22:47](ecras/22-47.jpg)). Uma declaração finalizada volta a ter **Editar**. Novo nesta revisão: "Atualizar plano de contas" (taxonomias) pede confirmação com o aviso **"Esta operação é irreversível"** ([35:27](ecras/35-27.jpg)). | Se um mês fechado impede apagar. |
+
+As restantes perguntas em aberto (OG-4, OG-5, OG-7, OG-8, API-1 a API-3, AT-1 a AT-4, B-1, B-2, COM-1, D-1, D-2 e as perguntas de volume e de âmbito) não são tocadas por este vídeo.
+
+**Perguntas sugeridas** (o vídeo levanta, o projeto ainda não tem):
+
+- Quando uma oficina nova chega com a contabilidade feita noutro programa, o histórico é importado (SAF-T da contabilidade) ou começa-se do zero? O formador avisa que a importação só corre bem se o plano de contas for o do OfficeGest (≈ 05:20–06:30).
+- As oficinas usam o **plano de contas do OfficeGest** ou um plano próprio? Com um plano próprio, as classificações de artigos têm de ser refeitas (≈ 04:50–05:50).
+
+**A rever no texto acima** (não corrigido nesta revisão, que só mexe na ligação): a secção 4.3 não refere as colunas **Colaboradores** e **Fechado** do ecrã *Exercícios* e dá a hora da integração como certa; a secção 2 não lista os separadores dos *Parâmetros*; a secção 7 não refere *Mapas analíticos* nem o relatório *Centros de Custo*; a secção 4 não refere o botão "Validar lançam…".
+
+O projeto winners-group **não foi editado**: é ele que decide o que absorve.
 
 ## Pontos a verificar no sistema atual
 
 - [ ] Os caminhos de menu acima continuam iguais?
 - [ ] A integração automática (Exercícios → Integrar) e o relatório "Integração Contabilidade" ainda existem nestes moldes?
-- [ ] O que faz hoje a **Importação E-fatura**, e se serve para a conferência das compras?
+- [ ] O que faz hoje a **Importação E-fatura**, e se serve para a conferência das compras? (OG-9; ver primeiro a secção 2 da Formação Prática Módulo Configuração Geral)
 - [ ] O TPA ou multibanco como conta própria, anunciado em 2020, chegou a existir? → Sim, em agosto de 2021 já existia o **Fecho TPA**: ver a secção 9 da [Formação Prática Módulo Financeira](../formacao-pratica-modulo-financeira/dissertacao.md). Falta confirmar no sistema atual.
 - [ ] O balanço e a demonstração de resultados já são calculados a partir das taxonomias?
+- [ ] A que hora corre a integração automática, e se a hora se pode escolher? (C-24)
+- [ ] O ecrã *Exercícios* ainda tem as colunas **Colaboradores** e **Fechado**? Que utilizadores estão em que exercício, em cada oficina? (C-24)
+- [ ] O que é a entrada **Gestão Documental** do menu: é o DMS com OCR? (OG-6)
+- [ ] O separador **"Iva / Abertura"** dos Parâmetros da contabilidade mostra o regime de IVA de cada oficina? (C-11)
+- [ ] O lançamento gerado por uma compra ainda se pode **apagar**, e o que acontece se o mês estiver fechado? (regra do risco irreversível)
+- [ ] O que abrem hoje *Mapas analíticos* e o relatório *Centros de Custo*? (C-5)
+- [ ] O menu *Ajuda → Registo de Alterações* diz quando cada função entrou (Importação E-fatura, Fecho TPA)? Se sim, data as hipóteses destes vídeos.
 
 ## Limites desta versão
 

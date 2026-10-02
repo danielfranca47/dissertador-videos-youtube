@@ -513,36 +513,67 @@ A descrição do vídeo promete também "Automatismos, Notificações e Alarmís
 
 ## O que este vídeo pode responder no projeto winners-group
 
-Segundo a formação de 2021-08 (versão 3.039), e **ainda por confirmar no OfficeGest atual**. As perguntas são as de `docs/dependencias-externas.md` e de `docs/pendentes.md`.
+Perguntas consultadas em 2026-10-02 (revisão; a versão anterior era de 2026-10-02, feita com leitura parcial) em: `docs/dependencias-externas.md`, `docs/pendentes.md` e `contabilidade/processo-atual/perguntas-em-aberto.md` do projeto `C:\projetos\winners-group`, lidos por inteiro, mais o registo de vídeos `docs/fontes-videos.md`. A tabela é o retrato desse dia: se as perguntas mudarem, pede-se nova revisão.
 
-| Pergunta | O que o vídeo mostra |
-|---|---|
-| **OG-9** — o OfficeGest traz as faturas de compra do e-Fatura e compara-as? | **É o ponto mais importante deste vídeo.** O menu *Comunicações AT → Importação E-fatura*, que o webinar de 2020 só mostrava fechado, é aqui **aberto**: tem duas listas lado a lado, "Registos AT" e "Registos OfficeGest", um botão **Importar Dados AT** por intervalo de datas, filtros de verificados e não verificados, e uma legenda Encontrado / Duplicado / Não Encontrado. A lista do OfficeGest tem a coluna **"Nº. no Forn."**, o que aponta para **documentos de compra**. Segundo a fala, um documento da AT que falte no OfficeGest pode ser **criado a partir da linha** (entidade e cabeçalho; as linhas ficam por preencher). Se isto existir hoje, a conferência e-Fatura (P4–P6) é **configuração e formação, não construção**. **Limite:** na demo as listas estavam vazias, por isso não se viu o emparelhamento a funcionar nem o critério usado |
-| **Divergência a registar** | A exploração da demo de 30/09/2026 **não encontrou** nenhum importador do e-Fatura. Ou o menu foi retirado, ou não está no pacote da demo, ou só aparece com a palavra-passe preenchida. É a pergunta a fazer ao suporte, **pelo nome do menu** |
-| **AT-1** — forma suportada de obter a lista do e-Fatura | Segundo o vídeo, o próprio OfficeGest vai buscá-la, com a **Password Efatura** guardada em *Dados da Empresa → Comunicação AT*. Deixaria de haver exportação manual |
-| **AT-4** — como são guardadas as credenciais do Portal das Finanças | O OfficeGest guarda **duas**: a de um **subutilizador** (para comunicar guias) e a **palavra-passe principal** do portal (para o e-Fatura). A perguntar: em cada oficina, a "Password Efatura" está preenchida? Quem a pôs lá? |
-| **Pendente 11** — abrir o menu Comunicações AT na conta da Winners | Passa a saber-se **o que procurar**: o ecrã "Registos AT", o botão "Importar Dados AT", e, em Dados da Empresa, o separador "Comunicação AT" com o campo "Password Efatura" |
-| **API-2** — como se ativa o acesso à API v1 | **Pista nova.** A ficha de cada colaborador, em *Acesso Web*, tem um bloco **API Access** com **API User** e **API Hash** (e um botão Alterar). É provável que a v1 se autentique com este par e não com a palavra-passe da aplicação, o que explicaria o erro 401 do teste na demo. A confirmar no teste API-3 |
-| **OG-1 / C-25** — um único acesso para todas as oficinas | O vídeo não fala de várias empresas. Mostra, sim, como **restringir** um utilizador dentro de uma empresa: grupo de permissões, séries, caixas, armazéns e contas bancárias de acesso, IP, horário e uma sessão de cada vez. A perguntar: que grupo de permissões tem o utilizador da Winners? É um utilizador por pessoa, ou partilhado? (Com utilizador partilhado, o registo de quem fez o quê perde-se) |
-| **Regra do risco irreversível** — anular documentos | Há um prazo configurável (**10 dias de base**; 0 desliga) depois do qual um documento não pode ser anulado. O apresentador liga-o ao SAF-T: anular um documento já comunicado obriga a **resubmeter o SAF-T**. Junta-se ao que já se sabia (lançamento apagável, mês que se fecha) |
-| **Viragem de ano** (ligada a C-24) | Além do exercício da contabilidade (formação de contabilidade), há as **séries**: série nova criada sem a tornar predefinida, e a série velha com **data limite 31/12**. Documentos emitidos por engano na série errada não se apagam |
-| **Retenção na fonte** (C-9, Modelo 10) | A percentagem de retenção vem **primeiro da ficha do fornecedor** (Dados Financeiros) e só depois dos Parâmetros |
-| **Isenções de IVA** | A tabela de razões de isenção traz o **código SAF-T (M01…M99)** e não deve ser alterada. Útil para ler exportações e o SAF-T |
-| **COM-1** — canais de comunicação com a oficina | O envio de email usa a conta da própria empresa, com **limite de envios** configurável (250 na demo) e risco de bloqueio da caixa de saída. Há SMS (API's → SMS) e predefinições de aviso por email e SMS nas marcações. O WhatsApp visto na demo de 2026 **não aparece** neste vídeo |
-| **Reconciliação — multibanco** | Complementa o Fecho TPA: as **referências multibanco** (ifthenpay) geram o **recibo automaticamente** quando o cliente paga. A perguntar: as oficinas usam referências MB? Se sim, há recibos que ninguém criou à mão |
+Tudo o que está na coluna do meio é **segundo a formação de 2021-08 (versão 3.039)** e continua **por confirmar no OfficeGest atual**. Os instantes entre parênteses são ecrãs guardados em [`ecras/`](ecras/).
+
+> ⚠️ **Este vídeo ainda não consta do registo de vídeos do projeto** (`docs/fontes-videos.md` tem três linhas; esta pasta não é nenhuma delas). As notas do projeto sobre a "Importação E-fatura" foram escritas **sem** o que este vídeo mostra.
+
+| Pergunta (código e texto no projeto) | O que o vídeo mostra | O que ficou por ver |
+|---|---|---|
+| **OG-9** — O OfficeGest tem um importador do e-Fatura? | **É o ponto mais importante deste vídeo.** O menu *Comunicações AT → Importação E-fatura* é **aberto** ([12:28](ecras/12-28.jpg)). O ecrã chama-se **Registos AT** e tem duas listas, "Registos AT" e "Registos OfficeGest", um botão **Importar Dados AT** por intervalo de datas, filtros de verificados e não verificados e a legenda Encontrado / Duplicado / Não Encontrado. A lista do OfficeGest tem a coluna **"Nº. no Forn."**, o que aponta para **documentos de compra**. Segundo a fala, um documento da AT que falte no OfficeGest **cria-se a partir da linha** (entidade e cabeçalho; as linhas ficam por preencher), e a ferramenta está "disponível para todos os clientes". ⚠️ **Divergência com o projeto:** o projeto regista que a entrada "não foi aberta nem explicada" e que não se sabe o que importa. | Na demo as duas listas estavam **vazias**: não se viu o emparelhamento a funcionar nem o critério. A fala não diz "compras" com estas palavras ❓. |
+| **OG-9**, existência hoje | — | ⚠️ **Divergência com o projeto:** a exploração da demo de 30/09/2026 não encontrou nenhum importador. Ou o menu foi retirado, ou não está no pacote dessa demo, ou depende de a palavra-passe estar preenchida. |
+| **AT-1** — Existe forma suportada e automatizável de obter a lista do e-Fatura? | Segundo o vídeo, o próprio OfficeGest vai buscá-la, com a **Password Efatura** guardada em *Dados da Empresa → Comunicação AT* ([11:45](ecras/11-45.jpg)). | Se a importação se pode agendar ou só corre ao carregar no botão. |
+| **AT-4** — Como são guardadas as credenciais do Portal das Finanças? | O OfficeGest guarda **duas**: a de um **subutilizador** do portal (para comunicar guias) e a **palavra-passe principal** (para o e-Fatura) ([11:45](ecras/11-45.jpg)). | Se a Winners tem acesso como contabilista certificado: **não responde**. |
+| **C-3** — O que conta como divergência? Há tolerância de valor e de data? | Do lado da ferramenta: três estados (**Encontrado**, **Duplicado**, **Não Encontrado**) e, nas duas listas, as colunas que se comparam: contribuinte, número do documento, data, valor total e valor do IVA ([12:28](ecras/12-28.jpg)). | O critério do emparelhamento e as tolerâncias **não foram mostrados**. O que a Winners aceita é pergunta para a Winners. |
+| **C-12** — A equipa verifica o ATCUD? | A lista da AT tem uma coluna **Hash**; não há coluna de ATCUD (o vídeo é de 2021). A chave visível do lado do OfficeGest é o **"Nº. no Forn."** ([12:28](ecras/12-28.jpg)). | Se hoje o ecrã usa o ATCUD. |
+| **C-21** — O OfficeGest exporta para Excel/CSV? A equipa já usa alguma folha para conferir? | As duas listas do ecrã *Registos AT* têm botões de copiar, **Excel**, **CSV** e imprimir ([12:28](ecras/12-28.jpg)): o resultado da comparação pode sair para uma folha. | — |
+| **C-2** — "Classificar por artigos" é atribuir a conta SNC ou o artigo? | Nas colunas que se podem mostrar nas **linhas** de um documento de venda ou de compra existem **"Classif. Contabil"** e **"Centro Custo"** ([14:22](ecras/14-22.jpg), lista completa na secção 3.1). Quem regista a compra pode ver a classificação linha a linha. | As colunas não foram ligadas no vídeo. |
+| **C-5** — O que é o ficheiro de performance? | Centros de custo fora da contabilidade: coluna "Centro Custo" nas linhas, centro de custo como **campo obrigatório** dos documentos, um centro de custo por **departamento**, e "Não permitir acesso aos centros de custo" na ficha do colaborador ([1:11:12](ecras/1-11-12.jpg)). | Se as oficinas os usam. |
+| **C-9** — Que impostos são registados no fecho? | Só a **retenção na fonte**: a percentagem vem primeiro da ficha do fornecedor (*Dados Financeiros*) e só depois dos Parâmetros (5 % na demo). | O resto: **não responde**. |
+| **C-24** — A equipa usa o lançamento automático ou lança à mão? | Não fala de lançamentos. Toca na **viragem do ano**, que o projeto juntou a esta pergunta: a série nova cria-se sem a tornar predefinida, e a série velha fica com **data limite 31/12**. Documentos emitidos na série errada não se apagam. | — |
+| **API-2** — Como se ativa o acesso à API v1? | A ficha de cada colaborador, em *Acesso Web*, tem um bloco **API Access** com **API User** e **API Hash** e um botão *Alterar* ([1:10:30](ecras/1-10-30.jpg)). | O bloco **não foi explicado**. Que a v1 use este par em vez da palavra-passe é uma **suposição** de quem escreveu, a confirmar no teste API-3. |
+| **API-1** — Como se aponta a API para uma oficina específica? | **Não responde.** A única pista é que a credencial da API é **por colaborador**. | — |
+| **OG-10** — Que funcionalidades estão licenciadas e em uso? | Os separadores dos *Parâmetros* só aparecem para os **módulos ativos** (fala, ≈ 14:15–14:45); a demo comercial tinha, entre outros, Recursos Humanos, **Bancos** e **SEPA** ([14:22](ecras/14-22.jpg)). Os grupos de permissões têm um bloco por módulo, incluindo **Oficinas**, **Contabilidade**, **Bancos** e **Gestão Documental** ([1:00:30](ecras/1-00-30.jpg)). Dá uma forma de ver, numa conta, que módulos estão ativos. | O que a Winners tem. |
+| **OG-6** — As oficinas têm o módulo DMS (OCR) licenciado? | **Gestão Documental** continua no menu em 2021 e é um bloco de permissões ([1:00:30](ecras/1-00-30.jpg)). | Nunca é aberta. |
+| **OG-7** — Existe um tenant de testes (sandbox)? | Não responde à pergunta. Mostra que em 2021 havia **duas demos** públicas, uma comercial e uma **de oficinas** (`demooficinas.officegest.com`, "Empresa Oficinas Demo"), usada para as séries (≈ 30:00). A demo do projeto é a do pacote Contabilidade, sem os menus de oficinas. | Se a demo de oficinas ainda existe e se tem API. |
+| **COM-1** — Que canal usa cada oficina para falar com a Winners? | Não responde à pergunta. Do lado da ferramenta: o email sai pela conta da própria empresa, com **limite de envios** (250 na demo) e risco de bloqueio; há SMS e modelos de email. | O WhatsApp visto na demo de 2026 **não aparece** neste vídeo. |
+| **C-16** — O processamento salarial é feito no OfficeGest? | **Não responde.** Só o campo *Nº Segurança Social* nos Dados da Empresa, que serve o ficheiro da Segurança Social do módulo de Recursos Humanos. | — |
+| **OG-3**, **C-26**, **C-27**, **B-1**, **B-2** — reconciliação, movimentos sem documento, Fecho de TPA, extratos | **Não responde.** Os separadores *Bancos* e *SEPA* dos Parâmetros não foram abertos. | — |
+| **D-3** — Que funcionalidades nativas a Winners já usa? | A juntar ao inventário: *Importação E-fatura*, prazo para anular documentos, referências multibanco, grupos de permissões. | O uso é pergunta para a Winners. |
+| Sem código: **regra do risco irreversível** (citada nas notas do projeto) | Um documento só se anula até **10 dias** depois de emitido (parâmetro; 0 desliga) ([36:47](ecras/36-47.jpg)). O apresentador liga-o ao SAF-T: anular um documento já comunicado obriga a **submeter de novo o SAF-T** desse mês. | Se o prazo vale também para as compras ❓. |
+| Sem código: **item 11 da lista "Daniel → Winners"** de `docs/pendentes.md` (abrir o menu Comunicações AT) | Passa a saber-se o que procurar: o ecrã "Registos AT", o botão "Importar Dados AT" e, nos Dados da Empresa, o separador "Comunicação AT" com o campo "Password Efatura". | — |
+
+As restantes perguntas em aberto (OG-4, OG-5, OG-8, API-3, AT-2, AT-3, D-1, D-2, C-18, C-19 e as perguntas de volume e de âmbito) não são tocadas por este vídeo.
+
+**Perguntas sugeridas** (o vídeo levanta, o projeto ainda não tem):
+
+- O acesso único da Winners é **um utilizador por pessoa** ou partilhado? Que grupo de permissões tem? Com um utilizador partilhado, perde-se o registo de quem fez o quê (≈ 1:08:35–1:10:00).
+- As oficinas usam **referências multibanco**? Com elas, o recibo é criado sozinho quando o cliente paga ([48:13](ecras/48-13.jpg)), e há recebimentos que ninguém registou à mão.
+- Em cada oficina, a **"Password Efatura"** está preenchida? Quem a pôs lá e quem a atualiza quando muda no portal?
+- Qual é o **prazo para anular documentos** em cada oficina, e alguém o põe a zero?
+
+**A rever no texto acima** (não corrigido nesta revisão, que só mexe na ligação): a secção 2 não refere os botões de exportação (Excel, CSV) das duas listas nem a frase de que a ferramenta está disponível para todos os clientes; a secção 9.1 diz que o bloco API Access "não foi explicado" mas não avisa que o ecrã embutido mostra um API Hash de demonstração.
+
+O projeto winners-group **não foi editado**: é ele que decide o que absorve.
 
 ## Pontos a verificar no sistema atual
 
-- [ ] **Existe hoje o menu *Comunicações AT → Importação E-fatura*?** O que importa (compras, vendas, ambas)? Como emparelha (NIF + número? valor? ATCUD)?
-- [ ] O separador **Comunicação AT** dos Dados da Empresa ainda tem "Password Efatura"? Está preenchida nas oficinas?
+- [ ] **Existe hoje o menu *Comunicações AT → Importação E-fatura*?** O que importa (compras, vendas, ambas)? Como emparelha (NIF + número? valor? ATCUD)? (OG-9, C-3, C-12)
+- [ ] O separador **Comunicação AT** dos Dados da Empresa ainda tem "Password Efatura"? Está preenchida nas oficinas? (AT-4)
 - [ ] O botão de criar o documento a partir da linha da AT existe? Cria um rascunho ou um documento final?
-- [ ] O **API Hash** da ficha do colaborador é a credencial da API v1?
+- [ ] O **API Hash** da ficha do colaborador é a credencial da API v1? (API-2)
 - [ ] O prazo para **anular documentos** continua nos Parâmetros → Vendas? Qual é o valor em cada oficina?
 - [ ] As séries das oficinas têm **data limite** preenchida? Como foi feita a última passagem de ano?
 - [ ] Os utilizadores são **um por pessoa**? Que grupos de permissões existem?
 - [ ] A opção de **impedir** (e não só avisar) existe nos Avisos? Quais estão ativos nas oficinas?
 - [ ] Os separadores dos Parâmetros são os mesmos na versão atual (a demo de 2026 é a 4.156)?
 - [ ] O menu Tipos de Movimento de Caixa ainda existe?
+- [ ] A importação do e-Fatura pode ser **agendada**, ou só corre quando alguém carrega em "Importar Dados AT"? (AT-1)
+- [ ] As listas do ecrã *Registos AT* ainda exportam para **Excel e CSV**? (C-21)
+- [ ] Que separadores de módulo aparecem nos Parâmetros da conta da Winners, e que blocos nos grupos de permissões? Diz que módulos estão ativos. (OG-10)
+- [ ] As colunas **"Classif. Contabil"** e **"Centro Custo"** estão ligadas nas linhas das compras das oficinas? (C-2, C-5)
+- [ ] A demo de oficinas (`demooficinas.officegest.com`) ainda existe? (OG-7)
 
 ## Limites desta versão
 

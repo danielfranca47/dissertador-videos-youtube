@@ -594,36 +594,65 @@ Tudo isto foi dito em setembro de 2021. **Falta verificar se existe hoje.**
 
 ## O que este vídeo pode responder no projeto winners-group
 
-Segundo a formação de 2021-09 (versão 3.043), e **ainda por confirmar no OfficeGest atual**. As perguntas são as de `contabilidade/processo-atual/perguntas-em-aberto.md`.
+Perguntas consultadas em 2026-10-02 (revisão; a versão anterior era de 2026-10-02, feita com leitura parcial) em: `docs/dependencias-externas.md`, `docs/pendentes.md` e `contabilidade/processo-atual/perguntas-em-aberto.md` do projeto `C:\projetos\winners-group`, lidos por inteiro, mais o registo de vídeos `docs/fontes-videos.md`. A tabela é o retrato desse dia: se as perguntas mudarem, pede-se nova revisão.
 
-| Pergunta | O que o vídeo mostra |
-|---|---|
-| **C-2** — o que é "classificar por artigos"? | **Reforça** a hipótese (a classificação é do artigo, por taxa de IVA e mercado) e acrescenta três coisas. (1) Há um valor por omissão **por tipo de artigo**. (2) A família só classifica **artigos novos**. (3) Sobre a pergunta "as despesas entram com artigos genéricos?": a conta de demonstração tem **classificações por conta de gasto** ("6221 - Trabalhos Especializados", "6222 - Publicidade e Propaganda", "6241 - Eletricidade") e artigos do **tipo Contabilístico**, um por tipo de despesa. É a forma prevista pelo produto. Continua a faltar saber como a Winners faz |
-| **C-24** — existe lançamento automático? | **Confirma** que em 2021 continuavam a existir o ecrã *Lançamentos em lote* e a integração diária por mês. Acrescenta o parâmetro da **data do lançamento** (data do documento, último dia do mês ou manual) e a lista de erros "A conta não é de movimento". Perguntas novas para a Winners: que opção de data usam? Quem vê os documentos a vermelho? |
-| **C-25** — um único acesso para todas as oficinas | **Ponto novo a verificar:** cada utilizador trabalha **num exercício**. Na viragem do ano é preciso criar o exercício e **mudar os colaboradores** para ele; se não, as contas de entidades novas ficam criadas no ano errado. Vale perguntar quem faz isto em cada oficina |
-| **C-11** — IVA mensal ou trimestral? | A periodicidade é um parâmetro da contabilidade (separador Iva / Abertura ❓) e a declaração periódica faz-se por mês ou por trimestre. Dá para **ver a resposta no sistema**, oficina a oficina |
-| **C-9** — que impostos se registam no fecho? | O OfficeGest tem **apuramento de IVA**, **declaração periódica**, **Modelo 10** (a partir da retenção na fonte da ficha do fornecedor) e contas próprias para IRS e Segurança Social dos vencimentos. **Limite:** a declaração periódica não aceita valores à mão; a Modelo 10 não inclui sozinha os independentes sem retenção |
-| **C-16** — salários no OfficeGest? | O módulo de Recursos Humanos **lança os vencimentos na contabilidade** (contas em Configurações → Parâmetros → Recursos Humanos), e os recibos de vencimento aparecem nos Lançamentos em lote |
-| **C-18** — leasing / ALD | **Divergência possível com a nota de 01/10:** lá está "são só um modelo de contas; os valores escrevem-se à mão". A fala de 2021 diz que o recorrente **também pode guardar valores** ❓ (o ecrã não o prova). O que se mantém: **não há agendamento** |
-| **C-19** — cascos, rappel, devoluções | A classificação de artigos tem contas próprias de **devolução** (de venda, de compra e do respetivo IVA). O **reencaminhamento de contas** é a ferramenta para regras especiais de IVA |
-| **C-21** — exporta o balancete? | **Fecha a parte que estava "por confirmar":** o balancete tem **Imprimir** (PDF) e **Imprimir Excel** |
-| **C-5** — ficheiro de performance | Além dos Mapas, existem **Mapas analíticos**, o relatório de **Centros de Custo** e a **contabilidade analítica**. Se o ficheiro de performance for por área da oficina (mecânica, chapa, peças…), os centros de custo são o caminho nativo |
-| **D-3** — funcionalidades nativas | A acrescentar ao inventário, como perguntas: classificação e centro de custo **por série**, **inventário permanente** e Apuramento do CMV, **reencaminhamento de contas** (o IVA do **gasóleo a 50 %** e a **autoliquidação** são casos típicos de oficina), **Transferir conta** em massa, Modelo 10, Modelo 22, declaração recapitulativa, Fluxos de caixa. **Não demonstra** DMS/OCR, reconciliação bancária, QR Code nem e-Fatura |
+Tudo o que está na coluna do meio é **segundo a formação de 2021-09 (versão 3.043)** e continua **por confirmar no OfficeGest atual**. Os instantes entre parênteses são ecrãs guardados em [`ecras/`](ecras/). O projeto já absorveu este vídeo a 02/10/2026.
+
+| Pergunta (código e texto no projeto) | O que o vídeo mostra | O que ficou por ver |
+|---|---|---|
+| **C-24** — A equipa usa o lançamento automático ou lança à mão? | *Lançamentos em lote* e integração diária por mês continuam a existir; a integração lança **sem intervenção do utilizador** e manda por email o que integrou e o que não integrou. Parâmetro da **data do lançamento** (data do documento, último dia do mês, ou manual). Cada utilizador trabalha **num exercício**; na viragem do ano cria-se o exercício e mudam-se os colaboradores ([36:30](ecras/36-30.jpg)). Novo nesta revisão: a pré-visualização mostra uma **compra** a ser lançada (Factura Fornecedor FAF 9999/31: gasto 20,00, IVA 4,60, e "Conta entidade" no lugar da conta do fornecedor) ([39:42](ecras/39-42.jpg)); os três exercícios da demo têm **todos os meses em "Integrar"** ([37:20](ecras/37-20.jpg)). | Qual das formas a Winners usa: pergunta para a Winners. |
+| **C-26** — Como regista a equipa os movimentos do banco sem documento: operações bancárias ou lançamentos diretos? | **Novo nesta revisão, e liga os dois vídeos.** As operações bancárias criadas na formação de financeira (a do pagamento do IVA e a da comissão do TPA) aparecem aqui nos *Lançamentos em lote*, com Diário [30] Bancos, à espera de serem lançadas ([39:42](ecras/39-42.jpg)). Ao processar, **falham** com "A conta não é de movimento: (Conta do banco)" ([40:12](ecras/40-12.jpg)), porque a conta bancária usada não tinha conta da contabilidade. Ou seja: a operação bancária **não dispensa** a contabilidade, passa por ela, e só é lançada se a conta bancária e o tipo de despesa tiverem conta. | O lançamento de uma operação bancária bem configurada não é mostrado. |
+| **C-27** — As oficinas fazem o Fecho de TPA? | Só indícios: a conta bancária "Caixa Multibanco" na lista de contas, e a operação bancária da comissão do TPA na lista dos lotes ([39:42](ecras/39-42.jpg)). | O fecho em si está na formação de financeira. |
+| **C-2** — "Classificar por artigos" é atribuir a conta SNC ou o artigo? | A classificação é do **artigo**, por taxa de IVA e mercado. Há um valor por omissão **por tipo de artigo**; a família só classifica **artigos novos**; a classificação cria-se **uma taxa de cada vez**. Para as despesas: artigos do tipo **Contabilístico** e classificações com nome de conta de gasto. Regras de classificação **por série**. | Como a Winners faz. |
+| **C-13** — Além das compras, que outros documentos entram no fecho? | Do lado do produto, a lista do que passa para a contabilidade: os *Parâmetros → Documentos* têm 26 tipos, e os lotes mostram, além das faturas, lançamentos diretos na conta corrente de fornecedores, movimentos de caixa, levantamentos e depósitos, movimentos de conta, operações bancárias, **recibos de vencimento**, recibos e notas de pagamento ([39:42](ecras/39-42.jpg), [40:12](ecras/40-12.jpg)). | O que a Winners trata no fecho: pergunta para a Winners. |
+| **C-8** — Qual é o prazo do fecho? | Não responde à pergunta. Mostra o que o sistema tem para fechar: cada **mês** fecha-se no ícone da pasta, e o **exercício** tem um interruptor **Fechado** na janela *Editar exercício* ([36:30](ecras/36-30.jpg)). | Fechar e reabrir um mês não foi demonstrado. |
+| **C-11** — Regime de IVA mensal ou trimestral? | A lista de declarações da demo tem **trimestres e um mês** ("Novembro 2020") ([50:58](ecras/50-58.jpg)): a mesma conta pode ter as duas periodicidades. A fala diz que a periodicidade se define no separador *Iva / Abertura*. | O separador **não foi aberto** ❓. |
+| **C-9** — Que impostos são registados no fecho? | Apuramento de IVA (contas 24361 a pagar e 24371 a recuperar), declaração periódica, **Modelo 10** (a partir da retenção na fonte da ficha do fornecedor ([55:52](ecras/55-52.jpg))), e contas de IRS e Segurança Social dos vencimentos. Limites ditos: a periódica não aceita valores à mão; a Modelo 10 não inclui sozinha os independentes sem retenção. | PEC/PPC: **não responde**. |
+| **AT-3** — De onde vêm os dados dos pagamentos de impostos? | **Não responde.** O apuramento dá o valor a pagar; o pagamento não é mostrado. | — |
+| **C-16** — O processamento salarial é feito no OfficeGest? | O módulo de Recursos Humanos **lança os vencimentos**: contas em *Configurações → Parâmetros → Recursos Humanos*, e recibos de vencimento nos lotes (Diário [60] Diversos, Documento [81] Salários) ([39:42](ecras/39-42.jpg)). Na demo falham com "(Remunerações)". | Se as oficinas têm o módulo. |
+| **C-18** — Como são tratados os contratos de leasing/ALD? | *Lançamentos recorrentes*: a fala diz que o modelo pode guardar contas **e valores**. No ecrã, depois de associar, duas linhas vêm a 0,00 e uma tem 10,00 ([42:59](ecras/42-59.jpg)); não se percebe se o valor veio do modelo ou foi escrito ❓. Sem agendamento. | O modelo aberto. |
+| **C-19** — Que regra se aplica a cascos, rappel e devoluções? | Contas de **devolução** na classificação de artigos. *Reencaminhamento de contas* para o **gasóleo a 50 %** e a **autoliquidação**. Novo nesta revisão: a ficha do fornecedor tem um campo **"Nº Conta Adiantamento (Autoliquidação)"** ([55:52](ecras/55-52.jpg)). | Cascos e rappel: **não responde**. Centro de custo na metade não dedutível do gasóleo: ficou sem resposta na sessão. |
+| **C-5** — O que é o ficheiro de performance? | Centros de custo nas linhas dos documentos, contabilidade analítica, relatório de *Centros de Custo* (com separadores Gestão Comercial e Contabilidade Geral e exportação ([1:17:32](ecras/1-17-32.jpg))), *Mapas* e *Mapas analíticos*. | Se as oficinas usam centros de custo. |
+| **C-21** — O OfficeGest exporta para Excel a lista de compras e o balancete? | O **balancete** tem *Imprimir* e **Imprimir Excel**. | A lista de compras: **não responde**. |
+| **OG-10** — Que funcionalidades estão licenciadas e em uso? | A contabilidade é um **módulo adicional**, que se compra à parte, com apoio à configuração nos dois primeiros meses (≈ 1:21:50–1:22:50). | Se está ativo em todas as oficinas. |
+| **OG-7** — Existe um tenant de testes (sandbox)? | Não responde. Só mostra que a demo de contabilidade era partilhada: foi dado aos participantes um utilizador de formação para lá experimentarem (≈ 1:22:50–1:24:00). | — |
+| **OG-9** e **OG-6** — importador do e-Fatura; DMS | **Não responde.** Do menu *Comunicações AT* só se fala do SAF-T; *Gestão Documental* vê-se no menu e não é aberta. | — |
+| **OG-3** — reconciliação bancária | **Não responde.** | — |
+| **D-3** — Que funcionalidades nativas a Winners já usa? | Para o inventário: classificação e centro de custo por série, inventário permanente e Apuramento do CMV, reencaminhamento de contas, *Transferir conta* em massa, Modelo 10, Modelo 22, declaração recapitulativa, Fluxos de caixa. | O uso é pergunta para a Winners. |
+| Sem código: **regra do risco irreversível** (citada nas notas do projeto) | A "Criação de contas" em massa pede confirmação com o aviso de que **não se desfaz**. Um lançamento gravado tem *Apagar*. Uma declaração finalizada volta a ter *Editar*. | Se um mês fechado impede apagar ou lançar com data anterior. |
+
+As restantes perguntas em aberto (OG-4, OG-5, OG-8, API-1 a API-3, AT-1, AT-2, AT-4, B-1, B-2, COM-1, C-3, C-12, D-1, D-2 e as perguntas de volume e de âmbito não listadas) não são tocadas por este vídeo.
+
+**Não há divergências** com o que o projeto já registou sobre este vídeo. Duas notas: a versão anterior desta tabela punha a regra "um utilizador, um exercício" na pergunta C-25, que o projeto já deu por respondida; o projeto arrumou esse ponto na C-24, e é lá que fica agora. E a linha da C-26 é nova: o projeto criou a pergunta a partir do vídeo de financeira e ainda não a cruzou com este.
+
+**Perguntas sugeridas** (o vídeo levanta, o projeto ainda não tem):
+
+- As **contas bancárias** das oficinas têm conta da contabilidade (recebimentos e pagamentos)? Sem ela, nenhum movimento de banco é lançado.
+- As oficinas usam **inventário permanente**, e em que modo (no lançamento de cada documento, mensal, ou não usam)?
+- Quando se cria uma conta ou uma classificação a meio do ano, depois de o exercício seguinte já existir, quem a repete no outro exercício? (≈ 34:30–35:35)
+
+**A rever no texto acima** (não corrigido nesta revisão, que só mexe na ligação): a secção 7.1 lista os tipos de documento dos lotes sem dizer que as operações bancárias 20 e 21 são as criadas na formação de financeira, nem que falham por falta da conta do banco; a secção 6 não diz que os três exercícios da demo estão todos em "Integrar"; a secção 9.1 não refere que a lista de declarações mistura trimestres e um mês.
+
+O projeto winners-group **não foi editado**: é ele que decide o que absorve.
 
 ## Pontos a verificar no sistema atual
 
 - [ ] Os caminhos de menu acima continuam iguais? (Em especial o submenu **Declarações** e o **Apuramento do CMV**.)
-- [ ] Em que exercício está cada utilizador da Winners, em cada oficina? Os exercícios do ano corrente estão criados e com os meses em **Integrar**?
-- [ ] Que opção está em **Data Lançamento Contabilidade**?
+- [ ] Em que exercício está cada utilizador da Winners, em cada oficina? Os exercícios do ano corrente estão criados e com os meses em **Integrar**? (C-24)
+- [ ] Que opção está em **Data Lançamento Contabilidade**? (C-24)
 - [ ] As oficinas usam **inventário permanente**? Em que modo?
-- [ ] Existe uma regra de **reencaminhamento** para o gasóleo a 50 % e para a autoliquidação? E o problema do centro de custo na metade não dedutível foi resolvido?
-- [ ] O **lançamento recorrente** guarda valores, ou só contas?
+- [ ] Existe uma regra de **reencaminhamento** para o gasóleo a 50 % e para a autoliquidação? E o problema do centro de custo na metade não dedutível foi resolvido? (C-19)
+- [ ] O **lançamento recorrente** guarda valores, ou só contas? (C-18)
 - [ ] A declaração periódica já aceita **valores à mão**?
 - [ ] A Modelo 10 já inclui os independentes sem retenção?
 - [ ] O balanço e a demonstração de resultados usam fórmulas ou taxonomias? Os **Fluxos de caixa** já vêm configurados?
-- [ ] Há mais relatórios por **centro de custo**?
+- [ ] Há mais relatórios por **centro de custo**? (C-5)
 - [ ] O **Fecho de TPA** existe? (Entrada vista no manual online.) → Em agosto de 2021 já existia: ver a secção 9 da [Formação Prática Módulo Financeira](../formacao-pratica-modulo-financeira/dissertacao.md). Falta confirmar no sistema atual.
 - [ ] A secção **08_Contabilidade** do manual online já está escrita? Se sim, é uma fonte mais atual do que estes vídeos.
+- [ ] As operações bancárias (IVA, salários, comissões) ainda passam pelos **Lançamentos em lote**? As contas bancárias das oficinas têm conta da contabilidade? (C-26)
+- [ ] O separador **Iva / Abertura** mostra a periodicidade do IVA de cada oficina? (C-11)
+- [ ] Como se **reabre** um mês fechado, e quem o pode fazer? (C-8, regra do risco irreversível)
+- [ ] Que tipos de documento aparecem hoje nos *Parâmetros → Documentos*? É a lista do que o OfficeGest sabe lançar sozinho. (C-13)
 
 ## Limites desta versão
 

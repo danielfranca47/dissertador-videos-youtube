@@ -11,6 +11,8 @@ palavras-chave: [contabilidade, classificação de artigos, plano de contas, con
 
 > 🔁 **Há um vídeo mais recente sobre o mesmo tema:** [Formação Prática Módulo Contabilidade](../formacao-pratica-modulo-contabilidade/dissertacao.md) (gravado em 2021-09, v3.043). Repete a parametrização com mais detalhe e acrescenta as declarações (Modelo 10), a contabilidade analítica e o reencaminhamento de contas. A secção "O que mudou desde o webinar de 2020" dessa dissertação lista as diferenças. Esta continua a ser a melhor fonte para o botão de contabilização na fatura, o SAF-T e as taxonomias.
 
+> 🔁 **O menu "Importação E-fatura"**, que aqui só se vê fechado, é **aberto** na [Formação Prática Módulo Configuração Geral](../formacao-pratica-modulo-configuracao-geral/dissertacao.md) (gravada em 2021-08, v3.039), secção 2.
+
 | | |
 |---|---|
 | **Vídeo** | [youtu.be/vW9GhkTXmNU](https://www.youtube.com/watch?v=vW9GhkTXmNU) |

@@ -2,7 +2,7 @@
 
 **Componente:** skill `dissertar-video` e documentação (os scripts não mudam)
 **Branch:** `feat/ligacao-projetos-destino`
-**Status:** Em andamento
+**Status:** Todos os cenários validados (02/10/2026)
 
 ---
 
@@ -137,6 +137,12 @@ reescreve só a secção de ligação e a checklist de cada dissertação do ass
   anterior, para se ver que houve revisão.
 - Um commit único por revisão, com todas as dissertações revistas.
 
+### Commits Fase 2
+
+| # | Commit | O que foi implementado |
+|---|---|---|
+| 1 | `645379e` | Modo "rever a ligação" na skill; README, CLAUDE.md, decisões e nota em M3 |
+
 ### Relatório da Fase 2 — o que mudou na prática
 
 **Antes:** a tabela de ligação de um vídeo já dissertado ficava para sempre
@@ -181,13 +187,19 @@ Setup: seguir o passo 1b para um assunto sem linha no registo (por exemplo
 
 - [x] A skill pergunta uma vez se o assunto serve algum projeto
 - [x] A resposta "serve um projeto" fica gravada no registo
-- [ ] A resposta "nenhum" fica gravada no registo
+- [x] A resposta "nenhum" fica gravada no registo
 - **Validado em:** 02/10/2026 — o utilizador respondeu "serve um projeto", sem
   indicar qual; usou-se `C:\projetos\modelos-agents` como alvo do teste. A
   exploração não encontrou perguntas escritas e registou `README.md`,
   `CLAUDE.md` e `briefings/` como "o que o projeto já sabe". A linha de teste
   foi apagada no fim. **O ramo "nenhum" não foi exercitado**; fica para a
   validação da Fase 2.
+- **Ramo "nenhum" validado em:** 02/10/2026 (com a Fase 2) — para o assunto
+  `claude-code`, sem linha no registo, com a resposta "não serve nenhum
+  projeto" dada pelo utilizador no pedido do teste. Ficou gravada a linha
+  `| claude-code | nenhum | — | — | 2026-10-02 |`. Numa segunda passagem pelo
+  passo 1b, a linha é encontrada e o passo é saltado sem nova pergunta. A
+  linha de teste foi apagada no fim; `git diff` do registo vazio.
 
 ### Cenário L3 — Ficheiro do registo em falta (Fase 1)
 
@@ -230,9 +242,52 @@ resultado **não é commitado**.
 Setup: na worktree, pedir "revê os vídeos do OfficeGest com as perguntas
 atuais".
 
-- [ ] `git diff` mostra alterações só na secção de ligação e na checklist de
+- [x] `git diff` mostra alterações só na secção de ligação e na checklist de
       cada `dissertacao.md`
-- [ ] Cada secção revista tem a nova data de consulta
+- [x] Cada secção revista tem a nova data de consulta
+- **Validado em:** 02/10/2026 — revistas as quatro dissertações do assunto
+  `officegest`, da gravação mais antiga para a mais recente. Lidos por inteiro
+  os quatro ficheiros do winners-group (268, 71, 81 e 41 linhas), as quatro
+  transcrições e as 22 folhas do webinar (os outros três vídeos não têm folhas
+  no git); 41 ecrãs abertos em tamanho real, vários que as dissertações não
+  embutem. Nenhuma captura foi repetida e nenhum vídeo foi descarregado.
+  Conferido por script: em cada ficheiro, o texto até ao título da secção de
+  ligação e de "Limites desta versão" em diante é **igual ao do commit**; as
+  quatro secções começam por "Perguntas consultadas em 2026-10-02 (revisão…)";
+  todos os códigos citados estão definidos nos ficheiros do winners-group;
+  todas as imagens ligadas existem; nenhum ponto antigo das checklists se
+  perdeu; o winners-group não foi tocado.
+
+  | Dissertação | Linhas da tabela | Pontos da checklist |
+  |---|---|---|
+  | Webinar #2 (2020) | 4 → 20 | 5 → 12 |
+  | Configuração Geral (2021) | 13 → 22 | 10 → 15 |
+  | Financeira (2021) | 9 → 13 | 9 → 13 |
+  | Contabilidade (2021) | 11 → 20 | 12 → 16 |
+
+- **O que a revisão encontrou** e as versões anteriores não tinham:
+  o winners-group ainda não registou o vídeo de Configuração Geral, o único
+  que abre o menu "Importação E-fatura" (OG-9); as operações bancárias do
+  vídeo de financeira aparecem nos Lançamentos em lote do vídeo de
+  contabilidade e falham por falta da conta do banco (C-26); registos
+  "Fechado" que mostram um botão Apagar, contra a nota do projeto; o
+  emparelhamento à mão da reconciliação não confere datas (OG-3). Cada
+  dissertação ganhou uma linha "A rever no texto acima" com as faltas do corpo
+  que a revisão viu e não corrigiu.
+- **Decidido ao validar:**
+  - Três das quatro tabelas antigas não tinham data de consulta. Como "data da
+    versão anterior" usou-se a data "Processado em" do cabeçalho.
+  - A ordem "do mais antigo para o mais recente" seguiu a data de **gravação**
+    (três dos vídeos têm a mesma data de publicação).
+  - Códigos de pergunta já respondida no projeto (OG-1, OG-2, C-1, C-25) saíram
+    das tabelas; o que estava preso a eles passou para a pergunta em aberto
+    onde o projeto o arrumou, ou para "pergunta sugerida".
+  - **O resultado não foi commitado**, pela regra dos testes na worktree. Ao
+    contrário do E1, é trabalho que vale a pena aproveitar: as quatro
+    dissertações revistas ficam por commitar na worktree, para serem levadas
+    para `main` na graduação como a primeira revisão real
+    (`docs: rever a ligação de officegest ao projeto winners-group`), se o
+    utilizador não preferir descartá-las.
 
 ---
 
@@ -240,6 +295,26 @@ atuais".
 
 - **As quatro dissertações existentes** mantêm a tabela antiga, sem data de
   consulta, até serem revistas a pedido (Fase 2).
+- **(02/10, da validação do E2) A revisão de um assunto inteiro é pesada.**
+  Quatro vídeos pediram quatro transcrições inteiras e 41 ecrãs em tamanho
+  real numa só conversa. Com mais vídeos por assunto, convém a skill sugerir a
+  revisão **vídeo a vídeo** ou em lotes pequenos.
+- **(02/10, idem) Versão anterior sem data.** A skill manda escrever "a versão
+  anterior era de AAAA-MM-DD" e não diz de onde tirar a data quando a tabela
+  antiga não a tem. Usou-se a data de processamento; falta escrevê-lo na skill.
+- **(02/10, idem) Revisão no mesmo dia.** Quando a versão anterior é do próprio
+  dia, a linha "revisão; a versão anterior era de" repete a data e não diz o
+  que mudou. Acrescentou-se à mão "feita com leitura parcial".
+- **(02/10, idem) "Do mais antigo para o mais recente"** não diz se é pela data
+  de publicação ou de gravação.
+- **(02/10, da validação do L2) Linha "nenhum".** O registo e a skill só dizem
+  o que vai na coluna Projeto; as outras colunas ficaram com "—". O modo de
+  rever não diz o que fazer quando o assunto pedido está registado como
+  "nenhum".
+- **(02/10, da validação do E2) Capturas à mão fora do `indice.json`.** 16
+  ecrãs pedidos à mão nos três vídeos de 2021 existem em `ecras/` mas não
+  constam do índice. Já é o M3 de `docs/plans/melhorias-futuras.md`; fica aqui
+  porque o modo de rever depende desses ecrãs.
 - **O registo depende do outro projeto não mudar os ficheiros de sítio.** A
   skill avisa quando um caminho falha, mas não o descobre antes.
 - **Usar a skill a partir de outro projeto** continua a ser o M2 de

@@ -123,6 +123,12 @@ foi pedido à mão. Repetir a captura de qualquer destes vídeos deixa a
 dissertação com imagens em falta. **Sobe para MÉDIA** na primeira vez que
 for preciso repetir a captura de um vídeo já dissertado.
 
+**Nota (2026-10-02, ligação a projetos de destino).** O modo "rever a ligação"
+da skill pode pedir mais capturas à mão em vídeos antigos, quando uma pergunta
+nova pede um ecrã que não existe. Por isso a skill proíbe repetir a captura
+automática de um vídeo já dissertado. É uma proteção por regra escrita, não
+pelo script: a correção de fundo continua a ser esta melhoria.
+
 ---
 
 ## M4 — O yt-dlp avisa que vai deixar de funcionar sem um "motor de JavaScript"

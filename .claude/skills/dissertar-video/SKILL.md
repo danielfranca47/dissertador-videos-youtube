@@ -1,10 +1,12 @@
 ---
 name: dissertar-video
-description: Transforma um vídeo do YouTube num .md detalhado, com screenshots dos ecrãs demonstrados, para servir de base de conhecimento a projetos do Claude Code. Use sempre que o utilizador colar um link do YouTube (youtube.com ou youtu.be) e pedir para dissertar, documentar, resumir em detalhe, extrair o conhecimento ou "fazer" o vídeo, ou quando pedir para reprocessar ou atualizar um vídeo já processado.
-argument-hint: <link-do-youtube> [projeto de destino, opcional; por omissão, o do registo videos/projetos-destino.md]
+description: Transforma um vídeo do YouTube num .md detalhado, com screenshots dos ecrãs demonstrados, para servir de base de conhecimento a projetos do Claude Code. Use sempre que o utilizador colar um link do YouTube (youtube.com ou youtu.be) e pedir para dissertar, documentar, resumir em detalhe, extrair o conhecimento ou "fazer" o vídeo, ou quando pedir para reprocessar ou atualizar um vídeo já processado. Use também quando pedir para rever, atualizar ou voltar a cruzar os vídeos já dissertados com as perguntas atuais de um projeto (por exemplo, "revê os vídeos do OfficeGest com as perguntas atuais").
+argument-hint: <link-do-youtube> [projeto de destino, opcional; por omissão, o do registo videos/projetos-destino.md] | rever <assunto>
 ---
 
 # Dissertar vídeo do YouTube
+
+Esta skill tem dois modos. **Dissertar um vídeo novo** são os passos 1 a 5. **Rever a ligação** de vídeos já dissertados, quando as perguntas do projeto de destino mudaram, é a secção "Rever a ligação", no fim.
 
 O utilizador **não é desenvolvedor** e usa o resultado para aprender um tema que não domina. Por isso, não lhe peças para validar o conteúdo. A prova é o ecrã: os nomes de menus, campos e botões vêm dos screenshots, e não da tua interpretação.
 
@@ -82,3 +84,18 @@ Regras de escrita:
 - Se o vídeo atualiza um tema que já tem dissertação de um vídeo mais antigo, diz na nova dissertação **o que mudou** em relação à anterior, e na anterior acrescenta no topo um aviso a apontar para a mais recente.
 - Responde ao utilizador com: o link para o `.md`, a idade do vídeo, os temas cobertos, o que responde no projeto de destino, os pontos a verificar e quanto do vídeo ficou com ❓.
 - **Apaga o `video.mp4` no fim, sem perguntar** (cerca de 120 MB por 45 minutos). Só depois de a dissertação estar escrita, de confirmares que todas as imagens que ela embute existem em `ecras/`, e do commit feito. Diz na resposta que o apagaste. Se mais tarde faltar um ecrã, o `capturar_ecras.py --em` volta a descarregar o vídeo.
+
+## Rever a ligação (vídeos já dissertados)
+
+Usa-se quando o utilizador pede para rever os vídeos de um assunto com as perguntas atuais do projeto de destino. **Não é automático**: só a pedido. Reescreve **só** a secção "O que este vídeo pode responder no projeto …" e a checklist "Pontos a verificar no sistema atual" de cada dissertação. O resto do texto não é tocado.
+
+1. **Âmbito.** O pedido diz o assunto (todos os vídeos dele, pelo índice `videos/fontes-video.md`) ou um vídeo em particular. Se não disser, pergunta.
+2. **Perguntas atuais.** Faz o passo 1b uma vez para o assunto: lê por inteiro os ficheiros do registo `videos/projetos-destino.md`. Lê também o registo de vídeos do projeto, para saber que vídeos ele já absorveu e que notas tirou de cada um.
+3. **Para cada vídeo**, do mais antigo para o mais recente:
+   1. Lê a `dissertacao.md` e a `transcricao.txt` da pasta. Faz a lista de trabalho deste vídeo com as perguntas **de hoje**.
+   2. Volta aos ecrãs **já guardados** em `ecras/`. Se `ecras/folhas/` existir, revê as folhas; se não, usa os minutos da transcrição e da dissertação para escolher os ecrãs. Abre em tamanho real os que tocam numa pergunta da lista de trabalho, mesmo os que a dissertação não embute: uma pergunta nova pode estar respondida num ecrã que antes não interessava.
+   3. **Nunca repitas a captura automática** de um vídeo já dissertado: apaga os ecrãs pedidos à mão que a dissertação embute. Se faltar um instante, pede só esse com `--em MM:SS` (descarrega o vídeo de novo) e apaga o `video.mp4` no fim.
+   4. Reescreve a secção de ligação com as regras do ponto 7 do passo 4. A primeira linha passa a ser "Perguntas consultadas em AAAA-MM-DD (revisão; a versão anterior era de AAAA-MM-DD) em: …". Atualiza a checklist: acrescenta os pontos novos e mantém os que continuam por verificar.
+   5. Se a revisão mostrar que o **corpo** da dissertação tem um erro ou uma falta, **não o corrijas neste modo**: escreve-o no fim da secção de ligação, numa linha "A rever no texto acima", e diz-o na resposta.
+4. **Commit único** em `main`, só com as dissertações revistas: `docs: rever a ligação de <assunto> ao projeto <nome>`. No corpo, uma linha por vídeo com o que mudou.
+5. **Responde** com, por vídeo: quantas perguntas a tabela tinha e passou a ter, o que apareceu de novo, as perguntas sugeridas e as divergências. Lembra que o projeto de destino **não foi editado**: é ele que decide o que absorve.

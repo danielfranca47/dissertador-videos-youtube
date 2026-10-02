@@ -124,7 +124,30 @@ reescreve só a secção de ligação e a checklist de cada dissertação do ass
 | `docs/decisoes.md` | Entrada datada |
 | `docs/plans/melhorias-futuras.md` | Nota em M3: o modo de rever pode pedir mais capturas à mão |
 
-*(Por implementar.)*
+**Decidido ao implementar:**
+
+- O modo de rever **não repete a captura automática** de um vídeo já
+  dissertado, porque apagaria os ecrãs pedidos à mão (M3). Um instante em
+  falta pede-se sozinho, com `--em`.
+- O modo de rever **não corrige o corpo** da dissertação. Se encontrar um erro
+  ou uma falta no texto, escreve-o numa linha "A rever no texto acima" e
+  di-lo na resposta. Motivo: o utilizador escolheu uma revisão que mexe só na
+  ligação; alargar o âmbito em silêncio tirava-lhe essa garantia.
+- A primeira linha da secção revista diz a data da revisão **e** a da versão
+  anterior, para se ver que houve revisão.
+- Um commit único por revisão, com todas as dissertações revistas.
+
+### Relatório da Fase 2 — o que mudou na prática
+
+**Antes:** a tabela de ligação de um vídeo já dissertado ficava para sempre
+como estava no dia em que foi escrita. Para a pôr em dia era preciso pedir a
+correção vídeo a vídeo, sem regra de como.
+**Agora:** basta pedir "revê os vídeos do OfficeGest com as perguntas atuais".
+A ferramenta lê as perguntas de hoje, volta à transcrição e aos ecrãs
+guardados de cada vídeo e reescreve só a tabela de ligação e a lista de pontos
+a verificar, com a data nova. O README, o CLAUDE.md e o registo de decisões
+explicam o registo de destinos e este pedido.
+**Para validar:** Cenário E2, e o ramo "nenhum" do Cenário L2.
 
 ---
 

@@ -91,3 +91,31 @@ capturados não se perdem: estão na pasta e no histórico.
 **Como foi feito:** alteração de uma linha na skill e outra no `README.md`,
 direta em `main`, sem passar pelo fluxo de implementação, por ser uma regra de
 uso já decidida pelo utilizador e sem escolhas por fechar.
+
+---
+
+## 02/10/2026 — Cada assunto tem um projeto de destino, e as perguntas dele são lidas atualizadas
+
+A dissertação passa a ser escrita com as perguntas em aberto do projeto que
+serve lidas **por inteiro e antes de rever os ecrãs**. O registo
+`videos/projetos-destino.md` diz, por assunto, que projeto é e onde estão as
+perguntas. A tabela de ligação leva a data da consulta. Os vídeos já
+dissertados são revistos **a pedido**, reescrevendo só essa tabela e a
+checklist.
+
+**Motivo:** o utilizador reparou que o winners-group reformula e cria perguntas
+a cada vídeo, e que o que se procura num vídeo depende do que falta saber
+nesse dia. No vídeo `7UlDwks9BgQ` a leitura tinha sido parcial e não viu duas
+perguntas criadas no próprio dia. O utilizador quer também usar a ferramenta
+com outros projetos.
+
+**Escolha do utilizador:** rever os vídeos antigos só a pedido, em vez de
+sozinho a cada vídeo novo (demorava cada vez mais) ou de nunca (deixava as
+tabelas antigas desatualizadas).
+
+**Mantido:** a ferramenta só lê o projeto de destino. Quem decide o que entra
+nas perguntas é esse projeto.
+
+**Custo aceite:** cada vídeo gasta mais leitura (os ficheiros de perguntas
+inteiros), e o registo deixa de estar certo se o outro projeto mudar os
+ficheiros de sítio; a skill avisa quando isso acontece.

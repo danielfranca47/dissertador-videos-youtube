@@ -92,6 +92,12 @@ por inteiro antes de rever os ecrãs, e data a tabela de ligação.
 | `.claude/skills/dissertar-video/SKILL.md` | Passo novo "1b. Saber a quem o vídeo serve"; no passo 3, os momentos que tocam numa pergunta são ecrãs-chave; o ponto 7 do passo 4 passa a exigir data de consulta, códigos lidos no ficheiro, "não responde" e "pergunta sugerida"; `argument-hint` atualizado |
 | `docs/implementations/ligacao-projetos-destino.md` (novo) | Este contrato |
 
+### Commits Fase 1
+
+| # | Commit | O que foi implementado |
+|---|---|---|
+| 1 | `7cc8d61` | Registo de destinos, passo 1b na skill, ecrãs-chave guiados pelas perguntas, tabela de ligação datada |
+
 ### Relatório da Fase 1 — o que mudou na prática
 
 **Antes:** ao dissertar um vídeo, o Claude escolhia sozinho o que ler do
@@ -136,24 +142,39 @@ se partiu.
 
 Setup: na worktree, seguir o passo 1b da skill para o assunto `officegest`.
 
-- [ ] Os três ficheiros de perguntas do winners-group e o
+- [x] Os três ficheiros de perguntas do winners-group e o
       `docs/fontes-videos.md` são lidos por inteiro
-- [ ] Sai uma lista de trabalho com códigos e textos iguais aos dos ficheiros
+- [x] Sai uma lista de trabalho com códigos e textos iguais aos dos ficheiros
+- **Validado em:** 02/10/2026 — lidos os quatro ficheiros (268, 71, 81 e 41
+  linhas). A leitura completa encontrou as perguntas C-26 e C-27, criadas no
+  próprio dia, que a leitura parcial do vídeo `7UlDwks9BgQ` não tinha visto, e
+  confirmou que o COM-1 existe (estava nas últimas linhas, que não tinham sido
+  lidas).
 
 ### Cenário L2 — Assunto novo (Fase 1)
 
 Setup: seguir o passo 1b para um assunto sem linha no registo (por exemplo
 `claude-code`).
 
-- [ ] A skill pergunta uma vez se o assunto serve algum projeto
-- [ ] A resposta fica gravada no registo, incluindo "nenhum"
+- [x] A skill pergunta uma vez se o assunto serve algum projeto
+- [x] A resposta "serve um projeto" fica gravada no registo
+- [ ] A resposta "nenhum" fica gravada no registo
+- **Validado em:** 02/10/2026 — o utilizador respondeu "serve um projeto", sem
+  indicar qual; usou-se `C:\projetos\modelos-agents` como alvo do teste. A
+  exploração não encontrou perguntas escritas e registou `README.md`,
+  `CLAUDE.md` e `briefings/` como "o que o projeto já sabe". A linha de teste
+  foi apagada no fim. **O ramo "nenhum" não foi exercitado**; fica para a
+  validação da Fase 2.
 
 ### Cenário L3 — Ficheiro do registo em falta (Fase 1)
 
 Setup: trocar na worktree um caminho da linha `officegest` por um que não
 existe e seguir o passo 1b.
 
-- [ ] A skill avisa e procura o ficheiro, em vez de seguir sem ele
+- [x] A skill avisa e procura o ficheiro, em vez de seguir sem ele
+- **Validado em:** 02/10/2026 — com `docs/pendentes-antigo.md` no registo, a
+  verificação deu "não existe" e a procura no projeto encontrou
+  `docs/pendentes.md`. Registo reposto.
 
 ### Cenário E1 — Vídeo novo, ponta a ponta (Fase 1)
 
@@ -161,10 +182,25 @@ Setup: na worktree, dissertar `https://www.youtube.com/watch?v=vW9GhkTXmNU`
 com a skill nova (a pasta já existe; a captura descarrega o vídeo de novo). O
 resultado **não é commitado**.
 
-- [ ] A secção de ligação começa com a data da consulta e os ficheiros lidos
-- [ ] Todos os códigos citados existem nos ficheiros do winners-group
-- [ ] Há pelo menos uma linha "não responde" ou a lista de trabalho ficou toda
+- [x] A secção de ligação começa com a data da consulta e os ficheiros lidos
+- [x] Todos os códigos citados existem nos ficheiros do winners-group
+- [x] Há pelo menos uma linha "não responde" ou a lista de trabalho ficou toda
       respondida
+- **Validado em:** 02/10/2026 — extração e captura repetidas na worktree (194
+  ecrãs, iguais aos que estavam no histórico), as 22 folhas revistas e 8 ecrãs
+  abertos em tamanho real por tocarem numa pergunta. Os 19 códigos citados
+  estão definidos nos ficheiros do winners-group e as 8 imagens existem
+  (verificado por script). A tabela passou de 4 para 15 linhas.
+- **O que as perguntas fizeram encontrar** e a dissertação de 01/10 não tinha:
+  a coluna **Colaboradores** e o estado **Fechado** no ecrã Exercícios (C-24,
+  C-8), as compras já lançadas na lista de lançamentos (C-24), o separador
+  "Iva / Abertura" e a retenção na fonte nos Parâmetros (C-11, C-9), os
+  botões do lançamento (regra do risco irreversível), "Imprimir Excel" no
+  balancete (C-21) e os Mapas analíticos no menu (C-5).
+- **Desvio em relação ao setup:** só a secção de ligação e a checklist foram
+  reescritas; o corpo da dissertação (secções 1 a 9) foi reaproveitado, porque
+  esta implementação não muda a forma de o escrever. O resultado foi
+  descartado da worktree, como previsto.
 
 ### Cenário E2 — Rever a ligação (Fase 2)
 

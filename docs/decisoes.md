@@ -119,3 +119,38 @@ nas perguntas é esse projeto.
 **Custo aceite:** cada vídeo gasta mais leitura (os ficheiros de perguntas
 inteiros), e o registo deixa de estar certo se o outro projeto mudar os
 ficheiros de sítio; a skill avisa quando isso acontece.
+
+---
+
+## 08/10/2026 — Gravações locais: a fala é transcrita na própria máquina
+
+A ferramenta passa a aceitar um ficheiro de vídeo do disco e a transcrever a
+fala no computador, com o `faster-whisper` e o modelo `large-v3-turbo`, sem
+rede. A saída vai para uma pasta fora do git, indicada pelo projeto que pede
+a análise. Nada dessas gravações fica nesta pasta.
+
+**Motivo:** o winners-group tem gravações de ecrã com dados reais de
+clientes, que não podem passar pelo YouTube nem por um serviço de
+transcrição externo.
+
+**Revê a entrada de 01/10** só neste ponto. A recomendação de então afastava
+a transcrição local por a máquina não ter placa gráfica. O que mudou foi a
+regra, e não a máquina: com dados reais, o serviço externo deixou de ser
+opção. Recomendação do arquiteto, com revisão crítica, em
+`C:\projetos\modelos-agents\briefings\2026-10-08-dissertador-gravacoes-locais.md`.
+
+**Medido no piloto:** entre 0,3 e 0,6 vezes a duração do áudio, contra a
+estimativa de 1 a 1,5 vezes.
+
+**Escolha do utilizador:** transcrever sem lista de vocabulário. O texto fica
+com as frases fiéis e erra só os nomes próprios ("Office de Edge" por
+OfficeGest); com a lista acerta os nomes e troca frases inteiras.
+
+**Custo aceite:** os nomes e os valores confirmam-se sempre nos ecrãs; o
+texto não separa quem fala; e o texto e os ecrãs que o Claude Code lê são
+processados pelo serviço da Anthropic, embora o som e o vídeo não saiam da
+máquina.
+
+**Em aberto:** para vídeos públicos do YouTube sem legendas (M1), a escolha
+entre o serviço pago e a transcrição local fica por fazer, agora com o
+tempo medido.

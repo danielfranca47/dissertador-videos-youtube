@@ -10,8 +10,10 @@ Para saber qual **doc de arquitetura** ler por área, ver
 
 **Estado:** fase inicial, a funcionar. As três fases iniciais (texto, ecrãs e
 skill) estão concluídas, e a dissertação é escrita com as perguntas atuais do
-projeto que serve. Há quatro vídeos dissertados, todos do OfficeGest. Vídeos
-sem legendas ainda não têm transcrição. Não há testes automáticos.
+projeto que serve. Há quatro vídeos dissertados, todos do OfficeGest. A
+ferramenta também prepara gravações que estão no disco, com a fala
+transcrita na própria máquina. Vídeos do YouTube sem legendas ainda não têm
+transcrição. Não há testes automáticos.
 
 ---
 
@@ -42,6 +44,27 @@ A pedido, a skill também **revê a ligação** de vídeos já dissertados às
 perguntas de hoje, sem repetir a extração nem a captura. O detalhe está em
 [`ligacao-projetos-destino.md`](ligacao-projetos-destino.md).
 
+Há um segundo caminho, para **gravações locais** (ficheiros no disco, que
+podem ter dados reais). Não passa pelo YouTube nem deixa nada nesta pasta:
+
+```
+ficheiro de vídeo no disco
+   │
+   ▼
+scripts/preparar_local.py ───► metadados.json numa pasta fora do git
+   │
+   ▼
+scripts/transcrever_audio.py ► transcricao.txt (feita na máquina, sem rede)
+   │
+   ▼
+scripts/capturar_ecras.py ───► ecras/ + ecras/folhas/ (lê o ficheiro local)
+   │
+   ▼
+o projeto que pediu escreve a sua análise
+```
+
+O detalhe está em [`gravacoes-locais.md`](gravacoes-locais.md).
+
 Os scripts fazem a parte que dá sempre o mesmo resultado. Ler imagens e
 escrever é feito pelo próprio Claude Code na sessão, sem chave de API.
 
@@ -51,19 +74,21 @@ escrever é feito pelo próprio Claude Code na sessão, sem chave de API.
 
 ### `scripts/`
 
-Python 3.13, sem ambiente virtual: `yt-dlp` e Pillow instalados no Python da
-máquina; `ffmpeg` e `ffprobe` no PATH.
+Python 3.13, sem ambiente virtual: `yt-dlp`, Pillow e `faster-whisper`
+instalados no Python da máquina; `ffmpeg` e `ffprobe` no PATH.
 
 | Ficheiro | Responsabilidade |
 |---|---|
 | `extrair_video.py` | Lê os dados do vídeo com o `yt-dlp`, escolhe a melhor legenda (manual antes de automática; idioma do vídeo, depois pt-PT, pt, pt-BR, en), agrupa a fala em blocos de ~30 s e cria a pasta `videos/<assunto>/<título>/` |
-| `capturar_ecras.py` | Descarrega o vídeo sem som (até 1080p), deteta mudanças de ecrã com o `ffmpeg`, garante pelo menos uma captura por minuto, descarta imagens quase iguais e monta as folhas de miniaturas. Com `--em`, extrai instantes pedidos à mão |
+| `capturar_ecras.py` | Descarrega o vídeo sem som (até 1080p), deteta mudanças de ecrã com o `ffmpeg`, garante pelo menos uma captura por minuto, descarta imagens quase iguais e monta as folhas de miniaturas. Com `--em`, extrai instantes pedidos à mão. Numa gravação local lê o ficheiro onde ele está, sem descarregar |
+| `preparar_local.py` | Regista os dados de um ficheiro de vídeo do disco numa pasta de destino. Recusa uma pasta versionada e avisa quando o som acaba antes da imagem |
+| `transcrever_audio.py` | Transcreve na máquina a fala de uma gravação local, sem rede, em blocos de ~30 s. Mede o tempo, a fala e as frases repetidas. Descarregar o modelo é um comando à parte |
 
 ### `.claude/skills/dissertar-video/`
 
 | Ficheiro | Responsabilidade |
 |---|---|
-| `SKILL.md` | Os passos, pela ordem certa, que o Claude segue ao receber um link: escolher o assunto, extrair, ler as perguntas do projeto de destino, capturar e rever os ecrãs, escrever a dissertação com as regras de data e de hipótese, e atualizar o índice. Tem um segundo modo, "rever a ligação", para vídeos já dissertados |
+| `SKILL.md` | Os passos, pela ordem certa, que o Claude segue ao receber um link: escolher o assunto, extrair, ler as perguntas do projeto de destino, capturar e rever os ecrãs, escrever a dissertação com as regras de data e de hipótese, e atualizar o índice. Tem um segundo modo, "rever a ligação", para vídeos já dissertados, e um terceiro, "gravação local com dados reais", que só prepara o material e não deixa nada nesta pasta |
 
 A skill só é carregada com o Claude Code aberto nesta pasta.
 
@@ -71,8 +96,11 @@ A skill só é carregada com o Claude Code aberto nesta pasta.
 
 ## Dados
 
-Tudo o que a ferramenta produz fica em `videos/<assunto>/<título-do-vídeo>/`.
-Não há base de dados.
+Tudo o que a ferramenta produz a partir do YouTube fica em
+`videos/<assunto>/<título-do-vídeo>/`. Não há base de dados. O que produz a
+partir de uma gravação local (`metadados.json`, `transcricao.txt`, `ecras/`)
+fica **fora desta pasta e fora do git**, na pasta que o projeto de destino
+indicar.
 
 | Ficheiro | O que é | No git? |
 |---|---|---|
@@ -97,6 +125,7 @@ Na raiz de `videos/`, dois ficheiros valem para todos os vídeos:
 |---|---|---|
 | YouTube, através do `yt-dlp` | Dados do vídeo, legendas e o próprio vídeo | Nenhum |
 | Ficheiros de perguntas do projeto de destino, noutra pasta da máquina | Saber o que procurar no vídeo e preencher a secção de ligação | Nenhum. Só leitura |
+| Hugging Face, através do `faster-whisper` | Descarregar uma vez o modelo de transcrição (cerca de 1,6 GB). A transcrição em si corre sem rede | Nenhum |
 
 O `yt-dlp` deixa de funcionar de tempos a tempos, quando o YouTube muda. O
 primeiro passo perante um erro de extração é atualizá-lo:
@@ -108,7 +137,7 @@ primeiro passo perante um erro de extração é atualizá-lo:
 
 | Projeto | Como |
 |---|---|
-| `C:\projetos\winners-group` | Lê as dissertações do assunto `officegest`. A instrução a colar no `CLAUDE.md` do projeto consumidor está no [`README.md`](../../README.md) |
+| `C:\projetos\winners-group` | Lê as dissertações do assunto `officegest`. A instrução a colar no `CLAUDE.md` do projeto consumidor está no [`README.md`](../../README.md). Usa também os scripts para preparar as suas gravações locais, com a saída em `dados/gravacoes/` desse projeto |
 
 A relação tem dois sentidos: o consumidor lê as dissertações, e o dissertador
 lê as perguntas em aberto do consumidor, pelos caminhos de
@@ -125,7 +154,7 @@ na graduação da implementação que o criou.
 
 | Componente | Estado |
 |---|---|
-| Transcrição do áudio para vídeos sem legendas | No backlog — [`melhorias-futuras.md`](../plans/melhorias-futuras.md), M1 |
+| Transcrição do áudio para vídeos do YouTube sem legendas | No backlog — [`melhorias-futuras.md`](../plans/melhorias-futuras.md), M1. Para gravações locais já existe |
 | Skill disponível a partir de qualquer projeto | No backlog — [`melhorias-futuras.md`](../plans/melhorias-futuras.md), M2 |
 
 ---

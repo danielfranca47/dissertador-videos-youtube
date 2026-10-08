@@ -24,6 +24,7 @@ Há dois tipos de trabalho nesta pasta, e só um deles passa pelo fluxo abaixo.
 | Trabalho | Exemplo | Como se faz |
 |---|---|---|
 | **Usar** a ferramenta | Dissertar um vídeo, reprocessar um vídeo, corrigir o texto de uma dissertação, rever a ligação dos vídeos de um assunto às perguntas atuais do projeto de destino, acrescentar ou corrigir uma linha em `videos/projetos-destino.md` | Direto na pasta principal, pela skill `dissertar-video`. Sem Plan Mode, sem branch. No fim, um commit em `main` só com a pasta desse vídeo e o índice: `docs: dissertar <título do vídeo>` (ou, numa revisão, só com as dissertações revistas: `docs: rever a ligação de <assunto> ao projeto <nome>`) |
+| **Usar** a ferramenta numa gravação local | Transcrever e capturar os ecrãs de um ficheiro de vídeo que está no disco, a pedido de outro projeto | Pela secção "Gravação local com dados reais" da skill. Sem Plan Mode, sem branch e **sem commit nesta pasta**: nada da gravação fica aqui. A saída vai para uma pasta fora do git, indicada pelo projeto que pediu |
 | **Mudar** a ferramenta | Alterar `scripts/`, a skill `dissertar-video`, ou as regras da dissertação | Workflow de Implementação, abaixo |
 
 Se um vídeo revelar uma falha da ferramenta (ecrãs a mais, legenda que não é

@@ -50,6 +50,16 @@ Como muda a origem do texto e introduz um serviço pago, passa pelo arquiteto
 na fase de plano (ver `CLAUDE.md`, "Mudança de arquitetura passa pelo
 arquiteto"). A recomendação de base já existe; falta fechar os pontos acima.
 
+**Atualização (2026-10-08).** A transcrição local já existe para gravações
+do disco (`scripts/transcrever_audio.py`; ver
+[`gravacoes-locais.md`](../architecture/gravacoes-locais.md)). Nesta máquina
+demorou entre 0,3 e 0,6 vezes a duração do áudio, sem custo e sem conta, o
+que desfaz o motivo por que a recomendação de 01/10 a afastava. Para este
+item falta: um passo que descarregue o som do vídeo (a captura descarrega
+só a imagem), deixar o script aceitar uma pasta de `videos/`, e decidir com
+o arquiteto entre o serviço pago e a transcrição local para vídeos
+públicos. A qualidade a esperar: frases fiéis, nomes próprios mal escritos.
+
 ---
 
 ## M2 — Usar a skill a partir de qualquer projeto
@@ -195,3 +205,67 @@ alterações de texto na skill; os scripts não mudam.
 Não custa dinheiro nem exige contas. Não muda a arquitetura recomendada.
 **Sobe para MÉDIA** quando um assunto passar de quatro vídeos, ou na próxima
 revisão que tropeçar num destes pontos.
+
+---
+
+## M6 — Transcrever com a placa gráfica integrada
+
+**Prioridade: BAIXA**
+
+> Contexto: triagem dos "Ajustes Possíveis" na graduação de
+> `gravacoes-locais.md`, em 2026-10-08. Vale também para M7, M8 e M9.
+
+**O que acontece hoje.** A transcrição corre no processador e demora entre
+0,3 e 0,6 vezes a duração do áudio, com o computador lento enquanto corre.
+
+**O que precisa mudar.** Usar a placa gráfica integrada (`whisper.cpp` com
+Vulkan), que numa máquina parecida foi cerca de quatro vezes mais rápida.
+Exige um programa à parte e os controladores certos. Muda o motor da
+transcrição, por isso passa pelo arquiteto.
+
+**Sobe para MÉDIA** se o volume de gravações crescer a ponto de o tempo de
+máquina atrapalhar o trabalho.
+
+---
+
+## M7 — Separar no texto quem fala
+
+**Prioridade: BAIXA**
+
+**O que acontece hoje.** A transcrição junta as vozes num texto só. Numa
+gravação com duas pessoas, distingue-se quem fala pelo conteúdo.
+
+**O que precisa mudar.** Marcar cada bloco com quem falou. Exige outro
+modelo, a correr também na máquina.
+
+**Sobe para MÉDIA** se uma análise ficar errada por se atribuir uma frase à
+pessoa errada.
+
+---
+
+## M8 — Retomar uma transcrição interrompida
+
+**Prioridade: BAIXA**
+
+**O que acontece hoje.** O `transcrever_audio.py` grava o texto parcial a
+cada 5 minutos de áudio, mas uma nova corrida recomeça do início.
+
+**O que precisa mudar.** Recomeçar a partir do último bloco gravado.
+
+**Sobe para MÉDIA** na primeira vez que uma gravação longa for
+interrompida a meio.
+
+---
+
+## M9 — Recortar uma zona do ecrã ao pedir um instante
+
+**Prioridade: BAIXA**
+
+**O que acontece hoje.** O `capturar_ecras.py --em` grava o ecrã inteiro. A
+2560 pontos, os valores de uma folha de Excel leram-se sem erro.
+
+**O que precisa mudar.** Aceitar uma zona (por exemplo, a metade esquerda)
+e gravar só essa parte, ampliada.
+
+**Sobe para MÉDIA** na primeira gravação em que um valor não se consiga
+ler em tamanho real.

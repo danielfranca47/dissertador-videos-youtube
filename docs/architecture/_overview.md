@@ -13,6 +13,7 @@ Para a visão global de componentes, ver [`_mapa-sistema.md`](_mapa-sistema.md).
 | Documento | Área | Atualizar quando... |
 |---|---|---|
 | [`ligacao-projetos-destino.md`](ligacao-projetos-destino.md) | Como a dissertação se liga às perguntas do projeto que serve: registo de destinos, leitura das perguntas, secção de ligação datada, revisão a pedido | Mudar o registo `videos/projetos-destino.md`, o passo 1b da skill, as regras da secção de ligação ou o modo "rever a ligação" |
+| [`gravacoes-locais.md`](gravacoes-locais.md) | Como a ferramenta trata um ficheiro de vídeo do disco: metadados próprios, transcrição feita na máquina, saída fora do git, o que o código garante | Mudar `preparar_local.py`, `transcrever_audio.py`, o modelo ou os parâmetros da transcrição, a regra da pasta de destino, ou a secção "Gravação local com dados reais" da skill |
 
 Os docs de arquitetura são criados na **graduação** de implementações — não
 antecipadamente. Um doc aqui é sempre um espelho de código que já existe e foi
@@ -43,10 +44,11 @@ envolvidos.
 
 Candidatos prováveis neste projeto, pela ordem em que deve crescer:
 
-- **Extração e transcrição** — de onde vem o texto do vídeo, por que ordem se
-  tentam as fontes, e como a dissertação marca a fonte. Nasce quando a
-  transcrição do áudio for implementada: passa a haver duas fontes e uma regra
-  entre elas.
+- **Extração e transcrição** — de onde vem o texto de um vídeo do YouTube,
+  por que ordem se tentam as fontes, e como a dissertação marca a fonte.
+  Nasce quando os vídeos do YouTube sem legendas passarem a ser transcritos
+  (M1): passa a haver duas fontes e uma regra entre elas. A transcrição de
+  gravações locais já está em `gravacoes-locais.md`.
 - **Captura de ecrãs** — como se decide o que é um ecrã novo, o que cada
   constante controla, e o que distingue uma captura automática de uma manual.
 - **Formato da base de conhecimento** — o que fica em `videos/`, e o que os

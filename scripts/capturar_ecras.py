@@ -1,4 +1,5 @@
-"""Captura os ecrãs relevantes de um vídeo já extraído por extrair_video.py.
+"""Captura os ecrãs relevantes de um vídeo já extraído por extrair_video.py
+ou de uma gravação local já preparada por preparar_local.py.
 
 Uso:
     python scripts/capturar_ecras.py <pasta-do-video>
@@ -7,6 +8,7 @@ Uso:
 
 Sem --em:
     1. Descarrega o vídeo (até 1080p, sem som) para <pasta>/video.mp4.
+       Numa gravação local não descarrega nada: lê o ficheiro onde ele está.
     2. Deteta mudanças de ecrã com o ffmpeg e acrescenta capturas onde
        houver intervalos longos sem nenhuma (cobertura mínima).
     3. Extrai as imagens, descarta as quase iguais à anterior e grava em
@@ -25,7 +27,7 @@ import subprocess
 import sys
 from pathlib import Path
 
-from PIL import Image, ImageDraw
+from PIL import Image, ImageDraw, ImageOps
 from yt_dlp import YoutubeDL
 
 LIMIAR_CENA = 0.08          # sensibilidade da deteção de mudança de ecrã (0-1)
@@ -120,7 +122,9 @@ def montar_folhas(imagens: list[Path], pasta: Path) -> None:
         desenho = ImageDraw.Draw(folha)
         for i, caminho in enumerate(grupo):
             x, y = (i % FOLHA_COLUNAS) * largura, (i // FOLHA_COLUNAS) * (altura + 24)
-            folha.paste(Image.open(caminho).resize((largura, altura)), (x, y + 24))
+            # Mantém a proporção: um clipe de telemóvel ao alto não fica esticado.
+            miniatura = ImageOps.contain(Image.open(caminho), (largura, altura))
+            folha.paste(miniatura, (x + (largura - miniatura.width) // 2, y + 24))
             desenho.text((x + 6, y + 5), caminho.stem, fill="black")
         folha.save(pasta / f"folha-{n // por_folha + 1:02d}.jpg", quality=80)
 
@@ -132,7 +136,12 @@ def main() -> int:
         return 1
     pasta = Path(argumentos[0]).resolve()
     metadados = json.loads((pasta / "metadados.json").read_text(encoding="utf-8"))
-    video = pasta / "video.mp4"
+    # Uma gravação local é lida onde está, e os ecrãs dela só podem ir para fora do git.
+    local = metadados.get("ficheiro")
+    if local:
+        from preparar_local import exigir_fora_do_git
+        exigir_fora_do_git(pasta)
+    video = Path(local) if local else pasta / "video.mp4"
     ecras = pasta / "ecras"
     ecras.mkdir(exist_ok=True)
 
@@ -147,8 +156,9 @@ def main() -> int:
     for antigo in ecras.glob("*.jpg"):
         antigo.unlink()
 
-    print("A descarregar o vídeo...")
-    descarregar(metadados["link"], video)
+    if not local:
+        print("A descarregar o vídeo...")
+        descarregar(metadados["link"], video)
     total = duracao(video)
     print("A detetar mudanças de ecrã...")
     limiar = float(argumentos[argumentos.index("--limiar") + 1]) if "--limiar" in argumentos else LIMIAR_CENA

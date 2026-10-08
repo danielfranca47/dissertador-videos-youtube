@@ -1,8 +1,8 @@
 # Dissertador de vídeos do YouTube
 
-Transforma um vídeo do YouTube num `.md` detalhado, que serve de base de conhecimento para projetos do Claude Code.
+Transforma um vídeo do YouTube num `.md` detalhado, que serve de base de conhecimento para projetos do Claude Code. Também prepara gravações que estão no disco (transcrição feita no computador e ecrãs), para outro projeto as analisar.
 
-A recomendação de arquitetura está em `C:\projetos\modelos-agents\briefings\2026-10-01-dissertador-videos-youtube.md`.
+A recomendação de arquitetura está em `C:\projetos\modelos-agents\briefings\2026-10-01-dissertador-videos-youtube.md`; a das gravações locais, em `C:\projetos\modelos-agents\briefings\2026-10-08-dissertador-gravacoes-locais.md`.
 
 ## Como usar
 
@@ -46,6 +46,38 @@ A skill volta à transcrição e aos ecrãs já guardados de cada vídeo do assu
    Descarrega o vídeo (`video.mp4`, até 1080p, sem som) e grava em `ecras/` uma imagem por cada mudança de ecrã, mais uma por minuto onde não houver nenhuma. As imagens quase iguais são descartadas. Também monta folhas de miniaturas em `ecras/folhas/` para revisão rápida.
    Para capturar um instante específico: `--em 12:30,15:40`.
 3. Pedir ao Claude Code que reveja as folhas, abra em tamanho real os ecrãs-chave, escreva `dissertacao.md` com os ecrãs embutidos e acrescente o vídeo ao índice `videos/fontes-video.md`.
+
+## Gravações locais, com dados reais
+
+A ferramenta também trabalha com um **ficheiro de vídeo que está no disco**: uma gravação de ecrã ou de telemóvel que não pode ir para o YouTube, por mostrar dados reais. Peça ao Claude Code para preparar a gravação, indicando o ficheiro e uma pasta de destino.
+
+O que muda em relação a um vídeo do YouTube:
+
+- **A fala é transcrita no próprio computador.** O som nunca sai da máquina. Sem placa gráfica, a transcrição demorou menos do que a duração do vídeo nas medições feitas (estão no fim desta secção), e o computador fica mais lento enquanto corre.
+- **Nada da gravação fica nesta pasta.** A transcrição e os ecrãs vão para a pasta de destino, que tem de estar fora do git. Se a pasta estiver num repositório e não for ignorada, os scripts recusam.
+- **O vídeo é lido onde está.** Não é copiado nem apagado.
+- **Não entra no índice** `videos/fontes-video.md` e não gera commit aqui. A análise escrita pertence ao projeto que a pediu.
+- **O texto e os ecrãs que o Claude Code ler são processados pelo serviço da Anthropic**, como tudo o que ele lê. "Não sai da máquina" vale para o som e para o vídeo.
+
+Os passos, se quiser correr à mão:
+
+```
+python scripts/transcrever_audio.py --descarregar-modelo        (uma vez; cerca de 1,6 GB)
+python scripts/preparar_local.py "<ficheiro>" --destino "<pasta fora do git>" --titulo "<título>"
+python scripts/transcrever_audio.py "<pasta>"
+python scripts/capturar_ecras.py "<pasta>"
+```
+
+O `transcrever_audio.py` aceita `--trecho 33:00-43:00` para transcrever só uma parte, e no fim diz quanto demorou, quanto do vídeo é fala e se encontrou frases repetidas (sinal de texto inventado num silêncio). O texto não separa quem fala.
+
+**Medições** (outubro de 2026, portátil AMD Ryzen 5 5500U, sem placa gráfica, 6 núcleos):
+
+| Gravação | Duração | Fala | Tempo de transcrição |
+|---|---|---|---|
+| Resumo falado, sem pausas | 4 min 05 s | 99 % | 2 min 21 s a 2 min 37 s (0,6 vezes a duração) |
+| Trecho de trabalho no ecrã, com pausas | 10 min | 53 % | 3 min 17 s (0,3 vezes a duração) |
+
+**O que esperar do texto.** Segue-se bem do princípio ao fim e não inventou frases nos silêncios. Erra nomes próprios e termos do ofício (por exemplo "Office de Edge" por OfficeGest, "fatores recibo" por faturas-recibo) e pode escrever valores com o símbolo de outra moeda. Com `--vocabulario` acerta esses nomes, mas perde frases e pontuação, por isso não é usado por omissão. Os nomes e os valores confirmam-se sempre nos ecrãs.
 
 ## Como encontrar um vídeo depois
 
@@ -94,3 +126,4 @@ Dissertar um vídeo não precisa de nada disto: é só colar o link.
 
 - Python 3.13, `yt-dlp` (`python -m pip install yt-dlp`) e Pillow
 - ffmpeg e ffprobe no PATH
+- Só para gravações locais: `faster-whisper` (`python -m pip install faster-whisper`) e o modelo, descarregado uma vez com `python scripts/transcrever_audio.py --descarregar-modelo`

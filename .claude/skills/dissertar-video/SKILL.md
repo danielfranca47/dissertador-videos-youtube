@@ -1,12 +1,12 @@
 ---
 name: dissertar-video
-description: Transforma um vídeo do YouTube num .md detalhado, com screenshots dos ecrãs demonstrados, para servir de base de conhecimento a projetos do Claude Code. Use sempre que o utilizador colar um link do YouTube (youtube.com ou youtu.be) e pedir para dissertar, documentar, resumir em detalhe, extrair o conhecimento ou "fazer" o vídeo, ou quando pedir para reprocessar ou atualizar um vídeo já processado. Use também quando pedir para rever, atualizar ou voltar a cruzar os vídeos já dissertados com as perguntas atuais de um projeto (por exemplo, "revê os vídeos do OfficeGest com as perguntas atuais").
-argument-hint: <link-do-youtube> [projeto de destino, opcional; por omissão, o do registo videos/projetos-destino.md] | rever <assunto>
+description: Transforma um vídeo do YouTube num .md detalhado, com screenshots dos ecrãs demonstrados, para servir de base de conhecimento a projetos do Claude Code. Use sempre que o utilizador colar um link do YouTube (youtube.com ou youtu.be) e pedir para dissertar, documentar, resumir em detalhe, extrair o conhecimento ou "fazer" o vídeo, ou quando pedir para reprocessar ou atualizar um vídeo já processado. Use também quando pedir para rever, atualizar ou voltar a cruzar os vídeos já dissertados com as perguntas atuais de um projeto (por exemplo, "revê os vídeos do OfficeGest com as perguntas atuais"). Use também quando o utilizador apontar para um ficheiro de vídeo no disco (uma gravação de ecrã ou de telemóvel, .mp4 ou outro) e pedir para o transcrever, capturar os ecrãs ou analisar.
+argument-hint: <link-do-youtube> [projeto de destino, opcional; por omissão, o do registo videos/projetos-destino.md] | rever <assunto> | <ficheiro-de-video> <pasta de destino fora do git>
 ---
 
 # Dissertar vídeo do YouTube
 
-Esta skill tem dois modos. **Dissertar um vídeo novo** são os passos 1 a 5. **Rever a ligação** de vídeos já dissertados, quando as perguntas do projeto de destino mudaram, é a secção "Rever a ligação", no fim.
+Esta skill tem três modos. **Dissertar um vídeo novo** do YouTube são os passos 1 a 5. **Rever a ligação** de vídeos já dissertados, quando as perguntas do projeto de destino mudaram, é a secção "Rever a ligação". **Preparar uma gravação local**, que é um ficheiro no disco e pode ter dados reais, é a secção "Gravação local com dados reais", no fim: tem regras próprias, e os passos 1 a 5 não se aplicam.
 
 O utilizador **não é desenvolvedor** e usa o resultado para aprender um tema que não domina. Por isso, não lhe peças para validar o conteúdo. A prova é o ecrã: os nomes de menus, campos e botões vêm dos screenshots, e não da tua interpretação.
 
@@ -99,3 +99,34 @@ Usa-se quando o utilizador pede para rever os vídeos de um assunto com as pergu
    5. Se a revisão mostrar que o **corpo** da dissertação tem um erro ou uma falta, **não o corrijas neste modo**: escreve-o no fim da secção de ligação, numa linha "A rever no texto acima", e diz-o na resposta.
 4. **Commit único** em `main`, só com as dissertações revistas: `docs: rever a ligação de <assunto> ao projeto <nome>`. No corpo, uma linha por vídeo com o que mudou.
 5. **Responde** com, por vídeo: quantas perguntas a tabela tinha e passou a ter, o que apareceu de novo, as perguntas sugeridas e as divergências. Lembra que o projeto de destino **não foi editado**: é ele que decide o que absorve.
+
+## Gravação local com dados reais
+
+Usa-se quando o pedido aponta para um **ficheiro de vídeo no disco** (uma gravação de ecrã ou de telemóvel) em vez de um link. Estas gravações costumam mostrar dados reais de clientes, por isso as regras são outras. Os passos 1 a 5 **não se aplicam**: aqui a ferramenta só prepara o material (a fala em texto e os ecrãs). A análise escrita é do projeto que a pediu, no sítio e no formato que ele definir.
+
+Regras, antes de correr qualquer comando:
+
+- **Nada da gravação fica nesta pasta nem entra no git.** A pasta de destino é dada pelo projeto que pediu (no winners-group: `C:\projetos\winners-group\dados\gravacoes\<código>`). Os scripts recusam uma pasta versionada com o código de saída 3. Não contornes a recusa: pede outra pasta.
+- **O vídeo original nunca é copiado, movido nem apagado.** A regra "apaga o `video.mp4` no fim" é só para vídeos do YouTube.
+- **Não acrescentes a gravação a `videos/fontes-video.md`**, não escrevas `dissertacao.md` aqui e não faças commit nesta pasta.
+- **O som não sai da máquina, mas o que leres sai.** A transcrição e os ecrãs que abrires são processados pelo serviço da Anthropic. Abre os ecrãs de que precisas, não todos. No que escreveres, não copies NIFs, IBANs nem palavras-passe.
+
+Passos, a correr com os caminhos completos dos scripts (`C:\projetos\dissertador-videos-youtube\scripts\…`) e `PYTHONIOENCODING=utf-8`:
+
+1. **Preparar:**
+   ```
+   python scripts/preparar_local.py "<ficheiro>" --destino "<pasta>" --titulo "<título>" --gravado AAAA-MM-DD
+   ```
+   Lê a linha "Som:". Se disser que o som só existe até um certo minuto, **avisa o utilizador logo**: o resto do vídeo só tem imagem, e ele pode ter o ficheiro original com o som inteiro.
+2. **Transcrever:**
+   ```
+   python scripts/transcrever_audio.py "<pasta>"
+   ```
+   - Se disser que o modelo não está na máquina, corre uma vez `python scripts/transcrever_audio.py --descarregar-modelo` (cerca de 1,6 GB; é o único passo que vai à internet).
+   - Demora menos do que a duração do áudio (entre 0,3 e 0,6 vezes, medido em outubro de 2026 num portátil sem placa gráfica; quanto mais silêncio, mais rápido) e deixa o computador lento. Acima de 20 minutos de vídeo, corre em segundo plano e avisa o utilizador de quanto vai demorar.
+   - No fim, lê as três medições. **"Frases repetidas" acima de zero** quer dizer texto inventado num silêncio: encontra esses blocos e não os uses. **"Fala"** diz quanto do vídeo tem alguém a falar.
+   - `--trecho 33:00-43:00 --saida <nome>.txt` transcreve só uma parte, para um teste rápido.
+   - Não uses `--vocabulario` por omissão: no piloto acertou nomes como "OfficeGest" e "fatura-recibo", mas trocou frases inteiras por outras sem sentido e perdeu pontuação. Sem ele, o texto é mais fiel e erra só os nomes: conta com "Office de Edge" por OfficeGest, "fatores recibo" por faturas-recibo, e valores com "R$" que no ecrã são euros.
+3. **Capturar os ecrãs:** `python scripts/capturar_ecras.py "<pasta>"`, como no passo 2 de cima. Uma gravação de ecrã com a imagem parada gera poucos ecrãs; pede com `--em` os instantes em que a fala aponta para alguma coisa.
+4. **Ler:** a transcrição inteira, as folhas de miniaturas, e em tamanho real os ecrãs-chave. O texto **não separa quem fala**: quando houver duas pessoas, distingue-as pelo conteúdo e, se não der, não atribuas a frase a ninguém. Os nomes de menus e os valores vêm dos ecrãs, não da fala.
+5. **Responder** com: onde ficou o material, quanto demorou, quanto do vídeo é fala, e qualquer aviso (som em falta, frases repetidas). O que fazer com o material é do projeto que pediu.

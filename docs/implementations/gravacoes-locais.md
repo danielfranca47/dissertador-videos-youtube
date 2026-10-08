@@ -2,7 +2,7 @@
 
 **Componente:** vários (dois scripts novos, script de captura, skill)
 **Branch:** `feat/gravacoes-locais` (worktree em `.claude/worktrees/feat/gravacoes-locais`)
-**Status:** Em andamento
+**Status:** Todos os cenários validados (08/10/2026)
 
 ---
 
@@ -117,6 +117,45 @@ Decisões tomadas ao construir:
 - **Um trecho sem som termina com uma mensagem e o código 2**, em vez de um
   erro. Apareceu no piloto: uma das gravações só tem som até aos 22 minutos.
 
+### Commits Fase 1
+
+| # | Commit | O que foi implementado |
+|---|---|---|
+| 1 | `c9654e6` | Preparação de um ficheiro local, transcrição na máquina, captura a partir do ficheiro local, modo novo na skill e documentação de uso |
+
+### Relatório da Fase 1 — o que mudou na prática
+
+**Antes:** a ferramenta só trabalhava com links do YouTube e só tinha texto
+quando o YouTube tinha legendas. Uma gravação com dados reais não tinha
+como ser tratada.
+**Agora:** dá-se um ficheiro de vídeo e uma pasta fora do git, e a
+ferramenta devolve a fala em texto, com os minutos, e os ecrãs. O som não
+sai da máquina, o vídeo não é copiado nem apagado, e nada fica nesta pasta.
+
+O que o piloto mediu, num portátil sem placa gráfica:
+
+- **Tempo:** 0,58 a 0,64 vezes a duração numa gravação só de fala (4 min
+  05 s em 2 min 21 s a 2 min 37 s) e 0,33 vezes num trecho com pausas (10
+  min em 3 min 17 s). A estimativa do plano era de 1 a 1,5 vezes.
+- **Silêncios:** no trecho de 10 minutos, só 53 % era fala, e não apareceu
+  nenhuma frase repetida três vezes seguidas.
+- **Fidelidade:** o texto segue-se do princípio ao fim e bate com a nota
+  que o utilizador tinha tirado desse momento e com os valores que se veem
+  no ecrã.
+- **Limitação:** erra nomes próprios e termos do ofício ("Office de Edge"
+  por OfficeGest, "fatores recibo" por faturas-recibo) e escreveu valores
+  em euros com "R$". Com a lista de vocabulário acerta os nomes, mas troca
+  frases inteiras por outras sem sentido. O utilizador decidiu a 08/10
+  seguir sem a lista; os nomes confirmam-se nos ecrãs.
+- **Ecrãs:** a 2560 pontos, os valores de uma folha de Excel leem-se sem
+  erro em tamanho real (oito linhas conferidas com os ficheiros
+  verdadeiros, em duas folhas).
+- **Achado nos dados:** uma das 8 gravações (a da conferência, de 63
+  minutos) só tem som até aos 22 minutos. O script passou a avisar disso ao
+  preparar o ficheiro.
+
+**Para validar:** Cenários L1 a L4 e E1 a E4 (todos corridos a 08/10/2026).
+
 ---
 
 ## Checks de Validação
@@ -130,43 +169,53 @@ Os checks `E1` a `E3` usam gravações com dados reais. Este arquivo regista
 as medições, e não o conteúdo.
 
 ### Cenário L1 — Os scripts abrem sem erro
-- [ ] `python -m py_compile scripts/extrair_video.py scripts/capturar_ecras.py scripts/preparar_local.py scripts/transcrever_audio.py` termina com o código 0
+- [x] `python -m py_compile scripts/extrair_video.py scripts/capturar_ecras.py scripts/preparar_local.py scripts/transcrever_audio.py` termina com o código 0
+- **Validado em:** 08/10/2026 — código 0, antes e depois da correção do trecho sem som
 
 ### Cenário L2 — Blocos de 30 segundos e contagem de repetições
-- [ ] `agrupar([(0,'a'),(12,'b'),(31,'c'),(45,'d'),(3700,'e')])` devolve `['[00:00] a b', '[00:31] c d', '[1:01:40] e']`
-- [ ] `repeticoes` devolve 1 para `x x x y x x`, 2 para `x x x x z z z` e 0 para uma lista vazia
+- [x] `agrupar([(0,'a'),(12,'b'),(31,'c'),(45,'d'),(3700,'e')])` devolve `['[00:00] a b', '[00:31] c d', '[1:01:40] e']`
+- [x] `repeticoes` devolve 1 para `x x x y x x`, 2 para `x x x x z z z` e 0 para uma lista vazia
+- **Validado em:** 08/10/2026 — os dois resultados saíram como escrito
 
 ### Cenário L3 — A pasta de destino tem de estar fora do git
-- [ ] `fora_do_git` é falso para uma pasta dentro de `videos/` desta ferramenta e para `docs/` do winners-group
-- [ ] É verdadeiro para `dados/gravacoes/G4` do winners-group (ignorada), para uma subpasta que ainda não existe dentro de `dados/`, e para uma pasta fora de qualquer repositório
-- [ ] `preparar_local.py` com destino em `docs/` do winners-group termina com o código 3 e não cria a pasta
+- [x] `fora_do_git` é falso para uma pasta dentro de `videos/` desta ferramenta e para `docs/` do winners-group
+- [x] É verdadeiro para `dados/gravacoes/G4` do winners-group (ignorada), para uma subpasta que ainda não existe dentro de `dados/`, e para uma pasta fora de qualquer repositório
+- [x] `preparar_local.py` com destino em `docs/` do winners-group termina com o código 3 e não cria a pasta
+- **Validado em:** 08/10/2026 — os cinco casos deram o esperado; a recusa escreveu a mensagem, saiu com 3 e a pasta não foi criada
 
 ### Cenário L4 — A transcrição não usa a rede
-- [ ] Com `HTTP_PROXY` e `HTTPS_PROXY` apontados para um endereço morto (`http://127.0.0.1:9`), a transcrição corre até ao fim
+- [x] Com `HTTP_PROXY` e `HTTPS_PROXY` apontados para um endereço morto (`http://127.0.0.1:9`), a transcrição corre até ao fim
+- **Validado em:** 08/10/2026 — as cinco transcrições do piloto correram assim, todas até ao fim. **Não verificado:** o tráfego de rede medido por fora do processo; o que se provou é que a biblioteca não precisou da rede
 
 ### Cenário E1 — Gravação G4 inteira (4 min 05 s, fala contínua)
 Setup: `preparar_local.py "<…>\Videos_IA\Resumo_Conferencia_E-fatura.mp4" --destino C:\projetos\winners-group\dados\gravacoes\G4`, depois `transcrever_audio.py` sem e com `--vocabulario`, e `capturar_ecras.py`.
 Termos fixados antes de correr: e-Fatura, OfficeGest, fatura, NIF, conferência, lançamento, contabilidade, fornecedor, nota de crédito, extrato, reconciliação, Excel.
-- [ ] Demora até 1,5 vezes a duração do áudio
-- [ ] Zero frases repetidas três vezes seguidas
-- [ ] Os termos fixados que são ditos aparecem bem escritos
-- [ ] A captura lê o ficheiro local sem descarregar nada e grava os ecrãs na pasta de destino
+- [x] Demora até 1,5 vezes a duração do áudio
+- [x] Zero frases repetidas três vezes seguidas
+- [x] Os termos fixados que são ditos aparecem bem escritos
+- [x] A captura lê o ficheiro local sem descarregar nada e grava os ecrãs na pasta de destino
+- **Validado em:** 08/10/2026 — três corridas: 2 min 21 s e 2 min 37 s sem vocabulário, 2 min 35 s com (0,58 a 0,64 vezes a duração); 99 % de fala; zero repetições. Ditos e bem escritos: e-Fatura (sem vocabulário, "e-fatura"), fatura, conferência, lançamento, contabilidade, fornecedores, extrato, Excel. Não foram ditos: OfficeGest, NIF, nota de crédito, reconciliação. Com vocabulário: a maiúscula de "e-Fatura" certa, pontos trocados por vírgulas e uma frase curta perdida. A captura demorou 26 s e guardou 2 ecrãs (a imagem está quase sempre parada)
 
 ### Cenário E2 — Dez minutos de uma gravação longa, com pausas
 Setup: `preparar_local.py` da G6 (`Reconciliacao_bancaria-002.mp4`, 1 h 56) e `transcrever_audio.py <pasta> --trecho 36:00-46:00 --saida transcricao-trecho-36-46.txt`.
 O plano previa a G2 dos 33:00 aos 43:00; a G2 não tem som nesse intervalo (ver a Fase 1), por isso o trecho passou para a G6, onde o utilizador tem uma nota aos 41 minutos.
-- [ ] Demora até 1,5 vezes a duração do trecho
-- [ ] Zero frases repetidas três vezes seguidas
-- [ ] O texto à volta dos 41 minutos bate com a nota do utilizador desse momento
-- [ ] Os minutos do texto são os do vídeo (começam em 36:00)
+- [x] Demora até 1,5 vezes a duração do trecho
+- [x] Zero frases repetidas três vezes seguidas
+- [x] O texto à volta dos 41 minutos bate com a nota do utilizador desse momento
+- [x] Os minutos do texto são os do vídeo (começam em 36:00)
+- [⏭️] Os termos fixados que são ditos aparecem bem escritos
+- **Validado em:** 08/10/2026 — 3 min 17 s para 9 min 59 s (0,33 vezes), com e sem vocabulário; 53 % de fala; zero repetições. Entre os 39:06 e os 40:40 o texto descreve faturas do fim do mês anterior cujo movimento no banco aparece dias depois, que é a nota do utilizador. Os blocos vão de 36:00 a 45:17
+- **Termos, não cumprido à letra:** sem vocabulário, "OfficeGest" saiu "Office de Edge" e "faturas-recibo" saiu "fatores recibo"; com vocabulário saem certos, mas três frases ficam trocadas por outras sem sentido. O critério media a grafia dos nomes, e o que a análise precisa é de frases fiéis. **Decisão do utilizador (08/10/2026):** seguir sem vocabulário. A limitação está escrita no `README.md` e na skill
 
 ### Cenário E3 — Os ecrãs de 2560 pontos leem-se
-- [ ] Num ecrã de folha de Excel aberto em tamanho real, quatro linhas lidas batem com o ficheiro de Excel verdadeiro
+- [x] Num ecrã de folha de Excel aberto em tamanho real, quatro linhas lidas batem com o ficheiro de Excel verdadeiro
+- **Validado em:** 08/10/2026 — feito em duas folhas: o ecrã da G4 a 01:48 (folha de conferência, quatro linhas) e o da G6 aos 41:00 (folha de reconciliação, quatro linhas). Números de documento, datas e valores iguais aos dos ficheiros
 
 ### Cenário E4 — O caminho do YouTube continua a funcionar
 Setup: na worktree, `extrair_video.py "https://www.youtube.com/watch?v=vW9GhkTXmNU" --tema officegest` e `capturar_ecras.py` na pasta desse vídeo.
-- [ ] A extração e a captura terminam sem erro
-- [ ] Os ecrãs gerados são os mesmos que estão no git (`git status` na pasta do vídeo), tirando os pedidos à mão, que a captura automática apaga (M3)
+- [x] A extração e a captura terminam sem erro
+- [x] Os ecrãs gerados são os mesmos que estão no git (`git status` na pasta do vídeo), tirando os pedidos à mão, que a captura automática apaga (M3)
+- **Validado em:** 08/10/2026 — 88 blocos de legenda e 194 ecrãs, em 190 s; `git status` em `videos/` sem nenhuma diferença (este vídeo não tem ecrãs pedidos à mão). O `video.mp4` do teste foi apagado da worktree
 
 ---
 
